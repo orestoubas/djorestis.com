@@ -34,7 +34,7 @@ POSTS = [
     {
         "slug": "greek-food-festival-winter-edition-tour-taxis",
         "date": "2024-12-04",
-        "title": "Greek Food Festival Winter Edition at Tour & Taxis — Recap",
+        "title": "Greek Food Festival at Tour & Taxis — Winter Recap",
         "desc": "DJing the Brussels Greek Food Festival Winter Edition at Tour & Taxis, 29 Nov–1 Dec 2024 — a Greek winter feast under the iconic sheds, recapped from the booth.",
         "category": "Event story",
         "h1": "A Greek winter under the sheds of <span class='gold'>Tour &amp; Taxis</span>",
@@ -91,7 +91,7 @@ POSTS = [
     {
         "slug": "corporate-end-of-year-party-dj-brussels",
         "date": "2023-12-20",
-        "title": "Inside a Corporate End-of-Year Party — a Brussels DJ Recap",
+        "title": "Corporate End-of-Year Party — A Brussels DJ's Recap",
         "desc": "Behind the decks at an international firm's end-of-year reception in Brussels: how a corporate event DJ turns a formal evening into a real celebration.",
         "category": "Event story",
         "h1": "From reception mode to <span class='gold'>midnight mode</span>",

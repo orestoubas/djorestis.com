@@ -81,7 +81,7 @@ STRINGS = {
 PAGES = {
     # ---------------------------------------------------------------- HOME
     "home": {
-        "title": "DJ in Brussels — Corporate Events, Weddings & Greek Parties | DJ Orestis",
+        "title": "DJ in Brussels — Corporate Events, Weddings & Greek Parties",
         "desc": "Brussels-based DJ for corporate events, weddings and Greek parties across Belgium, the Netherlands, France, Germany, the UK and Greece. Greek, electronic, Afro, Latin & RnB. Your event as you dream it.",
         "kicker": "Brussels · Belgium · Europe",
         "h1": "Your event, <span class='gold'>as you dream it</span>",
@@ -211,7 +211,7 @@ PAGES = {
 
     # ---------------------------------------------------------------- SERVICES
     "services": {
-        "title": "DJ Services in Brussels & Belgium — Corporate, Weddings, Parties | DJ Orestis",
+        "title": "DJ Services in Brussels & Belgium — Corporate & Weddings",
         "desc": "Professional DJ services in Brussels and across Europe: corporate events, weddings and baptisms, Greek parties, private celebrations, plus full sound, light, photo and video packages for up to 500 guests.",
         "kicker": "What I offer",
         "h1": "Services",
@@ -328,7 +328,7 @@ PAGES = {
 
     # ---------------------------------------------------------------- WEDDING
     "wedding": {
-        "title": "Wedding DJ in Brussels & Belgium — Greek & International Weddings | DJ Orestis",
+        "title": "Wedding DJ in Brussels & Belgium — Greek & International",
         "desc": "Wedding DJ in Brussels and across Belgium for Greek, international and mixed weddings and baptisms. Tailored playlists, ceremony to last dance, sound & light included if needed. Also NL, FR, DE, UK, GR.",
         "kicker": "The most important party of your life",
         "h1": "Wedding DJ in <span class='gold'>Brussels &amp; Belgium</span>",
@@ -439,7 +439,7 @@ PAGES = {
 
     # ---------------------------------------------------------------- PARTY
     "party": {
-        "title": "Party DJ in Brussels — Private Parties, Birthdays & Celebrations | DJ Orestis",
+        "title": "Party DJ in Brussels — Private Parties & Birthdays",
         "desc": "Private party DJ in Brussels: birthdays, anniversaries, graduations and celebrations with a professional open-format DJ. Electronic, Afro, Latin, RnB and Greek. Sound & light available. Belgium & Europe.",
         "kicker": "Your party, professionally loud",
         "h1": "Party DJ in <span class='gold'>Brussels</span>",
@@ -481,7 +481,7 @@ PAGES = {
 
     # ---------------------------------------------------------------- FULL PACKAGE
     "fullpackage": {
-        "title": "Full-Package Event Solutions — DJ, Sound, Light, Photo & Video | Brussels",
+        "title": "Full-Package Events Brussels — DJ, Sound, Light & Video",
         "desc": "One partner for your whole event in Brussels and beyond: professional DJ, sound and lighting for up to 500 guests, plus photography and video. One contact, one setup, one invoice.",
         "kicker": "One partner, whole event",
         "h1": "Full-package <span class='gold'>event solutions</span>",

@@ -72,7 +72,7 @@ STRINGS = {
 PAGES = {
     # ---------------------------------------------------------------- HOME
     "home": {
-        "title": "DJ in Brussel — Bedrijfsfeesten, Bruiloften & Griekse Feesten | DJ Orestis",
+        "title": "DJ in Brussel — Bedrijfsfeesten, Bruiloften & Griekse Feesten",
         "desc": "DJ in Brussel voor bedrijfsfeesten, bruiloften en Griekse feesten in België, Nederland, Frankrijk, Duitsland, het VK en Griekenland. Grieks, electronic, Afro, Latin & RnB. Uw evenement zoals u het droomt.",
         "kicker": "Brussel · België · Europa",
         "h1": "Uw evenement, <span class='gold'>zoals u het droomt</span>",
@@ -202,7 +202,7 @@ PAGES = {
 
     # ---------------------------------------------------------------- SERVICES
     "services": {
-        "title": "DJ Diensten in Brussel & België — Bedrijfsfeesten, Bruiloften | DJ Orestis",
+        "title": "DJ Diensten Brussel & België — Bedrijfsfeesten & Bruiloften",
         "desc": "Professionele DJ-diensten in Brussel en heel Europa: bedrijfsevenementen, bruiloften en doopfeesten, Griekse feesten, privévieringen, plus complete pakketten met geluid, licht, foto en video tot 500 gasten.",
         "kicker": "Wat ik aanbied",
         "h1": "Diensten",
@@ -319,7 +319,7 @@ PAGES = {
 
     # ---------------------------------------------------------------- WEDDING
     "wedding": {
-        "title": "Bruiloft DJ in Brussel & België — Griekse & Internationale Trouwfeesten",
+        "title": "Bruiloft DJ in Brussel — Griekse & Internationale Trouwfeesten",
         "desc": "Bruiloft DJ in Brussel en heel België voor Griekse, internationale en gemengde trouwfeesten en doopfeesten. Playlists op maat, van ceremonie tot laatste dans, geluid & licht inbegrepen indien gewenst.",
         "kicker": "Het belangrijkste feest van uw leven",
         "h1": "Bruiloft DJ in <span class='gold'>Brussel &amp; België</span>",
@@ -472,7 +472,7 @@ PAGES = {
 
     # ---------------------------------------------------------------- FULL PACKAGE
     "fullpackage": {
-        "title": "Totaalpakket voor Evenementen — DJ, Geluid, Licht, Foto & Video | Brussel",
+        "title": "Totaalpakket Evenementen Brussel — DJ, Geluid, Licht & Video",
         "desc": "Eén partner voor uw hele evenement in Brussel en daarbuiten: professionele DJ, geluid en licht voor maximaal 500 gasten, plus fotografie en video. Eén aanspreekpunt, één opstelling, één factuur.",
         "kicker": "Eén partner, het hele evenement",
         "h1": "Totaalpakketten voor <span class='gold'>evenementen</span>",
