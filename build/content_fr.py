@@ -620,7 +620,7 @@ PAGES = {
     </div>
     <aside class="contact-aside">
       <h2>Contact direct</h2>
-      <p><a href="mailto:vasileiadis.orestis@gmail.com">vasileiadis.orestis@gmail.com</a></p>
+      <p><a href="mailto:info@djorestis.com">info@djorestis.com</a></p>
       <p class="muted">Basé à Bruxelles, Belgique.<br>Disponible en Belgique, aux Pays-Bas, en France, en Allemagne, au Royaume-Uni et en Grèce — pour les événements à l'étranger, le déplacement et le logement s'ajoutent au devis.</p>
       <h2>Langues</h2>
       <p class="muted">Grec · Anglais · Français · Néerlandais</p>
@@ -640,7 +640,7 @@ PAGES = {
 <section class="section">
   <div class="wrap narrow legal">
     <h2>Qui suis-je</h2>
-    <p>Ce site, djorestis.com, est exploité par DJ Orestis, Bruxelles, Belgique (« je », « moi »). Contact : <a href="mailto:vasileiadis.orestis@gmail.com">vasileiadis.orestis@gmail.com</a>.</p>
+    <p>Ce site, djorestis.com, est exploité par DJ Orestis, Bruxelles, Belgique (« je », « moi »). Contact : <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
     <h2>Quelles données je collecte</h2>
     <p>Lorsque vous utilisez le formulaire de demande de devis, je reçois les informations que vous y introduisez : votre nom, votre adresse e-mail, votre numéro de téléphone facultatif et les détails de votre événement. Je les utilise dans un seul but : répondre à votre demande et préparer une proposition.</p>
     <h2>Ce que je ne fais pas</h2>

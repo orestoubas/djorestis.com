@@ -620,7 +620,7 @@ PAGES = {
     </div>
     <aside class="contact-aside">
       <h2>Rechtstreeks contact</h2>
-      <p><a href="mailto:vasileiadis.orestis@gmail.com">vasileiadis.orestis@gmail.com</a></p>
+      <p><a href="mailto:info@djorestis.com">info@djorestis.com</a></p>
       <p class="muted">Gevestigd in Brussel, België.<br>Beschikbaar in België, Nederland, Frankrijk, Duitsland, het VK en Griekenland — voor evenementen in het buitenland worden reis en verblijf bij de offerte opgeteld.</p>
       <h2>Talen</h2>
       <p class="muted">Grieks · Engels · Frans · Nederlands</p>
@@ -640,7 +640,7 @@ PAGES = {
 <section class="section">
   <div class="wrap narrow legal">
     <h2>Wie ik ben</h2>
-    <p>Deze website, djorestis.com, wordt beheerd door DJ Orestis, Brussel, België ("ik", "mij"). Contact: <a href="mailto:vasileiadis.orestis@gmail.com">vasileiadis.orestis@gmail.com</a>.</p>
+    <p>Deze website, djorestis.com, wordt beheerd door DJ Orestis, Brussel, België ("ik", "mij"). Contact: <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
     <h2>Welke gegevens ik verzamel</h2>
     <p>Wanneer u het offerteformulier gebruikt, ontvang ik de informatie die u invult: uw naam, e-mailadres, optioneel telefoonnummer en de details van uw evenement. Ik gebruik deze voor één doel: uw aanvraag beantwoorden en een voorstel opstellen.</p>
     <h2>Wat ik niet doe</h2>

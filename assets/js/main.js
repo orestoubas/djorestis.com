@@ -16,6 +16,37 @@
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
+  // Cookie consent + GA4 (banner exists only when a GA4 ID is configured)
+  var banner = document.getElementById("cookie-banner");
+  if (banner) {
+    var gaId = banner.getAttribute("data-ga");
+    var loadGA = function () {
+      var s = document.createElement("script");
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + gaId;
+      s.async = true;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag("js", new Date());
+      window.gtag("config", gaId, { anonymize_ip: true });
+    };
+    var choice = null;
+    try { choice = localStorage.getItem("cookie-consent"); } catch (e) {}
+    if (choice === "yes") {
+      loadGA();
+    } else if (choice !== "no") {
+      banner.hidden = false;
+      banner.querySelectorAll("[data-consent]").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          var v = btn.getAttribute("data-consent");
+          try { localStorage.setItem("cookie-consent", v); } catch (e) {}
+          banner.hidden = true;
+          if (v === "yes") loadGA();
+        });
+      });
+    }
+  }
+
   // Quote form.
   // If data-endpoint is set (e.g. a Formspree URL — see README), submit via fetch.
   // Otherwise fall back to opening the visitor's email client, pre-filled.

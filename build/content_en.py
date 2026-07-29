@@ -19,6 +19,21 @@ STRINGS = {
     "footer_based": "Based in Brussels, Belgium",
     "footer_areas": "Available in Belgium · Netherlands · France · Germany · UK · Greece",
     "footer_rights": "All rights reserved.",
+    "whatsapp_label": "Chat on WhatsApp",
+    "cookie": {
+        "text": "This site uses cookies for anonymous visitor statistics only.",
+        "accept": "Accept",
+        "decline": "Decline",
+    },
+    "blog": {
+        "index_title": "Blog — Stories & Guides from the Booth | DJ Orestis",
+        "index_desc": "Event stories and practical guides from DJ Orestis: corporate parties, weddings and Greek nights in Brussels and across Europe.",
+        "h1": "From the <span class='gold'>booth</span>",
+        "sub": "Event stories, lessons learned and practical guides — weddings, corporate nights and Greek parties across Europe.",
+        "read_more": "Read the story",
+        "back": "All articles",
+        "cta": "Planning something similar?",
+    },
     "nav": {
         "home": "Home",
         "about": "About",
@@ -28,6 +43,9 @@ STRINGS = {
         "greek": "Greek parties",
         "party": "Private parties",
         "fullpackage": "Full-package solutions",
+        "restaurant": "Restaurant DJ",
+        "mykonos": "DJ across Europe",
+        "blog": "Blog",
         "music": "Music",
         "events": "Past events",
         "contact": "Contact",
@@ -225,6 +243,16 @@ PAGES = {
       <a class="svc" href="{link:fullpackage}">
         <div><h2>Full-package event solutions</h2>
         <p>DJ + professional sound &amp; light + photography + video, for events and small shows up to 500 people. One contact, one setup, one invoice.</p></div>
+        <span class="card-more">Learn more →</span>
+      </a>
+      <a class="svc" href="{link:restaurant}">
+        <div><h2>Restaurant &amp; venue nights</h2>
+        <p>Recurring themed nights that build a loyal crowd — the formula behind my four-year residency at Papillon Schuman, available for your venue.</p></div>
+        <span class="card-more">Learn more →</span>
+      </a>
+      <a class="svc" href="{link:mykonos}">
+        <div><h2>Destination events across Europe</h2>
+        <p>A Mykonos-trained Greek DJ for events in the Netherlands, France, Germany, the UK and Greece — including Mykonos itself.</p></div>
         <span class="card-more">Learn more →</span>
       </a>
     </div>
@@ -506,6 +534,115 @@ PAGES = {
         ],
     },
 
+    # ---------------------------------------------------------------- RESTAURANT
+    "restaurant": {
+        "title": "Restaurant DJ in Brussels — Resident DJ & Themed Nights | DJ Orestis",
+        "desc": "Resident DJ for restaurants and venues in Brussels: recurring Greek nights and themed evenings that build a loyal crowd. Four-year residency at Papillon Schuman. Sound & light included if needed.",
+        "kicker": "For restaurants & venues",
+        "h1": "Restaurant DJ in <span class='gold'>Brussels</span>",
+        "sub": "Recurring nights that turn quiet evenings into fully booked ones — the formula behind my four-year residency at Papillon Schuman.",
+        "service_type": "Restaurant resident DJ",
+        "body": """
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>What a residency does for a venue</h2>
+      <p>A good themed night is a business asset: it fills a slow weekday, builds a returning crowd that books tables in advance, and gives your venue a reputation beyond its menu. I've built exactly that at <strong>Papillon Schuman</strong> — four years and counting — and played rooms across Brussels: La Place 33, Capital, Kosmos, YAYA, Meatropolis, Machina, AKT.</p>
+      <ul class="ticks">
+        <li><strong>A concept, not just a DJ</strong> — we design the night together: Greek nights, Latin evenings, Afro &amp; RnB sessions, or an elegant dinner-to-dance format.</li>
+        <li><strong>Volume discipline</strong> — dinner service stays conversational; the energy climbs when the plates leave.</li>
+        <li><strong>A crowd that follows</strong> — my community following in Brussels comes with me, especially for Greek nights.</li>
+        <li><strong>Zero infrastructure needed</strong> — I can bring compact, restaurant-appropriate sound and lighting.</li>
+      </ul>
+    </div>
+    {PLACEHOLDER_PHOTO}
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>Formats that work</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Weekly or monthly residency</h3><p>A fixed, branded night your guests can plan around — the strongest crowd-builder.</p></div>
+      <div class="card"><h3>Greek night launch</h3><p>A tested concept: Greek dinner service flowing into laïkà and island hits. Proven in Brussels for years.</p></div>
+      <div class="card"><h3>Seasonal &amp; pop-up</h3><p>Terrace summers, festive December programming, one-off themed evenings.</p></div>
+      <div class="card"><h3>Private venue hire</h3><p>Your restaurant hosts a private event? I handle the whole musical side, <a href="{link:fullpackage}">production included</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Run a restaurant or venue?</h2>
+    <p>Let's talk about a pilot night — one evening, clear numbers, no long-term commitment.</p>
+    <a class="btn btn-gold" href="{link:contact}">Propose a pilot night</a>
+  </div>
+</section>
+""",
+        "faq": [
+            ("How does a restaurant DJ residency work commercially?",
+             "Typically a fixed fee per night, agreed as a weekly or monthly series. We start with a pilot night so you can measure covers and bar revenue before committing to a series."),
+            ("Will the music be too loud for dinner service?",
+             "No — that's the craft. Dinner sets stay at conversation level with elegant programming; the volume and energy only climb once service winds down. I calibrate the system to your room."),
+            ("Do you bring your own equipment?",
+             "If needed, yes — compact, restaurant-appropriate sound and lighting that sets up discreetly. If your venue has an installed system, I work with that."),
+        ],
+    },
+
+    # ---------------------------------------------------------------- MYKONOS / EUROPE
+    "mykonos": {
+        "title": "Greek DJ for Events Across Europe — Mykonos-Trained | DJ Orestis",
+        "desc": "Book a Mykonos-trained Greek DJ for destination events across Europe: weddings, corporate events and Greek parties in the Netherlands, France, Germany, the UK and Greece — including Mykonos itself.",
+        "kicker": "Brussels-based, Europe-wide",
+        "h1": "Greek DJ across <span class='gold'>Europe</span>",
+        "sub": "Trained in three seasons of Mykonos nightlife, based in Brussels, and regularly on the road: your event doesn't have to be in Belgium to sound right.",
+        "service_type": "Destination event DJ",
+        "body": """
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>One DJ, six countries</h2>
+      <p>Some events need a DJ who understands a specific crowd — a Greek wedding in Germany, a diaspora gala in Vienna, a corporate summer party in Amsterdam, a celebration on Mykonos itself. I already travel for exactly these: the <strong>Vienna Greek Student Community</strong>, the <strong>Leuven and Lille Greek communities</strong>, and every summer, <strong>guest sets in Mykonos</strong>, where I spent three full seasons in the island's nightlife.</p>
+      <ul class="ticks">
+        <li><strong>Simple logistics</strong> — travel and accommodation are added to the quote transparently; everything else works exactly like a Brussels booking.</li>
+        <li><strong>Compact or full setup</strong> — I can fly light and use local equipment, or arrange full production for events near Belgium.</li>
+        <li><strong>Mykonos experience</strong> — for destination weddings and parties in Greece, you get a DJ who has actually worked those rooms and knows the island's pace.</li>
+      </ul>
+    </div>
+    {PLACEHOLDER_PHOTO}
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>Typical bookings abroad</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Destination weddings</h3><p>Greek and international weddings in Greece, France and beyond — including Mykonos and the islands.</p></div>
+      <div class="card"><h3>Diaspora community events</h3><p>Galas, national celebrations and student parties for Greek communities across Europe.</p></div>
+      <div class="card"><h3>Corporate off-sites</h3><p>Company retreats and summer parties where the team deserves better than a playlist.</p></div>
+      <div class="card"><h3>Mykonos &amp; Greece</h3><p>Villa parties, pre-wedding events and venue guest sets during the summer season.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Planning an event abroad?</h2>
+    <p>Tell me the city and the date — you'll get one clear quote, travel included.</p>
+    <a class="btn btn-gold" href="{link:contact}">Request a quote</a>
+  </div>
+</section>
+""",
+        "faq": [
+            ("Which countries do you cover?",
+             "Belgium is home base; I regularly play in the Netherlands, France, Germany, the UK, Austria and Greece. Other destinations are possible — ask."),
+            ("How does pricing work for events outside Belgium?",
+             "Same performance fee as a Belgian booking, plus transparent travel and accommodation costs listed separately in the quote. For Greece in summer, I'm often already there — ask about my Mykonos season dates."),
+            ("Can you DJ a destination wedding in Mykonos or the Greek islands?",
+             "Yes — that's where I learned the craft. I know the venues, the pace of an island wedding day, and how to combine the Greek repertoire with an international crowd."),
+        ],
+    },
+
     # ---------------------------------------------------------------- MUSIC
     "music": {
         "title": "Music & Sets — Greek, Electronic, Afro, Latin & RnB | DJ Orestis",
@@ -620,7 +757,7 @@ PAGES = {
     </div>
     <aside class="contact-aside">
       <h2>Direct contact</h2>
-      <p><a href="mailto:vasileiadis.orestis@gmail.com">vasileiadis.orestis@gmail.com</a></p>
+      <p><a href="mailto:info@djorestis.com">info@djorestis.com</a></p>
       <p class="muted">Based in Brussels, Belgium.<br>Available in Belgium, the Netherlands, France, Germany, the UK and Greece — for events abroad, travel and accommodation are added to the quote.</p>
       <h2>Languages</h2>
       <p class="muted">Greek · English · French · Dutch</p>
@@ -640,7 +777,7 @@ PAGES = {
 <section class="section">
   <div class="wrap narrow legal">
     <h2>Who I am</h2>
-    <p>This website, djorestis.com, is operated by DJ Orestis, Brussels, Belgium ("I", "me"). Contact: <a href="mailto:vasileiadis.orestis@gmail.com">vasileiadis.orestis@gmail.com</a>.</p>
+    <p>This website, djorestis.com, is operated by DJ Orestis, Brussels, Belgium ("I", "me"). Contact: <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
     <h2>What data I collect</h2>
     <p>When you use the quote request form, I receive the information you enter: your name, email address, optional phone number, and the details of your event. I use it for one purpose only: to answer your request and prepare a proposal.</p>
     <h2>What I don't do</h2>

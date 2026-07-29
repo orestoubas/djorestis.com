@@ -620,7 +620,7 @@ PAGES = {
     </div>
     <aside class="contact-aside">
       <h2>Απευθείας επικοινωνία</h2>
-      <p><a href="mailto:vasileiadis.orestis@gmail.com">vasileiadis.orestis@gmail.com</a></p>
+      <p><a href="mailto:info@djorestis.com">info@djorestis.com</a></p>
       <p class="muted">Έδρα: Βρυξέλλες, Βέλγιο.<br>Διαθέσιμος σε Βέλγιο, Ολλανδία, Γαλλία, Γερμανία, Ηνωμένο Βασίλειο και Ελλάδα — για εκδηλώσεις στο εξωτερικό, τα έξοδα μετακίνησης και διαμονής προστίθενται στην προσφορά.</p>
       <h2>Γλώσσες</h2>
       <p class="muted">Ελληνικά · Αγγλικά · Γαλλικά · Ολλανδικά</p>
@@ -640,7 +640,7 @@ PAGES = {
 <section class="section">
   <div class="wrap narrow legal">
     <h2>Ποιος είμαι</h2>
-    <p>Αυτός ο ιστότοπος, djorestis.com, λειτουργεί από τον DJ Orestis, Βρυξέλλες, Βέλγιο («εγώ», «εμένα»). Επικοινωνία: <a href="mailto:vasileiadis.orestis@gmail.com">vasileiadis.orestis@gmail.com</a>.</p>
+    <p>Αυτός ο ιστότοπος, djorestis.com, λειτουργεί από τον DJ Orestis, Βρυξέλλες, Βέλγιο («εγώ», «εμένα»). Επικοινωνία: <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
     <h2>Ποια δεδομένα συλλέγω</h2>
     <p>Όταν χρησιμοποιείτε τη φόρμα αιτήματος προσφοράς, λαμβάνω τις πληροφορίες που εισάγετε: το όνομά σας, τη διεύθυνση email σας, προαιρετικά τον αριθμό τηλεφώνου σας, και τα στοιχεία της εκδήλωσής σας. Τα χρησιμοποιώ για έναν και μόνο σκοπό: να απαντήσω στο αίτημά σας και να ετοιμάσω μια πρόταση.</p>
     <h2>Τι δεν κάνω</h2>
