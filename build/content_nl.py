@@ -19,6 +19,12 @@ STRINGS = {
     "footer_based": "Gevestigd in Brussel, België",
     "footer_areas": "Beschikbaar in België · Nederland · Frankrijk · Duitsland · VK · Griekenland",
     "footer_rights": "Alle rechten voorbehouden.",
+    "whatsapp_label": "Chat via WhatsApp",
+    "cookie": {
+        "text": "Deze site gebruikt cookies, uitsluitend voor anonieme bezoekersstatistieken.",
+        "accept": "Accepteren",
+        "decline": "Weigeren",
+    },
     "nav": {
         "home": "Home",
         "about": "Over mij",
@@ -28,6 +34,9 @@ STRINGS = {
         "greek": "Griekse feesten",
         "party": "Privéfeesten",
         "fullpackage": "Totaalpakketten",
+        "restaurant": "Restaurant DJ",
+        "mykonos": "DJ in heel Europa",
+        "blog": "Blog",
         "music": "Muziek",
         "events": "Eerdere evenementen",
         "contact": "Contact",
@@ -225,6 +234,16 @@ PAGES = {
       <a class="svc" href="{link:fullpackage}">
         <div><h2>Totaalpakketten voor evenementen</h2>
         <p>DJ + professioneel geluid &amp; licht + fotografie + video, voor evenementen en kleine shows tot 500 personen. Eén aanspreekpunt, één opstelling, één factuur.</p></div>
+        <span class="card-more">Meer informatie →</span>
+      </a>
+      <a class="svc" href="{link:restaurant}">
+        <div><h2>Restaurant- &amp; zaalavonden</h2>
+        <p>Terugkerende thema-avonden die een trouw publiek opbouwen — de formule achter mijn vierjarige residentie bij Papillon Schuman, nu ook beschikbaar voor uw zaak.</p></div>
+        <span class="card-more">Meer informatie →</span>
+      </a>
+      <a class="svc" href="{link:mykonos}">
+        <div><h2>Destination events in heel Europa</h2>
+        <p>Een op Mykonos gevormde Griekse DJ voor evenementen in Nederland, Frankrijk, Duitsland, het VK en Griekenland — inclusief Mykonos zelf.</p></div>
         <span class="card-more">Meer informatie →</span>
       </a>
     </div>
@@ -503,6 +522,115 @@ PAGES = {
              "Uiteraard. Alleen DJ, DJ + geluid & licht, of het complete pakket met foto en video — de offerte wordt opgebouwd rond wat u werkelijk nodig heeft."),
             ("Regelt u de technische afstemming met de locatie?",
              "Ja — stroom, toegang, geluidsnormen, timing: ik overleg rechtstreeks met de locatie, zodat u niet tussen leveranciers hoeft te bemiddelen."),
+        ],
+    },
+
+    # ---------------------------------------------------------------- RESTAURANT
+    "restaurant": {
+        "title": "Restaurant DJ Brussel — Resident DJ & Thema-avonden | DJ Orestis",
+        "desc": "Resident DJ voor restaurants en zalen in Brussel: terugkerende Griekse avonden en thema-avonden die een trouw publiek opbouwen. Al vier jaar resident bij Papillon Schuman. Geluid & licht inbegrepen indien gewenst.",
+        "kicker": "Voor restaurants & zalen",
+        "h1": "Restaurant DJ in <span class='gold'>Brussel</span>",
+        "sub": "Terugkerende concepten die rustige avonden veranderen in volgeboekte — de formule achter mijn vierjarige residentie bij Papillon Schuman.",
+        "service_type": "Resident DJ voor restaurants",
+        "body": """
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>Wat een residentie voor uw zaak betekent</h2>
+      <p>Een goede thema-avond is een commerciële troef: ze vult een rustige weekdag, bouwt een vast publiek op dat vooraf tafels reserveert, en geeft uw zaak een reputatie die verder reikt dan de menukaart. Precies dat heb ik opgebouwd bij <strong>Papillon Schuman</strong> — inmiddels al vier jaar — en ik draaide in zalen over heel Brussel: La Place 33, Capital, Kosmos, YAYA, Meatropolis, Machina, AKT.</p>
+      <ul class="ticks">
+        <li><strong>Een concept, niet zomaar een DJ</strong> — we ontwerpen de avond samen: Griekse avonden, Latin-avonden, Afro &amp; RnB-sessies, of een elegant dinner-to-dance-format.</li>
+        <li><strong>Volumediscipline</strong> — tijdens de dinerservice blijft een gesprek mogelijk; de energie stijgt pas wanneer de borden van tafel gaan.</li>
+        <li><strong>Een publiek dat volgt</strong> — mijn vaste aanhang in Brussel komt met mij mee, zeker voor Griekse avonden.</li>
+        <li><strong>Geen infrastructuur nodig</strong> — ik kan compact geluid en licht meebrengen, aangepast aan een restaurant.</li>
+      </ul>
+    </div>
+    {PLACEHOLDER_PHOTO}
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>Formats die werken</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Wekelijkse of maandelijkse residentie</h3><p>Een vaste avond met een eigen naam waar uw gasten naar uitkijken — de sterkste publieksbouwer.</p></div>
+      <div class="card"><h3>Lancering van een Griekse avond</h3><p>Een beproefd concept: Griekse dinerservice die overvloeit in laïkà en eilandhits. Al jaren bewezen in Brussel.</p></div>
+      <div class="card"><h3>Seizoensgebonden &amp; pop-up</h3><p>Terraszomers, feestelijke decemberprogrammering, eenmalige thema-avonden.</p></div>
+      <div class="card"><h3>Privéverhuur van uw zaal</h3><p>Uw restaurant ontvangt een privé-evenement? Ik verzorg de volledige muzikale kant, <a href="{link:fullpackage}">productie inbegrepen</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Heeft u een restaurant of zaal?</h2>
+    <p>Laten we praten over een proefavond — één avond, heldere cijfers, geen langetermijnverbintenis.</p>
+    <a class="btn btn-gold" href="{link:contact}">Stel een proefavond voor</a>
+  </div>
+</section>
+""",
+        "faq": [
+            ("Hoe werkt een DJ-residentie in een restaurant commercieel?",
+             "Doorgaans een vaste vergoeding per avond, afgesproken als wekelijkse of maandelijkse reeks. We starten met een proefavond, zodat u het aantal couverts en de baromzet kunt meten vóór u zich aan een reeks verbindt."),
+            ("Wordt de muziek niet te luid tijdens de dinerservice?",
+             "Nee — dat is precies het vakmanschap. Dinersets blijven op gespreksniveau, met elegante programmering; het volume en de energie stijgen pas wanneer de service afrondt. Ik stem het systeem af op uw zaal."),
+            ("Brengt u uw eigen materiaal mee?",
+             "Indien nodig, ja — compact geluid en licht dat bij een restaurant past en discreet wordt opgebouwd. Heeft uw zaak een vaste installatie, dan werk ik daarmee."),
+        ],
+    },
+
+    # ---------------------------------------------------------------- MYKONOS / EUROPE
+    "mykonos": {
+        "title": "Griekse DJ in heel Europa — Gevormd op Mykonos | DJ Orestis",
+        "desc": "Boek een op Mykonos gevormde Griekse DJ voor destination events in heel Europa: bruiloften, bedrijfsfeesten en Griekse feesten in Nederland, Frankrijk, Duitsland, het VK en Griekenland — inclusief Mykonos zelf.",
+        "kicker": "Thuisbasis Brussel, actief in heel Europa",
+        "h1": "Griekse DJ in heel <span class='gold'>Europa</span>",
+        "sub": "Gevormd in drie seizoenen Mykonos-nachtleven, gevestigd in Brussel en regelmatig onderweg: uw evenement hoeft niet in België te zijn om goed te klinken.",
+        "service_type": "DJ voor destination events",
+        "body": """
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>Eén DJ, zes landen</h2>
+      <p>Sommige evenementen vragen om een DJ die een specifiek publiek begrijpt — een Griekse bruiloft in Duitsland, een diasporagala in Wenen, een zakelijk zomerfeest in Amsterdam, een viering op Mykonos zelf. Voor precies zulke evenementen reis ik nu al: de <strong>Griekse studentengemeenschap van Wenen</strong>, de <strong>Griekse gemeenschappen van Leuven en Rijsel</strong>, en elke zomer <strong>gastoptredens op Mykonos</strong>, waar ik drie volledige seizoenen in het nachtleven van het eiland werkte.</p>
+      <ul class="ticks">
+        <li><strong>Eenvoudige logistiek</strong> — reis en verblijf worden transparant bij de offerte opgeteld; al het overige werkt precies zoals bij een boeking in Brussel.</li>
+        <li><strong>Compacte of volledige opstelling</strong> — ik kan licht reizen en met lokale apparatuur werken, of volledige productie voorzien voor evenementen dicht bij België.</li>
+        <li><strong>Mykonos-ervaring</strong> — voor destination weddings en feesten in Griekenland krijgt u een DJ die die zalen werkelijk heeft gedraaid en het ritme van het eiland kent.</li>
+      </ul>
+    </div>
+    {PLACEHOLDER_PHOTO}
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>Typische boekingen in het buitenland</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Destination weddings</h3><p>Griekse en internationale bruiloften in Griekenland, Frankrijk en verder — inclusief Mykonos en de eilanden.</p></div>
+      <div class="card"><h3>Diaspora-evenementen</h3><p>Gala's, nationale feestdagen en studentenfeesten voor Griekse gemeenschappen in heel Europa.</p></div>
+      <div class="card"><h3>Zakelijke off-sites</h3><p>Bedrijfsretraites en zomerfeesten waar het team beter verdient dan een playlist.</p></div>
+      <div class="card"><h3>Mykonos &amp; Griekenland</h3><p>Villafeesten, pre-weddingevenementen en gastoptredens in zalen tijdens het zomerseizoen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Plant u een evenement in het buitenland?</h2>
+    <p>Geef mij de stad en de datum — u ontvangt één heldere offerte, reis inbegrepen.</p>
+    <a class="btn btn-gold" href="{link:contact}">Offerte aanvragen</a>
+  </div>
+</section>
+""",
+        "faq": [
+            ("Welke landen bestrijkt u?",
+             "België is mijn thuisbasis; ik draai regelmatig in Nederland, Frankrijk, Duitsland, het VK, Oostenrijk en Griekenland. Andere bestemmingen zijn mogelijk — vraag het gerust."),
+            ("Hoe werkt de prijs voor evenementen buiten België?",
+             "Hetzelfde honorarium als voor een Belgische boeking, plus transparante reis- en verblijfskosten die apart in de offerte staan. Voor Griekenland in de zomer ben ik vaak al ter plaatse — vraag naar mijn seizoensdata op Mykonos."),
+            ("Kunt u draaien op een destination wedding op Mykonos of de Griekse eilanden?",
+             "Ja — daar leerde ik het vak. Ik ken de locaties, het ritme van een trouwdag op een eiland, en hoe ik het Griekse repertoire combineer met een internationaal publiek."),
         ],
     },
 
