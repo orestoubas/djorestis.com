@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'Marcellus';src:url('../../assets/fonts/marcellus-400-latin.woff2') format('woff2')}
+@font-face{font-family:'Jost';font-weight:300;src:url('../../assets/fonts/jost-300-latin.woff2') format('woff2')}
+@font-face{font-family:'Jost';font-weight:500;src:url('../../assets/fonts/jost-500-latin.woff2') format('woff2')}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{margin:0;padding:0;background:#0E0E10}
+.canvas{position:relative;width:1200px;height:675px;overflow:hidden;
+ display:flex;flex-direction:column;justify-content:center;align-items:center;
+ text-align:center;padding:0 90px;font-family:'Jost',sans-serif;color:#F4F1E8;background:radial-gradient(ellipse 60% 55% at 78% 22%,rgba(198,161,91,.13),transparent 62%),
+ radial-gradient(ellipse 50% 50% at 12% 92%,rgba(198,161,91,.06),transparent 60%),#0E0E10;
+}
+.vinyl{position:absolute;top:-190px;right:-190px;width:560px;height:560px;opacity:.9}
+.frame{position:absolute;top:40px;left:40px;right:40px;bottom:40px;border:1px solid #24242A}
+.frame::before,.frame::after{content:"";position:absolute;width:34px;height:34px;border-color:#C6A15B;border-style:solid}
+.frame::before{top:-1px;left:-1px;border-width:2px 0 0 2px}
+.frame::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
+.lg{font-family:'Marcellus',serif;font-size:86px;letter-spacing:11px;line-height:1;white-space:nowrap}
+.lg .dj{color:#C6A15B}
+.lg .o{display:inline-block;width:74px;height:74px;border:3px solid #C6A15B;border-radius:50%;position:relative;top:12px;margin:0 7px}
+.lg .o::after{content:"";position:absolute;inset:27px;background:#C6A15B;border-radius:50%}
+.tag{margin-top:34px;color:#A8A49A;font-weight:300;font-size:23px;letter-spacing:9px;text-transform:uppercase}
+.rule{width:120px;height:1px;background:#8F7439;margin:40px 0}
+.svc{color:#F4F1E8;font-weight:500;font-size:21px;letter-spacing:5.5px;text-transform:uppercase}
+.svc .sep{color:#C6A15B;margin:0 14px}
+.loc{margin-top:26px;color:#6E6A61;font-weight:300;font-size:19px;letter-spacing:5px;text-transform:uppercase}
+</style></head><body><div class="canvas">
+<svg class="vinyl" viewBox="0 0 560 560" aria-hidden="true">
+<circle cx="280" cy="280" r="262" fill="none" stroke="rgba(244,241,232,.05)" stroke-width="2"/>
+<circle cx="280" cy="280" r="215" fill="none" stroke="rgba(198,161,91,.32)" stroke-width="2"/>
+<circle cx="280" cy="280" r="170" fill="none" stroke="rgba(244,241,232,.07)" stroke-width="2"/>
+<circle cx="280" cy="280" r="126" fill="none" stroke="rgba(198,161,91,.18)" stroke-width="2"/>
+<circle cx="280" cy="280" r="22" fill="#C6A15B"/></svg>
+<div class="frame"></div>
+<div class="lg"><span class="dj">DJ</span><span class="o"></span><span>RESTIS</span></div>
+<div class="tag">Your event as you dream it</div>
+<div class="rule"></div>
+<div class="svc">Corporate<span class="sep">·</span>Weddings<span class="sep">·</span>Greek Nights</div>
+<div class="loc">Brussels &nbsp;·&nbsp; Belgium &nbsp;·&nbsp; Europe</div>
+</div></body></html>
