@@ -19,6 +19,12 @@ STRINGS = {
     "footer_based": "Basé à Bruxelles, Belgique",
     "footer_areas": "Disponible en Belgique · Pays-Bas · France · Allemagne · Royaume-Uni · Grèce",
     "footer_rights": "Tous droits réservés.",
+    "whatsapp_label": "Discuter sur WhatsApp",
+    "cookie": {
+        "text": "Ce site utilise des cookies uniquement à des fins de statistiques de visite anonymes.",
+        "accept": "Accepter",
+        "decline": "Refuser",
+    },
     "nav": {
         "home": "Accueil",
         "about": "À propos",
@@ -28,6 +34,9 @@ STRINGS = {
         "greek": "Soirées grecques",
         "party": "Fêtes privées",
         "fullpackage": "Formules tout compris",
+        "restaurant": "DJ restaurant",
+        "mykonos": "DJ en Europe",
+        "blog": "Blog",
         "music": "Musique",
         "events": "Événements passés",
         "contact": "Contact",
@@ -225,6 +234,16 @@ PAGES = {
       <a class="svc" href="{link:fullpackage}">
         <div><h2>Formules événementielles tout compris</h2>
         <p>DJ + son &amp; lumière professionnels + photographie + vidéo, pour des événements et petits spectacles jusqu'à 500 personnes. Un contact, une installation, une facture.</p></div>
+        <span class="card-more">En savoir plus →</span>
+      </a>
+      <a class="svc" href="{link:restaurant}">
+        <div><h2>Soirées en restaurant &amp; en salle</h2>
+        <p>Des soirées à thème récurrentes qui fidélisent un public — la formule derrière mes quatre années de résidence au Papillon Schuman, disponible pour votre établissement.</p></div>
+        <span class="card-more">En savoir plus →</span>
+      </a>
+      <a class="svc" href="{link:mykonos}">
+        <div><h2>Événements de destination partout en Europe</h2>
+        <p>Un DJ grec formé à Mykonos pour vos événements aux Pays-Bas, en France, en Allemagne, au Royaume-Uni et en Grèce — y compris à Mykonos même.</p></div>
         <span class="card-more">En savoir plus →</span>
       </a>
     </div>
@@ -503,6 +522,115 @@ PAGES = {
              "Bien sûr. DJ seul, DJ + son & lumière, ou la formule complète avec photo et vidéo — le devis est construit autour de ce dont vous avez réellement besoin."),
             ("Vous chargez-vous de la coordination technique avec la salle ?",
              "Oui — alimentation électrique, accès, normes sonores, horaires : je m'entretiens directement avec la salle, pour que vous n'ayez pas à faire l'interprète entre prestataires."),
+        ],
+    },
+
+    # ---------------------------------------------------------------- RESTAURANT
+    "restaurant": {
+        "title": "DJ Résident Restaurant Bruxelles — Soirées à Thème | DJ Orestis",
+        "desc": "DJ résident pour restaurants et établissements à Bruxelles : soirées grecques récurrentes et soirées à thème qui fidélisent un public. Quatre ans de résidence au Papillon Schuman. Son & lumière compris si besoin.",
+        "kicker": "Pour restaurants & établissements",
+        "h1": "DJ restaurant à <span class='gold'>Bruxelles</span>",
+        "sub": "Des soirées récurrentes qui transforment les soirs creux en salles combles — la formule derrière mes quatre années de résidence au Papillon Schuman.",
+        "service_type": "DJ résident de restaurant",
+        "body": """
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>Ce qu'une résidence apporte à un établissement</h2>
+      <p>Une bonne soirée à thème est un véritable atout commercial : elle remplit un soir de semaine calme, fidélise un public qui réserve sa table à l'avance et donne à votre établissement une réputation qui dépasse sa carte. C'est exactement ce que j'ai construit au <strong>Papillon Schuman</strong> — quatre ans déjà — après avoir mixé dans de nombreuses salles bruxelloises : La Place 33, Capital, Kosmos, YAYA, Meatropolis, Machina, AKT.</p>
+      <ul class="ticks">
+        <li><strong>Un concept, pas seulement un DJ</strong> — nous concevons la soirée ensemble : soirées grecques, soirées latino, sessions afro &amp; RnB, ou un format élégant du dîner à la piste de danse.</li>
+        <li><strong>La maîtrise du volume</strong> — le service reste propice à la conversation ; l'énergie ne monte que lorsque les assiettes quittent les tables.</li>
+        <li><strong>Un public qui suit</strong> — ma communauté bruxelloise me suit d'adresse en adresse, surtout pour les soirées grecques.</li>
+        <li><strong>Aucune infrastructure nécessaire</strong> — je peux apporter une sonorisation et un éclairage compacts, adaptés à un restaurant.</li>
+      </ul>
+    </div>
+    {PLACEHOLDER_PHOTO}
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>Les formats qui fonctionnent</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Résidence hebdomadaire ou mensuelle</h3><p>Une soirée fixe et identifiable que vos clients peuvent planifier — le meilleur moyen de construire un public fidèle.</p></div>
+      <div class="card"><h3>Lancement d'une soirée grecque</h3><p>Un concept éprouvé : un service de dîner grec qui glisse vers les laïkà et les tubes des îles. Des années de succès à Bruxelles.</p></div>
+      <div class="card"><h3>Saisonnier &amp; éphémère</h3><p>Étés en terrasse, programmation festive de décembre, soirées à thème ponctuelles.</p></div>
+      <div class="card"><h3>Privatisation de votre salle</h3><p>Votre restaurant accueille un événement privé ? Je prends en charge tout le volet musical, <a href="{link:fullpackage}">production comprise</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Vous gérez un restaurant ou un établissement ?</h2>
+    <p>Parlons d'une soirée pilote — une seule soirée, des chiffres clairs, aucun engagement à long terme.</p>
+    <a class="btn btn-gold" href="{link:contact}">Proposer une soirée pilote</a>
+  </div>
+</section>
+""",
+        "faq": [
+            ("Comment fonctionne une résidence DJ en restaurant sur le plan commercial ?",
+             "En général, un cachet fixe par soirée, convenu sous forme de série hebdomadaire ou mensuelle. Nous commençons par une soirée pilote, pour que vous puissiez mesurer les couverts et le chiffre du bar avant de vous engager sur une série."),
+            ("La musique ne sera-t-elle pas trop forte pendant le service ?",
+             "Non — c'est tout l'art du métier. Pendant le dîner, les sets restent au niveau de la conversation, avec une programmation élégante ; le volume et l'énergie ne montent qu'une fois le service terminé. Je calibre le système en fonction de votre salle."),
+            ("Apportez-vous votre propre matériel ?",
+             "Si nécessaire, oui — une sonorisation et un éclairage compacts, adaptés à un restaurant, qui s'installent en toute discrétion. Si votre établissement dispose d'une installation existante, je travaille avec celle-ci."),
+        ],
+    },
+
+    # ---------------------------------------------------------------- MYKONOS / EUROPE
+    "mykonos": {
+        "title": "DJ Grec pour Événements en Europe — Formé à Mykonos | DJ Orestis",
+        "desc": "Réservez un DJ grec formé à Mykonos pour vos événements de destination partout en Europe : mariages, événements d'entreprise et soirées grecques aux Pays-Bas, en France, en Allemagne, au Royaume-Uni et en Grèce — y compris à Mykonos même.",
+        "kicker": "Basé à Bruxelles, présent dans toute l'Europe",
+        "h1": "DJ grec partout en <span class='gold'>Europe</span>",
+        "sub": "Formé au fil de trois saisons dans la vie nocturne de Mykonos, basé à Bruxelles et régulièrement sur la route : votre événement ne doit pas se trouver en Belgique pour sonner juste.",
+        "service_type": "DJ événements de destination",
+        "body": """
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <h2>Un DJ, six pays</h2>
+      <p>Certains événements exigent un DJ qui comprend un public bien précis — un mariage grec en Allemagne, un gala de la diaspora à Vienne, une fête d'entreprise estivale à Amsterdam, une célébration à Mykonos même. Je me déplace déjà pour exactement cela : la <strong>communauté étudiante grecque de Vienne</strong>, les <strong>communautés grecques de Louvain et de Lille</strong>, et chaque été, des <strong>sets en guest à Mykonos</strong>, où j'ai passé trois saisons complètes dans la vie nocturne de l'île.</p>
+      <ul class="ticks">
+        <li><strong>Une logistique simple</strong> — le déplacement et le logement s'ajoutent au devis en toute transparence ; tout le reste fonctionne exactement comme une réservation à Bruxelles.</li>
+        <li><strong>Installation compacte ou complète</strong> — je peux voyager léger et utiliser le matériel sur place, ou organiser une production complète pour les événements proches de la Belgique.</li>
+        <li><strong>L'expérience Mykonos</strong> — pour les mariages et fêtes de destination en Grèce, vous avez un DJ qui a réellement travaillé dans ces salles et connaît le rythme de l'île.</li>
+      </ul>
+    </div>
+    {PLACEHOLDER_PHOTO}
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2>Réservations habituelles à l'étranger</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Mariages de destination</h3><p>Mariages grecs et internationaux en Grèce, en France et au-delà — y compris Mykonos et les îles.</p></div>
+      <div class="card"><h3>Événements de la diaspora</h3><p>Galas, fêtes nationales et soirées étudiantes pour les communautés grecques de toute l'Europe.</p></div>
+      <div class="card"><h3>Séminaires d'entreprise</h3><p>Retraites d'équipe et fêtes d'été où votre équipe mérite mieux qu'une playlist.</p></div>
+      <div class="card"><h3>Mykonos &amp; Grèce</h3><p>Fêtes en villa, événements pré-mariage et sets en guest pendant la saison estivale.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Vous préparez un événement à l'étranger ?</h2>
+    <p>Dites-moi la ville et la date — vous recevrez un devis clair, déplacement compris.</p>
+    <a class="btn btn-gold" href="{link:contact}">Demander un devis</a>
+  </div>
+</section>
+""",
+        "faq": [
+            ("Quels pays couvrez-vous ?",
+             "La Belgique est mon port d'attache ; je mixe régulièrement aux Pays-Bas, en France, en Allemagne, au Royaume-Uni, en Autriche et en Grèce. D'autres destinations sont possibles — demandez."),
+            ("Comment fonctionne la tarification pour les événements hors de Belgique ?",
+             "Le même cachet que pour une réservation en Belgique, plus des frais de déplacement et de logement transparents, détaillés séparément dans le devis. Pour la Grèce en été, j'y suis souvent déjà — renseignez-vous sur mes dates de saison à Mykonos."),
+            ("Pouvez-vous mixer pour un mariage de destination à Mykonos ou dans les îles grecques ?",
+             "Oui — c'est là que j'ai appris le métier. Je connais les lieux, le rythme d'une journée de mariage sur une île, et l'art de marier le répertoire grec à un public international."),
         ],
     },
 
