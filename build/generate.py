@@ -25,7 +25,7 @@ WHATSAPP_NUMBER = ""
 
 # Google Analytics 4 Measurement ID (e.g. "G-XXXXXXXXXX").
 # Leave empty to disable analytics AND the cookie-consent banner entirely.
-GA4_ID = ""
+GA4_ID = "G-HRTDFPRNHF"
 
 # Company legal line for the footer + privacy page, e.g.
 # "Company Name BV — BTW BE 0123.456.789". Empty = not shown.
