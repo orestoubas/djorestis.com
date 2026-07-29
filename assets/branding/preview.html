@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DJORESTIS — Brand Proposals</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --onyx:#0E0E10; --charcoal:#16161A; --graphite:#2A2A30;
+    --gold:#C6A15B; --gold-bright:#D9BC7F; --gold-deep:#8F7439;
+    --ivory:#F4F1E8; --grey:#A8A49A; --stone:#6E6A61; --aegean:#35606A;
+    --display:'Marcellus','Palatino Linotype','Book Antiqua',Palatino,Georgia,serif;
+    --body:'Jost','Century Gothic','Avenir Next','Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--onyx);color:var(--ivory);font-family:var(--body);font-weight:400;line-height:1.65;padding:56px 24px 96px}
+  .wrap{max-width:1040px;margin:0 auto}
+  header.page{text-align:center;margin-bottom:64px}
+  header.page h1{font-family:var(--display);font-weight:400;font-size:34px;letter-spacing:.14em}
+  header.page h1 .dj{color:var(--gold)}
+  header.page p{color:var(--grey);font-weight:300;letter-spacing:.3em;font-size:12px;text-transform:uppercase;margin-top:10px}
+  h2{font-family:var(--display);font-weight:400;font-size:22px;letter-spacing:.1em;text-transform:uppercase;margin:72px 0 8px}
+  h2::after{content:"";display:block;width:56px;height:1px;background:var(--gold);margin-top:10px}
+  .note{color:var(--grey);font-size:14px;margin-bottom:28px;max-width:640px}
+  .grid{display:grid;gap:24px}
+  .concepts{grid-template-columns:1fr 1fr}
+  @media(max-width:820px){.concepts{grid-template-columns:1fr}}
+  .card{background:var(--charcoal);border:1px solid var(--graphite);border-radius:10px;overflow:hidden}
+  .card .art{display:flex;align-items:center;justify-content:center;padding:8px;background:var(--onyx)}
+  .card object,.card img{display:block;width:100%;height:auto}
+  .card .cap{padding:14px 18px;border-top:1px solid var(--graphite);display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .card .cap b{font-weight:500;letter-spacing:.06em;font-size:14px}
+  .card .cap span{color:var(--grey);font-size:12.5px;font-weight:300}
+  .tag{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--onyx);background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+  /* favicon row */
+  .favrow{display:flex;align-items:flex-end;gap:36px;background:var(--charcoal);border:1px solid var(--graphite);border-radius:10px;padding:28px}
+  .favrow figure{text-align:center}
+  .favrow figcaption{color:var(--stone);font-size:11px;letter-spacing:.1em;margin-top:10px}
+  /* palette */
+  .swatches{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+  .sw{border:1px solid var(--graphite);border-radius:10px;overflow:hidden;background:var(--charcoal)}
+  .sw .chip{height:88px}
+  .sw .meta{padding:12px 14px;font-size:12.5px}
+  .sw .meta b{display:block;font-weight:500;letter-spacing:.05em}
+  .sw .meta code{color:var(--grey);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px}
+  .sw .meta i{display:block;font-style:normal;color:var(--stone);font-size:11.5px;margin-top:2px}
+  /* type samples */
+  .type{background:var(--charcoal);border:1px solid var(--graphite);border-radius:10px;padding:36px 40px}
+  .type .h-sample{font-family:var(--display);font-size:38px;letter-spacing:.02em;margin-bottom:4px}
+  .type .h-caps{font-family:var(--display);font-size:22px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:22px 0 6px}
+  .type p.body{max-width:620px;color:var(--ivory)}
+  .type p.sec{max-width:620px;color:var(--grey);font-weight:300;margin-top:10px}
+  .type .tagline{font-weight:300;letter-spacing:.32em;text-transform:uppercase;font-size:13px;color:var(--grey);margin-top:26px}
+  .btns{margin-top:30px;display:flex;gap:16px;flex-wrap:wrap}
+  .btn{font-family:var(--body);font-weight:500;font-size:13px;letter-spacing:.09em;text-transform:uppercase;padding:13px 26px;border-radius:4px;cursor:pointer;border:1px solid transparent;transition:all .15s}
+  .btn-gold{background:var(--gold);color:var(--onyx)}
+  .btn-gold:hover{background:var(--gold-bright)}
+  .btn-line{background:transparent;color:var(--gold);border-color:var(--gold)}
+  .btn-line:hover{color:var(--gold-bright);border-color:var(--gold-bright);background:rgba(198,161,91,.07)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page">
+    <h1><span class="dj">DJ</span>ORESTIS</h1>
+    <p>Brand proposals &mdash; Brussels &middot; 2026</p>
+  </header>
+
+  <h2>Logo Concepts</h2>
+  <p class="note">Four directions, all built for dark backgrounds. Concept 2 is the recommended primary; the favicon below is derived directly from its vinyl&nbsp;&ldquo;O&rdquo;.</p>
+  <div class="grid concepts">
+    <div class="card">
+      <div class="art"><object type="image/svg+xml" data="concept-1.svg" aria-label="Concept 1"></object></div>
+      <div class="cap"><b>01 &mdash; Lapidary Wordmark</b><span>Engraved, law-firm formal</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><object type="image/svg+xml" data="concept-2.svg" aria-label="Concept 2"></object></div>
+      <div class="cap"><b>02 &mdash; The Vinyl O</b><span>Record as the letter O</span><span class="tag">Recommended</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><object type="image/svg+xml" data="concept-3.svg" aria-label="Concept 3"></object></div>
+      <div class="cap"><b>03 &mdash; Column &amp; Waveform</b><span>Modern geometric sans</span></div>
+    </div>
+    <div class="card">
+      <div class="art"><object type="image/svg+xml" data="concept-4.svg" aria-label="Concept 4"></object></div>
+      <div class="cap"><b>04 &mdash; Crest Monogram</b><span>Stacked, with meander accent</span></div>
+    </div>
+  </div>
+
+  <h2>Favicon / Monogram</h2>
+  <p class="note">Pure SVG shapes (no fonts), so it renders identically as favicon, social avatar and app icon. Shown at 64, 32 and 16&nbsp;px.</p>
+  <div class="favrow">
+    <figure><img src="favicon.svg" width="64" height="64" alt="Favicon 64px"><figcaption>64 px</figcaption></figure>
+    <figure><img src="favicon.svg" width="32" height="32" alt="Favicon 32px"><figcaption>32 px</figcaption></figure>
+    <figure><img src="favicon.svg" width="16" height="16" alt="Favicon 16px"><figcaption>16 px</figcaption></figure>
+  </div>
+
+  <h2>Palette</h2>
+  <p class="note">Champagne gold on near-black, warm neutrals. Gold budget: at most ~10% of any screen. Full rules and WCAG notes in <code>palette.md</code>.</p>
+  <div class="grid swatches">
+    <div class="sw"><div class="chip" style="background:#0E0E10;border-bottom:1px solid var(--graphite)"></div><div class="meta"><b>Onyx</b><code>#0E0E10</code><i>Primary background</i></div></div>
+    <div class="sw"><div class="chip" style="background:#16161A"></div><div class="meta"><b>Charcoal</b><code>#16161A</code><i>Cards, elevated surfaces</i></div></div>
+    <div class="sw"><div class="chip" style="background:#2A2A30"></div><div class="meta"><b>Graphite</b><code>#2A2A30</code><i>Hairlines, borders</i></div></div>
+    <div class="sw"><div class="chip" style="background:#C6A15B"></div><div class="meta"><b>Champagne Gold</b><code>#C6A15B</code><i>Primary accent, buttons, links</i></div></div>
+    <div class="sw"><div class="chip" style="background:#D9BC7F"></div><div class="meta"><b>Pale Gold</b><code>#D9BC7F</code><i>Hover / focus states</i></div></div>
+    <div class="sw"><div class="chip" style="background:#8F7439"></div><div class="meta"><b>Antique Gold</b><code>#8F7439</code><i>Pressed states, deep rules</i></div></div>
+    <div class="sw"><div class="chip" style="background:#F4F1E8"></div><div class="meta"><b>Ivory</b><code>#F4F1E8</code><i>Headings, body text</i></div></div>
+    <div class="sw"><div class="chip" style="background:#A8A49A"></div><div class="meta"><b>Warm Grey</b><code>#A8A49A</code><i>Secondary text, taglines</i></div></div>
+    <div class="sw"><div class="chip" style="background:#6E6A61"></div><div class="meta"><b>Stone</b><code>#6E6A61</code><i>Muted / decorative only</i></div></div>
+    <div class="sw"><div class="chip" style="background:#35606A"></div><div class="meta"><b>Aegean</b><code>#35606A</code><i>Optional supporting accent</i></div></div>
+  </div>
+
+  <h2>Typography</h2>
+  <p class="note">Marcellus for display and headings, Jost for body and UI. Weights: Marcellus 400; Jost 300 / 400 / 500. Details in <code>typography.md</code>.</p>
+  <div class="type">
+    <div class="h-sample">Your event as you dream it</div>
+    <div class="h-caps">Corporate Events &middot; Weddings &middot; Private Parties</div>
+    <p class="body">Brussels-based DJ blending Greek, electronic, Afro, Latin and RnB into one seamless night &mdash; trusted by corporate clients and celebrated at weddings and baptisms across Belgium and Europe.</p>
+    <p class="sec">Jost Light, secondary copy &mdash; captions, supporting lines and details sit one step back in warm grey, keeping the page calm and composed.</p>
+    <div class="tagline">Your event as you dream it</div>
+    <div class="btns">
+      <button class="btn btn-gold">Request a date</button>
+      <button class="btn btn-line">Listen to sets</button>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
