@@ -245,7 +245,7 @@ see as a new negative. Do this monthly, forever.
 
 **Callouts** (≤25 chars each):
 ```
-Greek · Afro · Latin · RnB
+Greek · Afro · Latin
 9 Years Experience
 Sound & Light Available
 Photo & Video Available
