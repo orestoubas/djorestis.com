@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DJORESTIS — Press Kit</title>
+<style>
+  @font-face {
+    font-family: 'Marcellus';
+    src: url('../../assets/fonts/marcellus-400-latin.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: block;
+  }
+  @font-face {
+    font-family: 'Jost';
+    src: url('../../assets/fonts/jost-300-latin.woff2') format('woff2');
+    font-weight: 300; font-style: normal; font-display: block;
+  }
+  @font-face {
+    font-family: 'Jost';
+    src: url('../../assets/fonts/jost-400-latin.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: block;
+  }
+  @font-face {
+    font-family: 'Jost';
+    src: url('../../assets/fonts/jost-500-latin.woff2') format('woff2');
+    font-weight: 500; font-style: normal; font-display: block;
+  }
+
+  :root {
+    --onyx: #0E0E10;
+    --charcoal: #16161A;
+    --graphite: #2A2A30;
+    --gold: #C6A15B;
+    --gold-hover: #D9BC7F;
+    --ivory: #F4F1E8;
+    --grey: #A8A49A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page { size: A4; margin: 0; }
+
+  html, body {
+    background: var(--onyx);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'Jost', 'Century Gothic', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: var(--ivory);
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    background: var(--onyx);
+    position: relative;
+    overflow: hidden;
+    padding: 15mm 16mm 12mm;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Large vinyl-O motif, bleeding off the right edge */
+  .motif {
+    position: absolute;
+    top: -46mm;
+    right: -52mm;
+    width: 150mm;
+    height: 150mm;
+    opacity: 0.9;
+    pointer-events: none;
+  }
+
+  /* ---------- Header ---------- */
+  header { position: relative; z-index: 2; }
+
+  .logo-svg { display: block; width: 99mm; height: auto; }
+
+  .tagline {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 8.4pt;
+    letter-spacing: 0.42em;
+    color: var(--grey);
+    text-transform: uppercase;
+    margin-top: 4.2mm;
+    padding-left: 0.6mm;
+  }
+
+  .kit-label {
+    position: absolute;
+    top: 1mm; right: 0;
+    text-align: right;
+    font-size: 7pt;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .rule {
+    border: none;
+    border-top: 0.35mm solid var(--graphite);
+    margin: 8.5mm 0 0;
+  }
+  .rule.gold-tick { position: relative; }
+  .rule.gold-tick::before {
+    content: "";
+    position: absolute;
+    top: -0.35mm; left: 0;
+    width: 18mm;
+    border-top: 0.35mm solid var(--gold);
+  }
+
+  /* ---------- Positioning ---------- */
+  .positioning {
+    position: relative; z-index: 2;
+    margin-top: 8.5mm;
+    max-width: 150mm;
+  }
+  .eyebrow {
+    font-size: 7pt;
+    font-weight: 500;
+    letter-spacing: 0.38em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 3.4mm;
+  }
+  .positioning p {
+    font-size: 11.4pt;
+    font-weight: 300;
+    line-height: 1.62;
+    color: var(--ivory);
+  }
+  .positioning p strong {
+    font-weight: 400;
+    color: var(--gold-hover);
+  }
+
+  /* ---------- Three columns ---------- */
+  .columns {
+    position: relative; z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7mm;
+    margin-top: 9.5mm;
+  }
+  .col {
+    background: var(--charcoal);
+    border: 0.3mm solid var(--graphite);
+    border-top: 0.6mm solid var(--gold);
+    padding: 6.5mm 6mm 6mm;
+  }
+  .col h2 {
+    font-family: 'Marcellus', Georgia, serif;
+    font-weight: 400;
+    font-size: 10.6pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ivory);
+    margin-bottom: 1.8mm;
+  }
+  .col .col-sub {
+    font-size: 6.6pt;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4.2mm;
+  }
+  .col ul { list-style: none; }
+  .col li {
+    font-size: 8.6pt;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--grey);
+    padding: 1.7mm 0;
+    border-bottom: 0.25mm solid var(--graphite);
+  }
+  .col li:last-child { border-bottom: none; padding-bottom: 0; }
+  .col li em {
+    font-style: normal;
+    font-weight: 400;
+    color: var(--ivory);
+    display: block;
+  }
+
+  /* ---------- Footprint ---------- */
+  .footprint {
+    position: relative; z-index: 2;
+    margin-top: 10mm;
+    flex: 1;
+  }
+  .footprint-head {
+    display: flex;
+    align-items: baseline;
+    gap: 5mm;
+    margin-bottom: 5.5mm;
+  }
+  .footprint-head .eyebrow { margin-bottom: 0; white-space: nowrap; }
+  .footprint-head .line {
+    flex: 1;
+    border-top: 0.3mm solid var(--graphite);
+    align-self: center;
+  }
+  .countries {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .country {
+    text-align: center;
+  }
+  .country .name {
+    font-family: 'Marcellus', Georgia, serif;
+    font-size: 11pt;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ivory);
+  }
+  .country .code {
+    font-size: 6.4pt;
+    letter-spacing: 0.32em;
+    color: var(--gold);
+    margin-top: 1.6mm;
+    text-transform: uppercase;
+  }
+  .country-sep {
+    color: var(--graphite);
+    font-size: 8pt;
+    align-self: center;
+  }
+  .footprint-meta {
+    display: flex;
+    justify-content: center;
+    gap: 4mm;
+    margin-top: 6mm;
+    font-size: 7.6pt;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--grey);
+  }
+  .footprint-meta .dot { color: var(--gold); }
+
+  /* ---------- Contact strip ---------- */
+  .contact {
+    position: relative; z-index: 2;
+    background: var(--charcoal);
+    border: 0.3mm solid var(--graphite);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5.5mm 8mm;
+  }
+  .contact .item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6mm;
+  }
+  .contact .item .k {
+    font-size: 6.2pt;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .contact .item .v {
+    font-size: 9.6pt;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: var(--ivory);
+  }
+  .contact .mini-vinyl { flex: 0 0 auto; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Large vinyl-O motif -->
+  <svg class="motif" viewBox="0 0 400 400" aria-hidden="true">
+    <defs>
+      <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#C6A15B" stop-opacity="0.10"/>
+        <stop offset="70%" stop-color="#C6A15B" stop-opacity="0.03"/>
+        <stop offset="100%" stop-color="#C6A15B" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <circle cx="200" cy="200" r="200" fill="url(#glow)"/>
+    <circle cx="200" cy="200" r="188" fill="none" stroke="#2A2A30" stroke-width="1"/>
+    <circle cx="200" cy="200" r="164" fill="none" stroke="#C6A15B" stroke-width="1.6" opacity="0.5"/>
+    <circle cx="200" cy="200" r="140" fill="none" stroke="#2A2A30" stroke-width="1"/>
+    <circle cx="200" cy="200" r="118" fill="none" stroke="#F4F1E8" stroke-width="0.8" opacity="0.14"/>
+    <circle cx="200" cy="200" r="96" fill="none" stroke="#2A2A30" stroke-width="1"/>
+    <circle cx="200" cy="200" r="74" fill="none" stroke="#C6A15B" stroke-width="1.2" opacity="0.35"/>
+    <circle cx="200" cy="200" r="30" fill="none" stroke="#C6A15B" stroke-width="1.6" opacity="0.6"/>
+    <circle cx="200" cy="200" r="7" fill="#C6A15B" opacity="0.7"/>
+  </svg>
+
+  <!-- ======= Header ======= -->
+  <header>
+    <div class="kit-label">Press Kit · 2026</div>
+
+    <!-- Wordmark: DJ (gold) + vinyl O + RESTIS (ivory), from concept-2 -->
+    <svg class="logo-svg" viewBox="116 0 544 96" role="img" aria-label="DJ Orestis wordmark">
+      <text x="196" y="72" text-anchor="end"
+            font-family="Marcellus, Georgia, serif" font-size="62" letter-spacing="8"
+            fill="#C6A15B">DJ</text>
+      <g>
+        <circle cx="240" cy="50" r="30" fill="none" stroke="#C6A15B" stroke-width="2.6"/>
+        <circle cx="240" cy="50" r="19" fill="none" stroke="#F4F1E8" stroke-width="1" opacity="0.45"/>
+        <circle cx="240" cy="50" r="4.6" fill="#C6A15B"/>
+      </g>
+      <text x="284" y="72" text-anchor="start"
+            font-family="Marcellus, Georgia, serif" font-size="62" letter-spacing="8"
+            fill="#F4F1E8">RESTIS</text>
+    </svg>
+
+    <div class="tagline">Your Event As You Dream It</div>
+    <hr class="rule gold-tick">
+  </header>
+
+  <!-- ======= Positioning ======= -->
+  <section class="positioning">
+    <div class="eyebrow">DJ &amp; Event Producer — Brussels</div>
+    <p>
+      DJ Orestis is a Brussels-based DJ and event producer who moves fluently between
+      <strong>Greek, electronic, Afro, Latin and RnB</strong> — a range built over nine years
+      behind the decks, from three seasons in Mykonos nightlife to six years at the heart of
+      the Brussels scene. Now in his fourth year as resident DJ at Papillon Schuman and twice
+      host DJ of the Brussels Greek Food Festival, he delivers complete event productions —
+      sound, light, photography and video — for celebrations of up to 500 guests, across
+      six countries and in four languages.
+    </p>
+  </section>
+
+  <!-- ======= Three columns ======= -->
+  <section class="columns">
+    <div class="col">
+      <h2>Music Worlds</h2>
+      <div class="col-sub">Five sounds, one room</div>
+      <ul>
+        <li><em>Greek</em>Laïka to island anthems — diaspora energy done right</li>
+        <li><em>Electronic</em>House &amp; melodic sets with Mykonos pedigree</li>
+        <li><em>Afro &amp; Latin</em>Afrobeats, reggaeton &amp; Latin heat for the floor</li>
+        <li><em>RnB</em>Smooth open-format grooves, classics to current</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Marquee Credits</h2>
+      <div class="col-sub">Where the name plays</div>
+      <ul>
+        <li><em>Papillon Schuman</em>Resident DJ — fourth consecutive year</li>
+        <li><em>Brussels Greek Food Festival</em>Host DJ, two editions</li>
+        <li><em>Freshfields · Boston Consulting Group</em>Corporate events for leading firms</li>
+        <li><em>Sounds Greek Events</em>Co-founder — Greek nights across Brussels</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h2>Full-Package Production</h2>
+      <div class="col-sub">One booking, everything handled</div>
+      <ul>
+        <li><em>DJ Performance</em>Open-format sets tailored to your crowd</li>
+        <li><em>Sound &amp; Light</em>Pro-grade systems, rigged and operated</li>
+        <li><em>Photography &amp; Video</em>Your night, captured and delivered</li>
+        <li><em>Up to 500 Guests</em>Weddings, corporate &amp; private events</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======= Footprint ======= -->
+  <section class="footprint">
+    <div class="footprint-head">
+      <div class="eyebrow">European Footprint</div>
+      <div class="line"></div>
+    </div>
+    <div class="countries">
+      <div class="country"><div class="name">Belgium</div><div class="code">BE · Home Base</div></div>
+      <div class="country-sep">·</div>
+      <div class="country"><div class="name">Netherlands</div><div class="code">NL</div></div>
+      <div class="country-sep">·</div>
+      <div class="country"><div class="name">France</div><div class="code">FR</div></div>
+      <div class="country-sep">·</div>
+      <div class="country"><div class="name">Germany</div><div class="code">DE</div></div>
+      <div class="country-sep">·</div>
+      <div class="country"><div class="name">UK</div><div class="code">GB</div></div>
+      <div class="country-sep">·</div>
+      <div class="country"><div class="name">Greece</div><div class="code">GR · Roots</div></div>
+    </div>
+    <div class="footprint-meta">
+      <span>Languages</span><span class="dot">—</span>
+      <span>Greek</span><span class="dot">·</span>
+      <span>English</span><span class="dot">·</span>
+      <span>French</span><span class="dot">·</span>
+      <span>Dutch</span>
+    </div>
+  </section>
+
+  <!-- ======= Contact strip ======= -->
+  <footer class="contact">
+    <svg class="mini-vinyl" width="34" height="34" viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="32" cy="32" r="20" fill="none" stroke="#C6A15B" stroke-width="3.2"/>
+      <circle cx="32" cy="32" r="12" fill="none" stroke="#F4F1E8" stroke-width="1.4" opacity="0.38"/>
+      <circle cx="32" cy="32" r="4.6" fill="#C6A15B"/>
+    </svg>
+    <div class="item">
+      <span class="k">Bookings</span>
+      <span class="v">info@djorestis.com</span>
+    </div>
+    <div class="item">
+      <span class="k">Website</span>
+      <span class="v">djorestis.com</span>
+    </div>
+    <div class="item">
+      <span class="k">Instagram · TikTok</span>
+      <span class="v">@djorestis</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

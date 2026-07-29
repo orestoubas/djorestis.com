@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DJORESTIS — Story Template 1080x1920</title>
+<style>
+  @font-face { font-family:'Marcellus'; src:url('../../assets/fonts/marcellus-400-latin.woff2') format('woff2'); }
+  @font-face { font-family:'Jost'; font-weight:300; src:url('../../assets/fonts/jost-300-latin.woff2') format('woff2'); }
+  @font-face { font-family:'Jost'; font-weight:500; src:url('../../assets/fonts/jost-500-latin.woff2') format('woff2'); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1920px; overflow:hidden; }
+  body {
+    background:
+      radial-gradient(ellipse 70% 30% at 85% 8%, rgba(198,161,91,0.10), transparent 60%),
+      radial-gradient(ellipse 60% 25% at 15% 95%, rgba(198,161,91,0.06), transparent 60%),
+      #0E0E10;
+    font-family:'Jost', sans-serif; color:#F4F1E8;
+    display:flex; flex-direction:column; justify-content:space-between;
+    padding:120px 96px 110px;
+    position:relative;
+  }
+  /* vinyl motif top-right, echoing the post template */
+  .vinyl { position:absolute; top:-260px; right:-260px; width:640px; height:640px; }
+  .vinyl circle { fill:none; }
+  .frame { position:absolute; inset:56px; border:1px solid #2A2A30; pointer-events:none; }
+  .frame::before, .frame::after { content:""; position:absolute; width:40px; height:40px; border-color:#C6A15B; border-style:solid; }
+  .frame::before { top:-1px; left:-1px; border-width:2px 0 0 2px; }
+  .frame::after { bottom:-1px; right:-1px; border-width:0 2px 2px 0; }
+  .kicker { color:#C6A15B; font-weight:500; font-size:34px; letter-spacing:0.42em; text-transform:uppercase; }
+  .kicker::after { content:""; display:block; width:110px; height:2px; background:#C6A15B; margin-top:28px; }
+  .headline { font-family:'Marcellus', serif; font-size:132px; line-height:1.1; letter-spacing:0.02em; }
+  .headline .gold { color:#C6A15B; }
+  .meta { display:flex; flex-direction:column; gap:26px; color:#A8A49A; font-weight:300; font-size:40px; letter-spacing:0.14em; text-transform:uppercase; }
+  .meta strong { color:#F4F1E8; font-weight:500; }
+  .meta .dot { color:#C6A15B; }
+  .foot { display:flex; align-items:center; justify-content:space-between; border-top:1px solid #2A2A30; padding-top:52px; }
+  .foot .handle { color:#A8A49A; font-weight:300; font-size:36px; letter-spacing:0.3em; }
+  .lg { font-family:'Marcellus', serif; font-size:56px; letter-spacing:8px; }
+  .lg .dj { color:#C6A15B; }
+  .lg .o { display:inline-block; width:52px; height:52px; border:3px solid #C6A15B; border-radius:50%; position:relative; top:8px; margin:0 4px; }
+  .lg .o::after { content:""; position:absolute; inset:18px; background:#C6A15B; border-radius:50%; }
+</style>
+</head>
+<body>
+  <svg class="vinyl" viewBox="0 0 640 640" aria-hidden="true">
+    <circle cx="320" cy="320" r="300" stroke="rgba(244,241,232,0.05)" stroke-width="2"/>
+    <circle cx="320" cy="320" r="250" stroke="rgba(198,161,91,0.35)" stroke-width="2"/>
+    <circle cx="320" cy="320" r="200" stroke="rgba(244,241,232,0.07)" stroke-width="2"/>
+    <circle cx="320" cy="320" r="150" stroke="rgba(198,161,91,0.2)" stroke-width="2"/>
+    <circle cx="320" cy="320" r="26" fill="#C6A15B"/>
+  </svg>
+  <div class="frame"></div>
+  <div class="kicker">Upcoming</div>
+  <div class="headline">SATURDAY<br><span class="gold">GREEK NIGHT</span></div>
+  <div class="meta">
+    <div><strong>SAT 14 FEB</strong> <span class="dot">·</span> 22:00</div>
+    <div>PAPILLON SCHUMAN <span class="dot">·</span> BRUSSELS</div>
+    <div>FREE ENTRANCE <span class="dot">·</span> DJORESTIS.COM</div>
+  </div>
+  <div class="foot">
+    <div class="lg"><span class="dj">DJ</span><span class="o"></span><span>RESTIS</span></div>
+    <div class="handle">@DJORESTIS</div>
+  </div>
+</body>
+</html>

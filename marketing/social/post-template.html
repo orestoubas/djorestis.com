@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DJORESTIS — Post Template 1080</title>
+<style>
+  @font-face {
+    font-family: 'Marcellus';
+    src: url('../../assets/fonts/marcellus-400-latin.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: block;
+  }
+  @font-face {
+    font-family: 'Jost';
+    src: url('../../assets/fonts/jost-300-latin.woff2') format('woff2');
+    font-weight: 300; font-style: normal; font-display: block;
+  }
+  @font-face {
+    font-family: 'Jost';
+    src: url('../../assets/fonts/jost-400-latin.woff2') format('woff2');
+    font-weight: 400; font-style: normal; font-display: block;
+  }
+  @font-face {
+    font-family: 'Jost';
+    src: url('../../assets/fonts/jost-500-latin.woff2') format('woff2');
+    font-weight: 500; font-style: normal; font-display: block;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { width: 1080px; height: 1080px; overflow: hidden; }
+
+  .canvas {
+    position: relative;
+    width: 1080px;
+    height: 1080px;
+    background:
+      radial-gradient(1200px 900px at 85% -10%, rgba(198,161,91,0.10), transparent 60%),
+      radial-gradient(900px 900px at 50% 115%, #16161A, transparent 70%),
+      #0E0E10;
+    color: #F4F1E8;
+    font-family: 'Jost', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Hairline frame */
+  .frame {
+    position: absolute;
+    inset: 36px;
+    border: 1px solid #2A2A30;
+    pointer-events: none;
+  }
+  .frame::before, .frame::after {
+    content: "";
+    position: absolute;
+    width: 34px; height: 34px;
+    border-color: #C6A15B;
+    border-style: solid;
+  }
+  .frame::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+  .frame::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+
+  /* Vinyl motif bleeding off top-right */
+  .motif {
+    position: absolute;
+    top: -230px; right: -230px;
+    width: 640px; height: 640px;
+    opacity: 0.85;
+  }
+
+  .inner {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 108px 112px 96px;
+  }
+
+  /* Top kicker */
+  .kicker {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.44em;
+    text-transform: uppercase;
+    color: #C6A15B;
+  }
+  .kicker-rule {
+    width: 84px;
+    border-top: 2px solid #C6A15B;
+    margin-top: 30px;
+  }
+
+  /* Headline slot */
+  .headline {
+    margin-top: auto;
+    font-family: 'Marcellus', Georgia, serif;
+    font-size: 108px;
+    line-height: 1.12;
+    letter-spacing: 0.045em;
+    color: #F4F1E8;
+    text-transform: uppercase;
+  }
+  .headline .gold { color: #C6A15B; }
+
+  /* Date / venue slots */
+  .meta {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+  .meta .slot {
+    font-weight: 300;
+    font-size: 26px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #A8A49A;
+    white-space: nowrap;
+  }
+  .meta .slot strong { font-weight: 500; color: #F4F1E8; }
+  .meta .sep {
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: #C6A15B;
+    flex: 0 0 auto;
+  }
+
+  /* Footer with small logo */
+  .footer {
+    margin-top: 84px;
+    padding-top: 44px;
+    border-top: 1px solid #2A2A30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-lockup {
+    display: flex;
+    align-items: center;
+  }
+  .logo-lockup svg { display: block; }
+  .handle {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #A8A49A;
+  }
+  .handle .at { color: #C6A15B; }
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <svg class="motif" viewBox="0 0 400 400" aria-hidden="true">
+    <circle cx="200" cy="200" r="196" fill="none" stroke="#2A2A30" stroke-width="1.4"/>
+    <circle cx="200" cy="200" r="168" fill="none" stroke="#C6A15B" stroke-width="1.8" opacity="0.45"/>
+    <circle cx="200" cy="200" r="140" fill="none" stroke="#F4F1E8" stroke-width="1" opacity="0.12"/>
+    <circle cx="200" cy="200" r="112" fill="none" stroke="#2A2A30" stroke-width="1.4"/>
+    <circle cx="200" cy="200" r="80"  fill="none" stroke="#C6A15B" stroke-width="1.4" opacity="0.3"/>
+    <circle cx="200" cy="200" r="10"  fill="#C6A15B" opacity="0.6"/>
+  </svg>
+
+  <div class="frame"></div>
+
+  <div class="inner">
+    <!-- SLOT: kicker (e.g. UPCOMING · RESIDENCY · TONIGHT) -->
+    <div class="kicker">Upcoming</div>
+    <div class="kicker-rule"></div>
+
+    <!-- SLOT: headline -->
+    <div class="headline">Saturday<br><span class="gold">Greek Night</span></div>
+
+    <!-- SLOT: date + venue -->
+    <div class="meta">
+      <span class="slot"><strong>Sat 14 Feb</strong> · 22:00</span>
+      <span class="sep"></span>
+      <span class="slot">Papillon Schuman, Brussels</span>
+    </div>
+
+    <div class="footer">
+      <div class="logo-lockup">
+        <!-- Small wordmark: DJ (gold) + vinyl O + RESTIS (ivory) -->
+        <svg width="315" height="54" viewBox="116 0 544 96" role="img" aria-label="DJ Orestis">
+          <text x="196" y="72" text-anchor="end"
+                font-family="Marcellus, Georgia, serif" font-size="62" letter-spacing="8"
+                fill="#C6A15B">DJ</text>
+          <g>
+            <circle cx="240" cy="50" r="30" fill="none" stroke="#C6A15B" stroke-width="2.6"/>
+            <circle cx="240" cy="50" r="19" fill="none" stroke="#F4F1E8" stroke-width="1" opacity="0.45"/>
+            <circle cx="240" cy="50" r="4.6" fill="#C6A15B"/>
+          </g>
+          <text x="284" y="72" text-anchor="start"
+                font-family="Marcellus, Georgia, serif" font-size="62" letter-spacing="8"
+                fill="#F4F1E8">RESTIS</text>
+        </svg>
+      </div>
+      <div class="handle"><span class="at">@</span>djorestis</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
