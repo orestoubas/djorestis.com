@@ -6,11 +6,10 @@ both one-time.
 
 ## Step 1 — Enable GitHub Pages (2 minutes, in the browser)
 
-1. Open the repository on GitHub → **Settings → Pages**.
+1. Open https://github.com/orestoubas/djorestis.com/settings/pages
+   (the site lives in the dedicated **orestoubas/djorestis.com** repository).
 2. Under **Build and deployment / Source**, choose **Deploy from a branch**.
-3. Branch: select the branch that carries the site
-   (currently `claude/djorestis-portfolio-discovery-ahqbkc`; after merging, switch this to `main`),
-   folder **/ (root)** → **Save**.
+3. Branch: **main**, folder **/ (root)** → **Save**.
 4. Wait ~1 minute. Pages reads the `CNAME` file and configures the custom
    domain `djorestis.com` automatically. It will show "DNS check" warnings
    until Step 2 is done — that's expected.
@@ -32,7 +31,7 @@ In the Papaki control panel for djorestis.com, open **DNS management
 | A | @ | 185.199.109.153 |
 | A | @ | 185.199.110.153 |
 | A | @ | 185.199.111.153 |
-| CNAME | www | `<your-github-username>.github.io.` |
+| CNAME | www | `orestoubas.github.io.` |
 
 - Delete any existing A/AAAA records on `@` that point elsewhere (e.g. a
   Papaki parking page).
