@@ -768,7 +768,7 @@ PAGES = {
 <section class="section">
   <div class="wrap narrow legal">
     <h2>Wie ik ben</h2>
-    <p>Deze website, djorestis.com, wordt beheerd door DJ Orestis, Brussel, België ("ik", "mij"). Contact: <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
+    <p>Deze website, djorestis.com, wordt beheerd door Orestis Vasileiadis (DJ Orestis), Brussel, België — btw BE 0785.520.639 ("ik", "mij"). Contact: <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
     <h2>Welke gegevens ik verzamel</h2>
     <p>Wanneer u het offerteformulier gebruikt, ontvang ik de informatie die u invult: uw naam, e-mailadres, optioneel telefoonnummer en de details van uw evenement. Ik gebruik deze voor één doel: uw aanvraag beantwoorden en een voorstel opstellen.</p>
     <h2>Wat ik niet doe</h2>

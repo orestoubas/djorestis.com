@@ -768,7 +768,7 @@ PAGES = {
 <section class="section">
   <div class="wrap narrow legal">
     <h2>Qui suis-je</h2>
-    <p>Ce site, djorestis.com, est exploité par DJ Orestis, Bruxelles, Belgique (« je », « moi »). Contact : <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
+    <p>Ce site, djorestis.com, est exploité par Orestis Vasileiadis (DJ Orestis), Bruxelles, Belgique — TVA BE 0785.520.639 (« je », « moi »). Contact : <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
     <h2>Quelles données je collecte</h2>
     <p>Lorsque vous utilisez le formulaire de demande de devis, je reçois les informations que vous y introduisez : votre nom, votre adresse e-mail, votre numéro de téléphone facultatif et les détails de votre événement. Je les utilise dans un seul but : répondre à votre demande et préparer une proposition.</p>
     <h2>Ce que je ne fais pas</h2>

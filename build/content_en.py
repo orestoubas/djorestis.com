@@ -777,7 +777,7 @@ PAGES = {
 <section class="section">
   <div class="wrap narrow legal">
     <h2>Who I am</h2>
-    <p>This website, djorestis.com, is operated by DJ Orestis, Brussels, Belgium ("I", "me"). Contact: <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
+    <p>This website, djorestis.com, is operated by Orestis Vasileiadis (DJ Orestis), Brussels, Belgium — VAT BE 0785.520.639 ("I", "me"). Contact: <a href="mailto:info@djorestis.com">info@djorestis.com</a>.</p>
     <h2>What data I collect</h2>
     <p>When you use the quote request form, I receive the information you enter: your name, email address, optional phone number, and the details of your event. I use it for one purpose only: to answer your request and prepare a proposal.</p>
     <h2>What I don't do</h2>

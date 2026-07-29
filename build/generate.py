@@ -29,7 +29,7 @@ GA4_ID = ""
 
 # Company legal line for the footer + privacy page, e.g.
 # "Company Name BV — BTW BE 0123.456.789". Empty = not shown.
-COMPANY_LEGAL = ""
+COMPANY_LEGAL = "Orestis Vasileiadis — VAT BE 0785.520.639"
 
 # ------------------------------------------------------------------ pages
 # Page keys in order. Slug "" means the language home page.
