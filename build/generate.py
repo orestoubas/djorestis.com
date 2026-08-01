@@ -27,6 +27,21 @@ WHATSAPP_NUMBER = ""
 # Leave empty to disable analytics AND the cookie-consent banner entirely.
 GA4_ID = "G-HRTDFPRNHF"
 
+# Public social/profile URLs. ONLY add a URL once the profile actually exists —
+# linking to a non-existent profile is a broken link and a weak entity signal.
+# These feed both the footer and the schema.org sameAs entity chain.
+SOCIAL_LINKS = {
+    # "Instagram": "https://instagram.com/djorestis",
+    # "TikTok": "https://tiktok.com/@djorestis",
+    # "Facebook": "https://facebook.com/djorestis",
+    # "YouTube": "https://youtube.com/@djorestis",
+    # "Mixcloud": "https://mixcloud.com/djorestis",
+    # "LinkedIn": "https://linkedin.com/in/...",
+}
+
+# Google Business Profile URL, once verified (strong entity signal)
+GBP_URL = ""
+
 # Company legal line for the footer + privacy page, e.g.
 # "Company Name BV — BTW BE 0123.456.789". Empty = not shown.
 COMPANY_LEGAL = "Orestis Vasileiadis — VAT BE 0785.520.639"
@@ -119,11 +134,55 @@ def business_jsonld(mod):
         "areaServed": ["Belgium", "Netherlands", "France", "Germany", "United Kingdom", "Greece"],
         "knowsLanguage": ["el", "en", "fr", "nl"],
         "priceRange": "$$",
-        "sameAs": ["https://soundsgreekevents.be"],
+        "sameAs": ["https://soundsgreekevents.be"] + list(SOCIAL_LINKS.values()) + ([GBP_URL] if GBP_URL else []),
+        "knowsAbout": ["Greek music", "Electronic music", "Afrobeats", "Latin music", "RnB",
+                       "Wedding entertainment", "Corporate event production", "Sound and lighting"],
+        "founder": {"@type": "Person", "@id": BASE_URL + "/#person"},
     }
     if COMPANY_LEGAL:
         data["legalName"] = COMPANY_LEGAL
     return data
+
+
+def person_jsonld(mod):
+    """Person entity — the E-E-A-T anchor for a solo service provider."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": BASE_URL + "/#person",
+        "name": "Orestis Vasileiadis",
+        "alternateName": "DJ Orestis",
+        "jobTitle": "DJ and event producer",
+        "url": BASE_URL + url_path("about", mod.LANG),
+        "email": EMAIL,
+        "worksFor": {"@id": BASE_URL + "/#business"},
+        "knowsLanguage": ["el", "en", "fr", "nl"],
+        "homeLocation": {"@type": "Place", "name": "Brussels, Belgium"},
+        "sameAs": ["https://soundsgreekevents.be"] + list(SOCIAL_LINKS.values()),
+    }
+
+
+def website_jsonld():
+    return {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": BASE_URL + "/#website",
+        "url": BASE_URL + "/",
+        "name": "DJORESTIS",
+        "inLanguage": ["en", "fr", "nl", "el"],
+        "publisher": {"@id": BASE_URL + "/#business"},
+    }
+
+
+def breadcrumb_jsonld(mod, key, lang, label):
+    """Breadcrumbs are still an actively supported rich result."""
+    if key == "home":
+        return None
+    items = [{"@type": "ListItem", "position": 1, "name": mod.STRINGS["nav"]["home"],
+              "item": BASE_URL + url_path("home", lang)},
+             {"@type": "ListItem", "position": 2, "name": label,
+              "item": BASE_URL + (BLOG_PATH if key == "blog" else url_path(key, lang))}]
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": items}
 
 
 def service_jsonld(mod, key):
@@ -158,6 +217,7 @@ def article_jsonld(post):
         "headline": post["title"],
         "description": post["desc"],
         "datePublished": post["date"],
+        "dateModified": post.get("modified", post["date"]),
         "url": BASE_URL + BLOG_PATH + post["slug"] + "/",
         "inLanguage": "en",
         "author": {"@type": "Person", "name": "DJ Orestis", "url": BASE_URL + "/about/"},
@@ -285,6 +345,11 @@ def page_shell(mod, en_mod, mods, *, key, title, desc, canonical, hreflang, robo
     hreflang_block = (hreflang + "\n  ") if hreflang else ""
     robots_block = f'<meta name="robots" content="{robots}">\n  ' if robots else ""
     legal_line = f"<p class='f-legal'>{COMPANY_LEGAL}</p>" if COMPANY_LEGAL else ""
+    socials_html = ""
+    if SOCIAL_LINKS:
+        items = "".join(f'<li><a href="{u}" rel="noopener me" aria-label="{n}">{n}</a></li>'
+                        for n, u in SOCIAL_LINKS.items())
+        socials_html = f'<ul class="socials" aria-label="Social media">{items}</ul>' 
 
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
@@ -341,11 +406,7 @@ def page_shell(mod, en_mod, mods, *, key, title, desc, canonical, hreflang, robo
         <li>{s['footer_based']}</li>
         <li>{s['footer_areas']}</li>
       </ul>
-      <ul class="socials" aria-label="Social media">
-        <li><a href="https://instagram.com/djorestis" rel="noopener" aria-label="Instagram" data-social="instagram">Instagram</a></li>
-        <li><a href="https://tiktok.com/@djorestis" rel="noopener" aria-label="TikTok" data-social="tiktok">TikTok</a></li>
-        <li><a href="https://facebook.com/djorestis" rel="noopener" aria-label="Facebook" data-social="facebook">Facebook</a></li>
-      </ul>
+      {socials_html}
     </div>
   </div>
   <div class="wrap footer-bottom">
@@ -370,6 +431,11 @@ def render_page(mods, en_mod, lang, key):
     schemas = []
     if key == "home":
         schemas.append(business_jsonld(mod))
+        schemas.append(person_jsonld(mod))
+        schemas.append(website_jsonld())
+    bc = breadcrumb_jsonld(mod, key, lang, nav_label(mod, mods["en"], key) if key in mod.STRINGS["nav"] else page["h1"])
+    if bc:
+        schemas.append(bc)
     if key in SERVICE_KEYS:
         schemas.append(service_jsonld(mod, key))
     if page.get("faq"):
@@ -458,7 +524,10 @@ def render_blog_post(mods, en_mod, post):
 
     return page_shell(mods["en"], en_mod, mods, key="blog", title=post["title"] + " | DJ Orestis",
                       desc=post["desc"], canonical=BASE_URL + path, hreflang="", robots=None,
-                      hero_html=hero, body=body, schemas=[article_jsonld(post)], lang="en")
+                      hero_html=hero, body=body,
+                      schemas=[article_jsonld(post),
+                               breadcrumb_jsonld(mods["en"], "blog", "en", post["title"])],
+                      lang="en")
 
 
 def main():
@@ -471,7 +540,7 @@ def main():
         sys.exit("content_en.py is required")
     en_mod = mods["en"]
 
-    urls = []
+    urls = []          # (loc, lastmod|None)
     for lg, mod in mods.items():
         for key in SLUGS:
             if key not in mod.PAGES:
@@ -480,7 +549,7 @@ def main():
             dest = out_file(url_path(key, lg))
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(html, encoding="utf-8")
-            urls.append(BASE_URL + url_path(key, lg))
+            urls.append((BASE_URL + url_path(key, lg), None))
     print(f"  wrote {len(urls)} pages ({', '.join(mods.keys())})")
 
     # ------------------------------------------------------------------ blog
@@ -499,17 +568,20 @@ def main():
             dest = out_file(BLOG_PATH + p["slug"] + "/")
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(render_blog_post(mods, en_mod, p), encoding="utf-8")
-            urls.append(BASE_URL + BLOG_PATH + p["slug"] + "/")
+            urls.append((BASE_URL + BLOG_PATH + p["slug"] + "/", p.get("modified", p["date"])))
         dest = out_file(BLOG_PATH)
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(render_blog_index(mods, en_mod, posts), encoding="utf-8")
-        urls.append(BASE_URL + BLOG_PATH)
+        urls.append((BASE_URL + BLOG_PATH, posts[0]["date"]))
         print(f"  wrote blog: index + {len(posts)} posts")
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for u in urls:
-        sitemap.append(f"  <url><loc>{u}</loc></url>")
+    for loc, lastmod in urls:
+        if lastmod:
+            sitemap.append(f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod></url>")
+        else:
+            sitemap.append(f"  <url><loc>{loc}</loc></url>")
     sitemap.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
     print(f"  wrote sitemap.xml ({len(urls)} URLs)")
