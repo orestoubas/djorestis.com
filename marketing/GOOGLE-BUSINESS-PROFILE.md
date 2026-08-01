@@ -85,6 +85,34 @@ and the profile can be penalised.
 
 ## Keep it alive
 
-- Add photos as they arrive (see `PHOTOS.md`) — profiles with photos get markedly more clicks.
-- Post updates for upcoming events (Google Posts) — free, and appear in your listing.
+- Add photos as they arrive (see `PHOTOS.md`). Note: controlled tests show photos do **not**
+  lift map-pack *rankings* — but they strongly affect whether someone clicks and enquires.
+  Do it for conversion, not for ranking.
 - Keep the name, address and phone identical to the website and invoices. Google cross-checks.
+
+### Corrected: what the evidence actually supports
+
+Sterling Sky's controlled tests contradict several tactics that are widely sold:
+
+| Lever | Verdict |
+|---|---|
+| **Services** entries with detailed descriptions | ✅ Works — measurable within 24–72 h |
+| Reaching **10+ reviews** | ✅ Works — a real threshold effect |
+| Precise **primary category** | ✅ Works — specific beats broad |
+| Google **Posts** | ❌ No ranking effect (441 keywords, 9 weeks) |
+| Photos | ❌ No ranking effect (still worth it for clicks) |
+| **Geotagging** photos | ❌ Dead — Google strips EXIF data |
+
+So: fill Services exhaustively, get to 10 reviews on a slow drip, nail the category.
+Posting weekly updates is optional marketing, not SEO.
+
+### Things that can get the profile suspended or penalised
+
+- **Review gating** (asking only happy clients, screening before requesting) — Google removes
+  *all* reviews as a penalty, and it is now illegal in the US with FTC fines per violation.
+  Ask everyone, or no one.
+- **Keywords in the business name** ("DJ Orestis Brussels Wedding DJ") — it works, and it drove
+  a suspension wave in 2026. Use the real name only.
+- **Requesting many reviews at once** — a spike on a new profile is filtered hardest.
+  Roughly 5 per month reads as organic.
+- **A fake or virtual address**, or stretching the service area beyond where you truly work.
