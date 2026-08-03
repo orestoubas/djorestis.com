@@ -322,13 +322,13 @@ POSTS = [
 "h1": "Wat <span class='gold'>kost</span> een DJ in België?",
 "sub": "Een eerlijke blik op wat DJ's in België vragen, waarom offertes zo sterk uiteenlopen, en hoe u ze vergelijkt zonder u te vergissen.",
 "body": """
-<p>Laat mij de vraag beantwoorden die iedereen googelt en die weinig DJ's openlijk bespreken. De prijzen in deze sector lopen enorm uiteen, en koppels en bedrijven verdienen te begrijpen waarom, nog voor zij offertes vergelijken. Mijn eigen tarief start vanaf € 600 excl. btw voor de DJ alleen — geluid en licht worden apart geoffreerd — en elk evenement scope ik individueel. Wat hier volgt, is de eerlijke kaart van de markt zoals ik die van binnenuit zie.</p>
+<p>Laat mij de vraag beantwoorden die iedereen googelt en die weinig DJ's openlijk bespreken. De prijzen in deze sector lopen enorm uiteen, en koppels en bedrijven verdienen te begrijpen waarom, nog voor zij offertes vergelijken. Mijn eigen boekingen starten vanaf <strong>€ 600 excl. btw</strong> voor een DJ-set — geluid en licht worden apart geoffreerd, omdat de noden van een zaal enorm verschillen — en elk evenement wordt vervolgens individueel begroot. Wat hier volgt, is de eerlijke kaart van de bredere markt zoals ik die van binnenuit zie.</p>
 
 <h2>De gangbare prijsvorken</h2>
 <p>Op basis van wat ik in de Belgische markt zie, een ruwe oriëntatie:</p>
 <ul>
 <li><strong>Hobby- of semiprofessionele DJ's:</strong> vaak € 250 tot € 450 voor een avond. Soms uitstekende waarde, soms precies wat het lijkt.</li>
-<li><strong>Gevestigde professionele bruiloft-DJ's in Brussel:</strong> een standaard trouwpakket landt doorgaans rond € 600 tot € 700, en ervaren namen rekenen meestal in de orde van € 700 voor ongeveer zes uur. Dat is het realistische midden van de professionele markt — en het is ook waar mijn eigen vanafprijs van € 600 excl. btw (enkel DJ) begint.</li>
+<li><strong>Gevestigde professionele bruiloft-DJ's in Brussel:</strong> een standaard trouwpakket landt doorgaans rond € 600 tot € 700, en ervaren namen rekenen meestal in de orde van € 700 voor ongeveer zes uur. Dat is het realistische midden van de professionele markt.</li>
 <li><strong>Premium- en volledige productievoorstellen:</strong> € 900 tot ver boven € 1.500, zodra er stevig geluid en licht voor grote zalen, extra uren of <a href="{link:fullpackage}">foto- en videoreportage</a> bij komen.</li>
 <li><strong>Bedrijfsevenementen:</strong> in grote lijnen dezelfde mechaniek, al kunnen weekdagen en kortere formats anders geprijsd zijn dan zaterdagse bruiloften.</li>
 </ul>
