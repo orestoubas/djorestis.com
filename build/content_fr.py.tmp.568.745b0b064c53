@@ -572,11 +572,18 @@ PAGES = {
 
     # ---------------------------------------------------------------- RESTAURANT
     "restaurant": {
-        "title": "DJ Résident Restaurant Bruxelles — Soirées à Thème | DJ Orestis",
-        "desc": "DJ résident pour restaurants et établissements à Bruxelles : soirées grecques récurrentes et soirées à thème qui fidélisent un public. Quatre ans de résidence au Papillon Schuman. Son & lumière compris si besoin.",
+        "title": "DJ Résident pour Restaurants & Bars à Bruxelles | DJ Orestis",
+        "desc": "Engagez un DJ résident pour votre restaurant ou votre bar à Bruxelles. Des soirées à thème récurrentes qui remplissent les soirs creux et font grimper le chiffre du bar. Quatre ans de résidence au Papillon Schuman. Soirée pilote possible.",
         "kicker": "Pour restaurants & établissements",
-        "h1": "DJ restaurant à <span class='gold'>Bruxelles</span>",
-        "sub": "Des soirées récurrentes qui transforment les soirs creux en salles combles — la formule derrière mes quatre années de résidence au Papillon Schuman.",
+        "h1": "DJ résident pour <span class='gold'>restaurants &amp; bars</span>",
+        "sub": "Pour les restaurateurs et gérants de bars à Bruxelles : une soirée à thème récurrente qui remplit un soir de semaine calme et fait grimper le chiffre du bar — la formule derrière mes quatre années de résidence au Papillon Schuman.",
+        "price": "Cachet par soirée, devis établi pour la série", "price_note": "Soirée pilote possible avant tout engagement",
+        "facts": [("Engagement", "Résidence hebdomadaire, mensuelle ou saisonnière"),
+                  ("Essai", "Une soirée pilote, sans engagement de longue durée"),
+                  ("Service du dîner", "Volume propice à la conversation jusqu'à la fin du service"),
+                  ("Matériel", "Système compact fourni, ou utilisation de votre installation"),
+                  ("Format éprouvé", "Papillon Schuman, quatre années consécutives"),
+                  ("Public", "Une communauté grecque et internationale déjà fidèle à Bruxelles")],
         "service_type": "DJ résident de restaurant",
         "body": """
 <section class="section">

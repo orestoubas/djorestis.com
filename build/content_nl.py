@@ -26,6 +26,15 @@ STRINGS = {
         "accept": "Accepteren",
         "decline": "Weigeren",
     },
+    "blog": {
+        "index_title": "Blog — Verhalen & gidsen uit de DJ-booth | DJ Orestis",
+        "index_desc": "Verhalen over evenementen en praktische gidsen van DJ Orestis: bedrijfsfeesten, bruiloften en Griekse avonden in Brussel en heel Europa.",
+        "h1": "Vanuit de <span class='gold'>DJ-booth</span>",
+        "sub": "Verhalen over evenementen, lessen uit de praktijk en praktische gidsen — bruiloften, bedrijfsavonden en Griekse feesten in heel Europa.",
+        "read_more": "Lees het verhaal",
+        "back": "Alle artikelen",
+        "cta": "Plant u iets soortgelijks?",
+    },
     "nav": {
         "home": "Home",
         "about": "Over mij",
@@ -268,6 +277,13 @@ PAGES = {
         "kicker": "Zakelijke evenementen, tot in de puntjes",
         "h1": "Bedrijfsfeest DJ in <span class='gold'>Brussel</span>",
         "sub": "Muziek voor bedrijven die van hun DJ dezelfde standaard verwachten als van hun cateraar: Freshfields, Boston Consulting Group en andere toonaangevende kantoren gingen u voor.",
+        "price": "Vanaf € 600 excl. btw", "price_note": "Enkel DJ — geluid &amp; licht apart geoffreerd", "price_amount": "600",
+        "facts": [("Vanafprijs", "€ 600 excl. btw, enkel DJ"),
+                  ("Gebruikelijke setduur", "4–6 uur, verlengbaar"),
+                  ("Capaciteit", "Tot 500 gasten met volledige productie"),
+                  ("Talen", "Grieks, Engels, Frans, Nederlands"),
+                  ("Thuisbasis &amp; verplaatsing", "Brussel; heel België, en Europa op aanvraag"),
+                  ("Opbouwtijd", "2–3 uur vóór aankomst van de gasten, discreet")],
         "service_type": "Bedrijfsfeest DJ",
         "body": """
 <section class="section">
@@ -325,6 +341,13 @@ PAGES = {
         "kicker": "Het belangrijkste feest van uw leven",
         "h1": "Bruiloft DJ in <span class='gold'>Brussel &amp; België</span>",
         "sub": "Griekse, internationale en prachtig gemengde trouwfeesten — één DJ die beide kanten van de zaal op hetzelfde ritme laat dansen.",
+        "price": "Vanaf € 600 excl. btw", "price_note": "Enkel DJ — geluid &amp; licht apart geoffreerd", "price_amount": "600",
+        "facts": [("Vanafprijs", "€ 600 excl. btw, enkel DJ"),
+                  ("Dekt", "Ceremonie, diner en feest — één opstelling"),
+                  ("Microfoons", "Draadloze microfoons voor geloften en toespraken inbegrepen"),
+                  ("Capaciteit", "Tot 500 gasten met volledige productie"),
+                  ("Talen", "Grieks, Engels, Frans, Nederlands"),
+                  ("Voorbereiding", "Een planningsgesprek vóór elke bruiloft")],
         "service_type": "Bruiloft DJ",
         "body": """
 <section class="section">
@@ -381,6 +404,13 @@ PAGES = {
         "kicker": "Ελληνικές βραδιές — het echte werk",
         "h1": "Griekse DJ in <span class='gold'>Brussel</span>",
         "sub": "Van het Brussels Greek Food Festival tot gemeenschapsfeesten in Wenen, Leuven en Rijsel — de Griekse avond, zoals ze verdient.",
+        "price": "Vanaf € 600 excl. btw", "price_note": "Enkel DJ — geluid &amp; licht apart geoffreerd", "price_amount": "600",
+        "facts": [("Vanafprijs", "€ 600 excl. btw, enkel DJ"),
+                  ("Repertoire", "Laïkà, éntekhna, nisiótika, rebetiko, moderne Griekse hits"),
+                  ("Gemengde avonden", "Griekse uren vermengd met Afro, Latin, RnB en internationaal"),
+                  ("Presentatie", "Aankondigingen in het Grieks, Engels, Frans of Nederlands"),
+                  ("Palmares", "Brussels Greek Food Festival ×2; gemeenschappen van Wenen, Leuven en Rijsel"),
+                  ("Thuisbasis &amp; verplaatsing", "Brussel; heel België, Europa en Griekenland")],
         "service_type": "Griekse DJ",
         "body": """
 <section class="section">
@@ -436,6 +466,13 @@ PAGES = {
         "kicker": "Uw feest, professioneel luid",
         "h1": "Feest DJ in <span class='gold'>Brussel</span>",
         "sub": "Verjaardagen, jubilea, afstudeerfeesten, huisfeesten — energie van clubniveau, professionaliteit die ook in de huiskamer past.",
+        "price": "Vanaf € 600 excl. btw", "price_note": "Enkel DJ — geluid &amp; licht apart geoffreerd", "price_amount": "600",
+        "facts": [("Vanafprijs", "€ 600 excl. btw, enkel DJ"),
+                  ("Formats", "Verjaardagen, jubilea, afstudeerfeesten, huisfeesten"),
+                  ("Schaal", "Van een appartement tot een zaal met 500 gasten"),
+                  ("Muziek", "Open format — electronic, Afro, Latin, RnB, Grieks, pop"),
+                  ("Materiaal", "Compacte, appartementvriendelijke opstelling of volledige productie"),
+                  ("Thuisbasis &amp; verplaatsing", "Brussel en heel België")],
         "service_type": "DJ voor privéfeesten",
         "body": """
 <section class="section">
@@ -478,6 +515,13 @@ PAGES = {
         "kicker": "Eén partner, het hele evenement",
         "h1": "Totaalpakketten voor <span class='gold'>evenementen</span>",
         "sub": "DJ + professioneel geluid &amp; licht + fotografie + video — voor evenementen en kleine shows tot 500 personen.",
+        "price": "DJ vanaf € 600 excl. btw", "price_note": "Volledige productie per evenement geoffreerd", "price_amount": "600",
+        "facts": [("Vanafprijs", "DJ vanaf € 600 excl. btw; productie per evenement geoffreerd"),
+                  ("Maximale omvang", "500 gasten"),
+                  ("Op aanvraag inbegrepen", "Geluid, licht, fotografie, video"),
+                  ("Microfoons", "Draadloze microfoons voor toespraken en ceremonies"),
+                  ("Coördinatie", "Technische planning met de locatie rechtstreeks geregeld"),
+                  ("Facturatie", "Eén aanspreekpunt, één factuur voor het hele evenement")],
         "service_type": "Evenementproductie (DJ, geluid, licht, foto, video)",
         "body": """
 <section class="section">
@@ -588,6 +632,12 @@ PAGES = {
         "kicker": "Thuisbasis Brussel, actief in heel Europa",
         "h1": "Griekse DJ in heel <span class='gold'>Europa</span>",
         "sub": "Gevormd in drie seizoenen Mykonos-nachtleven, gevestigd in Brussel en regelmatig onderweg: uw evenement hoeft niet in België te zijn om goed te klinken.",
+        "price": "Vanaf € 600 excl. btw + reiskosten", "price_note": "Reis en verblijf worden apart vermeld", "price_amount": "600",
+        "facts": [("Vanafprijs", "€ 600 excl. btw plus reis en verblijf"),
+                  ("Landen", "België, Nederland, Frankrijk, Duitsland, VK, Oostenrijk, Griekenland"),
+                  ("Materiaal in het buitenland", "Licht reizen met lokale apparatuur, of volledige productie dicht bij België"),
+                  ("Griekse eilanden", "Elke zomer op Mykonos — vraag naar de seizoensdata"),
+                  ("Talen", "Grieks, Engels, Frans, Nederlands")],
         "service_type": "DJ voor destination events",
         "body": """
 <section class="section">
