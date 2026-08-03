@@ -187,6 +187,13 @@ def breadcrumb_jsonld(mod, key, lang, label):
 
 def service_jsonld(mod, key):
     page = mod.PAGES[key]
+    offer = {}
+    if page.get("price_amount"):
+        offer = {"offers": {"@type": "Offer", "price": page["price_amount"],
+                            "priceCurrency": "EUR",
+                            "valueAddedTaxIncluded": False,
+                            "url": BASE_URL + url_path(key, mod.LANG),
+                            "availability": "https://schema.org/InStock"}}
     return {
         "@context": "https://schema.org",
         "@type": "Service",
@@ -196,6 +203,7 @@ def service_jsonld(mod, key):
         "serviceType": page.get("service_type", page["h1"]),
         "provider": {"@id": BASE_URL + "/#business"},
         "areaServed": ["Belgium", "Netherlands", "France", "Germany", "United Kingdom", "Greece"],
+        **offer,
     }
 
 
@@ -449,8 +457,18 @@ def render_page(mods, en_mod, lang, key):
     body = body.replace("{PLACEHOLDER_VIDEO}",
                         f"<div class='media-ph wide' role='img' aria-label='{s['video_ph']}'>"
                         f"<span class='ph-ring'></span><span>{s['video_ph']}</span></div>")
+    if page.get("facts"):
+        rows = "".join(f"<div class='fact'><dt>{k}</dt><dd>{v}</dd></div>" for k, v in page["facts"])
+        body += (f"<section class='section alt'><div class='wrap narrow'>"
+                 f"<h2>{s.get('facts_heading', 'At a glance')}</h2>"
+                 f"<dl class='fact-grid'>{rows}</dl></div></section>")
     if page.get("faq"):
         body += faq_html(page["faq"], s["faq_heading"])
+
+    price_html = ""
+    if page.get("price"):
+        price_html = (f"<p class='price-band'><span class='price-figure'>{page['price']}</span>"
+                      f"<span class='price-note'>{page.get('price_note','')}</span></p>")
 
     hero_cls = "hero hero-home" if key == "home" else "hero"
     hero_kicker = f"<p class='kicker'>{page['kicker']}</p>" if page.get("kicker") else ""
@@ -464,6 +482,7 @@ def render_page(mods, en_mod, lang, key):
     {hero_kicker}
     <h1>{page['h1']}</h1>
     {hero_sub}
+    {price_html}
     {hero_ctas}
   </div>
 </section>"""

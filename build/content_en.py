@@ -10,6 +10,7 @@ STRINGS = {
     "cta_quote": "Request a quote",
     "cta_services": "View services",
     "faq_heading": "Frequently asked questions",
+    "facts_heading": "At a glance",
     "photo_ph": "Photo coming soon",
     "video_ph": "Video coming soon",
     "footer_sge": "Co-founder of",
@@ -276,6 +277,13 @@ PAGES = {
         "kicker": "Business events, done right",
         "h1": "Corporate event DJ in <span class='gold'>Brussels</span>",
         "sub": "Music for companies that expect the same standard from their DJ as from their caterer: Freshfields, Boston Consulting Group and other leading firms already do.",
+        "price": "From €600 excl. VAT", "price_note": "DJ only — sound &amp; lighting quoted separately", "price_amount": "600",
+        "facts": [("Starting price", "€600 excl. VAT, DJ only"),
+                  ("Typical set length", "4–6 hours, extendable"),
+                  ("Guest capacity", "Up to 500 with full production"),
+                  ("Languages", "Greek, English, French, Dutch"),
+                  ("Base &amp; travel", "Brussels; all of Belgium, and Europe on request"),
+                  ("Setup time", "2–3 hours before doors, discreetly")],
         "service_type": "Corporate event DJ",
         "body": """
 <section class="section">
@@ -333,6 +341,13 @@ PAGES = {
         "kicker": "The most important party of your life",
         "h1": "Wedding DJ in <span class='gold'>Brussels &amp; Belgium</span>",
         "sub": "Greek, international and beautifully mixed weddings — one DJ who gets both sides of the room dancing to the same beat.",
+        "price": "From €600 excl. VAT", "price_note": "DJ only — sound &amp; lighting quoted separately", "price_amount": "600",
+        "facts": [("Starting price", "€600 excl. VAT, DJ only"),
+                  ("Covers", "Ceremony, dinner and party — one setup"),
+                  ("Microphones", "Wireless mics for vows and speeches included"),
+                  ("Guest capacity", "Up to 500 with full production"),
+                  ("Languages", "Greek, English, French, Dutch"),
+                  ("Planning", "A preparation meeting before every wedding")],
         "service_type": "Wedding DJ",
         "body": """
 <section class="section">
@@ -389,6 +404,13 @@ PAGES = {
         "kicker": "Ελληνικές βραδιές — the real thing",
         "h1": "Greek DJ in <span class='gold'>Brussels</span>",
         "sub": "From the Brussels Greek Food Festival to community parties in Vienna, Leuven and Lille — the Greek night, done the way it deserves.",
+        "price": "From €600 excl. VAT", "price_note": "DJ only — sound &amp; lighting quoted separately", "price_amount": "600",
+        "facts": [("Starting price", "€600 excl. VAT, DJ only"),
+                  ("Repertoire", "Laïkà, éntekhna, nisiótika, rebetiko, modern Greek hits"),
+                  ("Mixed nights", "Greek hours blended with Afro, Latin, RnB and international"),
+                  ("Hosting", "Announcements in Greek, English, French or Dutch"),
+                  ("Track record", "Brussels Greek Food Festival ×2; Vienna, Leuven, Lille communities"),
+                  ("Base &amp; travel", "Brussels; across Belgium, Europe and Greece")],
         "service_type": "Greek DJ",
         "body": """
 <section class="section">
@@ -444,6 +466,13 @@ PAGES = {
         "kicker": "Your party, professionally loud",
         "h1": "Party DJ in <span class='gold'>Brussels</span>",
         "sub": "Birthdays, anniversaries, graduations, house parties — club-level energy, living-room friendly professionalism.",
+        "price": "From €600 excl. VAT", "price_note": "DJ only — sound &amp; lighting quoted separately", "price_amount": "600",
+        "facts": [("Starting price", "€600 excl. VAT, DJ only"),
+                  ("Formats", "Birthdays, anniversaries, graduations, house parties"),
+                  ("Scale", "From an apartment to a venue of 500 guests"),
+                  ("Music", "Open format — electronic, Afro, Latin, RnB, Greek, pop"),
+                  ("Equipment", "Compact apartment-friendly rig or full production"),
+                  ("Base &amp; travel", "Brussels and all of Belgium")],
         "service_type": "Private party DJ",
         "body": """
 <section class="section">
@@ -486,6 +515,13 @@ PAGES = {
         "kicker": "One partner, whole event",
         "h1": "Full-package <span class='gold'>event solutions</span>",
         "sub": "DJ + professional sound &amp; light + photography + video — for events and small shows up to 500 people.",
+        "price": "DJ from €600 excl. VAT", "price_note": "Full production quoted per event", "price_amount": "600",
+        "facts": [("Starting price", "DJ from €600 excl. VAT; production quoted per event"),
+                  ("Maximum size", "500 guests"),
+                  ("Included on request", "Sound, lighting, photography, video"),
+                  ("Microphones", "Wireless mics for speeches and ceremonies"),
+                  ("Coordination", "Venue technical planning handled directly"),
+                  ("Billing", "One contact, one invoice for the whole event")],
         "service_type": "Event production (DJ, sound, light, photo, video)",
         "body": """
 <section class="section">
@@ -536,17 +572,24 @@ PAGES = {
 
     # ---------------------------------------------------------------- RESTAURANT
     "restaurant": {
-        "title": "Restaurant DJ in Brussels — Resident DJ & Themed Nights | DJ Orestis",
-        "desc": "Resident DJ for restaurants and venues in Brussels: recurring Greek nights and themed evenings that build a loyal crowd. Four-year residency at Papillon Schuman. Sound & light included if needed.",
+        "title": "Resident DJ for Restaurants & Bars in Brussels | DJ Orestis",
+        "desc": "Hire a resident DJ for your restaurant or bar in Brussels. Recurring themed nights that fill quiet weekdays and lift bar revenue. Four-year residency at Papillon Schuman. Pilot night available.",
         "kicker": "For restaurants & venues",
-        "h1": "Restaurant DJ in <span class='gold'>Brussels</span>",
-        "sub": "Recurring nights that turn quiet evenings into fully booked ones — the formula behind my four-year residency at Papillon Schuman.",
+        "h1": "Resident DJ for <span class='gold'>restaurants &amp; bars</span>",
+        "sub": "For restaurant and bar owners in Brussels: a recurring themed night that fills a quiet weekday and lifts bar revenue — the formula behind my four-year residency at Papillon Schuman.",
+        "price": "Per-night fee, quoted for the series", "price_note": "Pilot night available before any commitment",
+        "facts": [("Engagement", "Weekly, monthly or seasonal residency"),
+                  ("Trial", "One pilot night, no long-term commitment"),
+                  ("Dinner service", "Conversation-level volume until service winds down"),
+                  ("Equipment", "Compact system supplied, or your installed system used"),
+                  ("Proven format", "Papillon Schuman, four consecutive years"),
+                  ("Audience", "An established Greek and international following in Brussels")],
         "service_type": "Restaurant resident DJ",
         "body": """
 <section class="section">
   <div class="wrap split">
     <div>
-      <h2>What a residency does for a venue</h2>
+      <h2>Why would a restaurant hire a resident DJ?</h2>
       <p>A good themed night is a business asset: it fills a slow weekday, builds a returning crowd that books tables in advance, and gives your venue a reputation beyond its menu. I've built exactly that at <strong>Papillon Schuman</strong> — four years and counting — and played rooms across Brussels: La Place 33, Capital, Kosmos, YAYA, Meatropolis, Machina, AKT.</p>
       <ul class="ticks">
         <li><strong>A concept, not just a DJ</strong> — we design the night together: Greek nights, Latin evenings, Afro &amp; RnB sessions, or an elegant dinner-to-dance format.</li>
@@ -561,7 +604,7 @@ PAGES = {
 
 <section class="section alt">
   <div class="wrap">
-    <h2>Formats that work</h2>
+    <h2>Which residency format fits your venue?</h2>
     <div class="card-grid">
       <div class="card"><h3>Weekly or monthly residency</h3><p>A fixed, branded night your guests can plan around — the strongest crowd-builder.</p></div>
       <div class="card"><h3>Greek night launch</h3><p>A tested concept: Greek dinner service flowing into laïkà and island hits. Proven in Brussels for years.</p></div>
@@ -573,7 +616,7 @@ PAGES = {
 
 <section class="section cta-band">
   <div class="wrap center">
-    <h2>Run a restaurant or venue?</h2>
+    <h2>Run a restaurant, bar or hotel in Brussels?</h2>
     <p>Let's talk about a pilot night — one evening, clear numbers, no long-term commitment.</p>
     <a class="btn btn-gold" href="{link:contact}">Propose a pilot night</a>
   </div>
@@ -596,6 +639,12 @@ PAGES = {
         "kicker": "Brussels-based, Europe-wide",
         "h1": "Greek DJ across <span class='gold'>Europe</span>",
         "sub": "Trained in three seasons of Mykonos nightlife, based in Brussels, and regularly on the road: your event doesn't have to be in Belgium to sound right.",
+        "price": "From €600 excl. VAT + travel", "price_note": "Travel and accommodation itemised separately", "price_amount": "600",
+        "facts": [("Starting price", "€600 excl. VAT plus travel and accommodation"),
+                  ("Countries served", "Belgium, Netherlands, France, Germany, UK, Austria, Greece"),
+                  ("Equipment abroad", "Fly light and use local gear, or full production near Belgium"),
+                  ("Greek islands", "Mykonos every summer — ask about season dates"),
+                  ("Languages", "Greek, English, French, Dutch")],
         "service_type": "Destination event DJ",
         "body": """
 <section class="section">
