@@ -572,18 +572,25 @@ PAGES = {
 
     # ---------------------------------------------------------------- RESTAURANT
     "restaurant": {
-        "title": "DJ Résident Restaurant Bruxelles — Soirées à Thème | DJ Orestis",
-        "desc": "DJ résident pour restaurants et établissements à Bruxelles : soirées grecques récurrentes et soirées à thème qui fidélisent un public. Quatre ans de résidence au Papillon Schuman. Son & lumière compris si besoin.",
+        "title": "DJ Résident pour Restaurants & Bars à Bruxelles | DJ Orestis",
+        "desc": "Engagez un DJ résident pour votre restaurant ou votre bar à Bruxelles. Des soirées à thème récurrentes qui remplissent les soirs creux et font grimper le chiffre du bar. Quatre ans de résidence au Papillon Schuman. Soirée pilote possible.",
         "kicker": "Pour restaurants & établissements",
-        "h1": "DJ restaurant à <span class='gold'>Bruxelles</span>",
-        "sub": "Des soirées récurrentes qui transforment les soirs creux en salles combles — la formule derrière mes quatre années de résidence au Papillon Schuman.",
+        "h1": "DJ résident pour <span class='gold'>restaurants &amp; bars</span>",
+        "sub": "Pour les restaurateurs et gérants de bars à Bruxelles : une soirée à thème récurrente qui remplit un soir de semaine calme et fait grimper le chiffre du bar — la formule derrière mes quatre années de résidence au Papillon Schuman.",
+        "price": "Cachet par soirée, devis établi pour la série", "price_note": "Soirée pilote possible avant tout engagement",
+        "facts": [("Engagement", "Résidence hebdomadaire, mensuelle ou saisonnière"),
+                  ("Essai", "Une soirée pilote, sans engagement de longue durée"),
+                  ("Service du dîner", "Volume propice à la conversation jusqu'à la fin du service"),
+                  ("Matériel", "Système compact fourni, ou utilisation de votre installation"),
+                  ("Format éprouvé", "Papillon Schuman, quatre années consécutives"),
+                  ("Public", "Une communauté grecque et internationale déjà fidèle à Bruxelles")],
         "service_type": "DJ résident de restaurant",
         "body": """
 <section class="section">
   <div class="wrap split">
     <div>
-      <h2>Ce qu'une résidence apporte à un établissement</h2>
-      <p>Une bonne soirée à thème est un véritable atout commercial : elle remplit un soir de semaine calme, fidélise un public qui réserve sa table à l'avance et donne à votre établissement une réputation qui dépasse sa carte. C'est exactement ce que j'ai construit au <strong>Papillon Schuman</strong> — quatre ans déjà — après avoir mixé dans de nombreuses salles bruxelloises : La Place 33, Capital, Kosmos, YAYA, Meatropolis, Machina, AKT.</p>
+      <h2>Pourquoi engager un DJ résident dans un restaurant ?</h2>
+      <p>Une bonne soirée à thème est un véritable atout commercial : elle remplit un soir de semaine calme, fidélise un public qui réserve sa table à l'avance et donne à votre établissement une réputation qui dépasse sa carte. C'est exactement ce que j'ai construit au <strong>Papillon Schuman</strong> — quatre ans déjà, et cela continue — après avoir mixé dans de nombreuses salles bruxelloises : La Place 33, Capital, Kosmos, YAYA, Meatropolis, Machina, AKT.</p>
       <ul class="ticks">
         <li><strong>Un concept, pas seulement un DJ</strong> — nous concevons la soirée ensemble : soirées grecques, soirées latino, sessions afro &amp; RnB, ou un format élégant du dîner à la piste de danse.</li>
         <li><strong>La maîtrise du volume</strong> — le service reste propice à la conversation ; l'énergie ne monte que lorsque les assiettes quittent les tables.</li>
@@ -597,7 +604,7 @@ PAGES = {
 
 <section class="section alt">
   <div class="wrap">
-    <h2>Les formats qui fonctionnent</h2>
+    <h2>Quel format de résidence convient à votre établissement ?</h2>
     <div class="card-grid">
       <div class="card"><h3>Résidence hebdomadaire ou mensuelle</h3><p>Une soirée fixe et identifiable que vos clients peuvent planifier — le meilleur moyen de construire un public fidèle.</p></div>
       <div class="card"><h3>Lancement d'une soirée grecque</h3><p>Un concept éprouvé : un service de dîner grec qui glisse vers les laïkà et les tubes des îles. Des années de succès à Bruxelles.</p></div>
@@ -609,7 +616,7 @@ PAGES = {
 
 <section class="section cta-band">
   <div class="wrap center">
-    <h2>Vous gérez un restaurant ou un établissement ?</h2>
+    <h2>Vous gérez un restaurant, un bar ou un hôtel à Bruxelles ?</h2>
     <p>Parlons d'une soirée pilote — une seule soirée, des chiffres clairs, aucun engagement à long terme.</p>
     <a class="btn btn-gold" href="{link:contact}">Proposer une soirée pilote</a>
   </div>

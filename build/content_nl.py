@@ -572,18 +572,25 @@ PAGES = {
 
     # ---------------------------------------------------------------- RESTAURANT
     "restaurant": {
-        "title": "Restaurant DJ Brussel — Resident DJ & Thema-avonden | DJ Orestis",
-        "desc": "Resident DJ voor restaurants en zalen in Brussel: terugkerende Griekse avonden en thema-avonden die een trouw publiek opbouwen. Al vier jaar resident bij Papillon Schuman. Geluid & licht inbegrepen indien gewenst.",
+        "title": "Vaste DJ voor Restaurants & Bars in Brussel | DJ Orestis",
+        "desc": "Boek een vaste DJ voor uw restaurant of bar in Brussel. Terugkerende thema-avonden die rustige weekdagen vullen en de baromzet verhogen. Al vier jaar resident bij Papillon Schuman. Proefavond mogelijk.",
         "kicker": "Voor restaurants & zalen",
-        "h1": "Restaurant DJ in <span class='gold'>Brussel</span>",
-        "sub": "Terugkerende concepten die rustige avonden veranderen in volgeboekte — de formule achter mijn vierjarige residentie bij Papillon Schuman.",
-        "service_type": "Resident DJ voor restaurants",
+        "h1": "Vaste DJ voor <span class='gold'>restaurants &amp; bars</span>",
+        "sub": "Voor restaurant- en bareigenaars in Brussel: een terugkerende thema-avond die een rustige weekdag vult en de baromzet verhoogt — de formule achter mijn vierjarige residentie bij Papillon Schuman.",
+        "price": "Vaste vergoeding per avond, geoffreerd per reeks", "price_note": "Proefavond mogelijk vóór elke verbintenis",
+        "facts": [("Samenwerking", "Wekelijkse, maandelijkse of seizoensgebonden residentie"),
+                  ("Proefperiode", "Eén proefavond, zonder langetermijnverbintenis"),
+                  ("Dinerservice", "Volume op gespreksniveau tot de service afrondt"),
+                  ("Materiaal", "Compact systeem meegebracht, of uw vaste installatie gebruikt"),
+                  ("Bewezen formule", "Papillon Schuman, vier jaar op rij"),
+                  ("Publiek", "Een gevestigde Griekse en internationale aanhang in Brussel")],
+        "service_type": "Vaste DJ voor restaurants",
         "body": """
 <section class="section">
   <div class="wrap split">
     <div>
-      <h2>Wat een residentie voor uw zaak betekent</h2>
-      <p>Een goede thema-avond is een commerciële troef: ze vult een rustige weekdag, bouwt een vast publiek op dat vooraf tafels reserveert, en geeft uw zaak een reputatie die verder reikt dan de menukaart. Precies dat heb ik opgebouwd bij <strong>Papillon Schuman</strong> — inmiddels al vier jaar — en ik draaide in zalen over heel Brussel: La Place 33, Capital, Kosmos, YAYA, Meatropolis, Machina, AKT.</p>
+      <h2>Waarom zou een restaurant een vaste DJ inhuren?</h2>
+      <p>Een goede thema-avond is een commerciële troef: ze vult een rustige weekdag, bouwt een terugkerend publiek op dat vooraf tafels reserveert, en geeft uw zaak een reputatie die verder reikt dan de menukaart. Precies dat heb ik opgebouwd bij <strong>Papillon Schuman</strong> — al vier jaar, en het loopt door — en ik draaide in zalen over heel Brussel: La Place 33, Capital, Kosmos, YAYA, Meatropolis, Machina, AKT.</p>
       <ul class="ticks">
         <li><strong>Een concept, niet zomaar een DJ</strong> — we ontwerpen de avond samen: Griekse avonden, Latin-avonden, Afro &amp; RnB-sessies, of een elegant dinner-to-dance-format.</li>
         <li><strong>Volumediscipline</strong> — tijdens de dinerservice blijft een gesprek mogelijk; de energie stijgt pas wanneer de borden van tafel gaan.</li>
@@ -597,7 +604,7 @@ PAGES = {
 
 <section class="section alt">
   <div class="wrap">
-    <h2>Formats die werken</h2>
+    <h2>Welk residentieformat past bij uw zaak?</h2>
     <div class="card-grid">
       <div class="card"><h3>Wekelijkse of maandelijkse residentie</h3><p>Een vaste avond met een eigen naam waar uw gasten naar uitkijken — de sterkste publieksbouwer.</p></div>
       <div class="card"><h3>Lancering van een Griekse avond</h3><p>Een beproefd concept: Griekse dinerservice die overvloeit in laïkà en eilandhits. Al jaren bewezen in Brussel.</p></div>
@@ -609,7 +616,7 @@ PAGES = {
 
 <section class="section cta-band">
   <div class="wrap center">
-    <h2>Heeft u een restaurant of zaal?</h2>
+    <h2>Runt u een restaurant, bar of hotel in Brussel?</h2>
     <p>Laten we praten over een proefavond — één avond, heldere cijfers, geen langetermijnverbintenis.</p>
     <a class="btn btn-gold" href="{link:contact}">Stel een proefavond voor</a>
   </div>
