@@ -10,6 +10,7 @@ STRINGS = {
     "cta_quote": "Offerte aanvragen",
     "cta_services": "Bekijk diensten",
     "faq_heading": "Veelgestelde vragen",
+    "facts_heading": "In het kort",
     "photo_ph": "Foto volgt binnenkort",
     "video_ph": "Video volgt binnenkort",
     "footer_sge": "Medeoprichter van",

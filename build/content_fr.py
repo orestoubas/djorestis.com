@@ -10,6 +10,7 @@ STRINGS = {
     "cta_quote": "Demander un devis",
     "cta_services": "Découvrir les services",
     "faq_heading": "Questions fréquentes",
+    "facts_heading": "En bref",
     "photo_ph": "Photo bientôt disponible",
     "video_ph": "Vidéo bientôt disponible",
     "footer_sge": "Cofondateur de",

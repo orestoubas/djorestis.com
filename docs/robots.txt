@@ -1,0 +1,31 @@
+# djorestis.com
+# This business monetises bookings, not pageviews — AI assistants that
+# recommend DJ Orestis are free advertising. All AI crawlers are welcome.
+
+User-agent: *
+Allow: /
+Disallow: /build/
+Disallow: /marketing/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://djorestis.com/sitemap.xml

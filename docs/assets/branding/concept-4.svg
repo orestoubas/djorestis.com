@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" role="img" aria-label="DJ Orestis stacked crest, concept 4">
+  <title>DJORESTIS — Concept 4: Crest Monogram</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Jost:wght@300&amp;display=swap');
+    .wordmark { font-family: 'Marcellus', 'Palatino Linotype', 'Book Antiqua', Georgia, serif; font-size: 44px; letter-spacing: 9px; }
+    .tagline  { font-family: 'Jost', 'Century Gothic', 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 300; font-size: 13px; letter-spacing: 4px; }
+    .gold  { fill: #C6A15B; }
+    .ivory { fill: #F4F1E8; }
+    .grey  { fill: #A8A49A; }
+  </style>
+  <rect width="520" height="400" fill="#0E0E10"/>
+
+  <!-- The mark: a record that is also the O of Orestis -->
+  <g>
+    <circle cx="260" cy="118" r="62" fill="none" stroke="#C6A15B" stroke-width="3"/>
+    <circle cx="260" cy="118" r="39" fill="none" stroke="#F4F1E8" stroke-width="1.2" opacity="0.4"/>
+    <circle cx="260" cy="118" r="9" fill="#C6A15B"/>
+  </g>
+
+  <!-- Greek meander accent: three spiral-key hooks -->
+  <g stroke="#C6A15B" stroke-width="1.6" fill="none" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.9">
+    <path d="M237.5 222 V 210 H 248.5 V 217.5 H 242 V 213.5"/>
+    <path d="M254.5 222 V 210 H 265.5 V 217.5 H 259 V 213.5"/>
+    <path d="M271.5 222 V 210 H 282.5 V 217.5 H 276 V 213.5"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="264" y="290" text-anchor="middle" class="wordmark"><tspan class="gold">DJ</tspan><tspan class="ivory">ORESTIS</tspan></text>
+
+  <!-- Tagline -->
+  <text x="260" y="332" text-anchor="middle" class="tagline grey">YOUR EVENT AS YOU DREAM IT</text>
+</svg>

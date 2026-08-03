@@ -13,6 +13,12 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# Where generated pages are written.
+# During the migration to a /docs publish root we write BOTH, so the live site
+# never breaks while the GitHub Pages source is switched. Once Pages serves
+# /docs, drop ROOT from this list and delete the stale copies at the root.
+OUT_DIRS = [ROOT, ROOT / "docs"]
 BASE_URL = "https://djorestis.com"
 LANGS = ["en", "fr", "nl", "el"]
 
@@ -90,9 +96,16 @@ def url_path(key, lang):
     return prefix if slug == "" else f"{prefix}{slug}/"
 
 
-def out_file(path):
-    p = path.strip("/")
-    return ROOT / p / "index.html" if p else ROOT / "index.html"
+def out_files(path):
+    """Every destination for a generated page, one per output root."""
+    rel = path.strip("/")
+    return [(d / rel / "index.html") if rel else (d / "index.html") for d in OUT_DIRS]
+
+
+def write_page(path, html):
+    for dest in out_files(path):
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(html, encoding="utf-8")
 
 
 def load_module(name):
@@ -587,10 +600,7 @@ def main():
         for key in SLUGS:
             if key not in mod.PAGES:
                 continue
-            html = render_page(mods, en_mod, lg, key)
-            dest = out_file(url_path(key, lg))
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_text(html, encoding="utf-8")
+            write_page(url_path(key, lg), render_page(mods, en_mod, lg, key))
             urls.append((BASE_URL + url_path(key, lg), None))
     print(f"  wrote {len(urls)} pages ({', '.join(mods.keys())})")
 
@@ -613,14 +623,10 @@ def main():
             if post["slug"] in slugs_seen:
                 sys.exit(f"duplicate blog slug in {lg}: {post['slug']}")
             slugs_seen.add(post["slug"])
-            dest = out_file(blog_path(lg) + post["slug"] + "/")
-            dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_text(render_blog_post(mods, en_mod, post, lg), encoding="utf-8")
+            write_page(blog_path(lg) + post["slug"] + "/", render_blog_post(mods, en_mod, post, lg))
             urls.append((BASE_URL + blog_path(lg) + post["slug"] + "/",
                          post.get("modified", post["date"])))
-        dest = out_file(blog_path(lg))
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_text(render_blog_index(mods, en_mod, posts, lg), encoding="utf-8")
+        write_page(blog_path(lg), render_blog_index(mods, en_mod, posts, lg))
         urls.append((BASE_URL + blog_path(lg), posts[0]["date"]))
         print(f"  wrote blog[{lg}]: index + {len(posts)} posts")
 
@@ -632,7 +638,9 @@ def main():
         else:
             sitemap.append(f"  <url><loc>{loc}</loc></url>")
     sitemap.append("</urlset>")
-    (ROOT / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
+    for d in OUT_DIRS:
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
     print(f"  wrote sitemap.xml ({len(urls)} URLs)")
 
 
