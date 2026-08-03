@@ -105,7 +105,7 @@ POSTS = [
 {
 "slug": "how-i-choose-my-dj-gear",
 "date": "2024-06-25",
-"title": "Comment je choisis mon matériel DJ — et pourquoi ça compte",
+"title": "Comment je choisis mon matériel DJ",
 "desc": "Un DJ professionnel explique comment il choisit platines, enceintes et lumières — et ce qu'il faut vraiment vérifier avant d'engager un DJ en Belgique.",
 "category": "Guide",
 "h1": "Comment je choisis mon <span class='gold'>matériel DJ</span> — et pourquoi ça compte",

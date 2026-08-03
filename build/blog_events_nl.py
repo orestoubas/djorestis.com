@@ -120,7 +120,7 @@ POSTS = [
     {
         "slug": "greek-belgian-wedding-dj-belgium",
         "date": "2025-07-09",
-        "title": "Een Grieks-Belgische bruiloft: twee families, één dansvloer",
+        "title": "Grieks-Belgische bruiloft: twee families, één vloer",
         "desc": "Verslag van een Grieks-Belgische bruiloft in België — van de openingsdans tot een zeibekiko met kippenvel, en twee culturen op één dansvloer.",
         "category": "Eventverslag",
         "h1": "Twee families, <span class='gold'>één dansvloer</span>",

@@ -142,7 +142,7 @@ POSTS = [
 {
 "slug": "event-photography-video-belgium-why-it-matters",
 "date": "2024-09-17",
-"title": "Hebt u foto en video nodig op uw evenement? Eerlijk antwoord",
+"title": "Hebt u foto en video nodig op uw evenement?",
 "desc": "Hoe belangrijk zijn fotografie en video voor bruiloften en bedrijfsevenementen? Een Brusselse DJ met totaalpakketten geeft zijn eerlijke, praktische visie.",
 "category": "Gids",
 "h1": "Hoe belangrijk zijn <span class='gold'>foto en video</span> voor uw evenement?",

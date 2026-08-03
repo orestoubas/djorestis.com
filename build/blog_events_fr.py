@@ -6,7 +6,7 @@ POSTS = [
     {
         "slug": "brussels-greek-food-festival-2024",
         "date": "2024-06-19",
-        "title": "DJ au Brussels Greek Food Festival 2024 — récit d'événement",
+        "title": "DJ au Brussels Greek Food Festival 2024",
         "desc": "Trois jours comme DJ du Brussels Greek Food Festival 2024 à Saint-Gilles : fumée des souvlakis, cercles de syrtaki et fierté grecque au cœur de Bruxelles.",
         "category": "Récit d'événement",
         "h1": "Trois jours de <span class='gold'>fierté grecque</span> à Saint-Gilles",
@@ -92,7 +92,7 @@ POSTS = [
     {
         "slug": "corporate-end-of-year-party-dj-brussels",
         "date": "2023-12-20",
-        "title": "Fête de fin d'année d'entreprise — récit d'un DJ bruxellois",
+        "title": "Fête de fin d'année d'entreprise à Bruxelles",
         "desc": "Derrière les platines à la réception de fin d'année d'un cabinet international à Bruxelles : comment un DJ transforme une soirée formelle en vraie célébration.",
         "category": "Récit d'événement",
         "h1": "Du mode réception au <span class='gold'>mode minuit</span>",
