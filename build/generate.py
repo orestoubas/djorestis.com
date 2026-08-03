@@ -74,12 +74,17 @@ SLUGS = {
 NAV_KEYS = ["about", "services", "music", "events", "blog", "contact"]
 SERVICE_KEYS = ["corporate", "wedding", "greek", "party", "fullpackage", "restaurant", "mykonos"]
 
-BLOG_PATH = "/blog/"  # English only
+BLOG_SLUG = {"en": "blog", "fr": "blog", "nl": "blog", "el": "blog"}
+
+def blog_path(lang="en"):
+    return "/blog/" if lang == "en" else f"/{lang}/{BLOG_SLUG[lang]}/"
+
+BLOG_PATH = "/blog/"   # English (kept for existing call sites)
 
 
 def url_path(key, lang):
     if key == "blog":
-        return BLOG_PATH
+        return blog_path(lang)
     slug = SLUGS[key][lang]
     prefix = "/" if lang == "en" else f"/{lang}/"
     return prefix if slug == "" else f"{prefix}{slug}/"
@@ -103,7 +108,7 @@ def load_module(name):
 def localize_links(html, lang):
     for key in SLUGS:
         html = html.replace("{link:%s}" % key, url_path(key, lang))
-    html = html.replace("{link:blog}", BLOG_PATH)
+    html = html.replace("{link:blog}", blog_path(lang))
     return html
 
 
@@ -218,7 +223,7 @@ def faq_jsonld(faq):
     }
 
 
-def article_jsonld(post):
+def article_jsonld(post, lang="en"):
     return {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -226,8 +231,8 @@ def article_jsonld(post):
         "description": post["desc"],
         "datePublished": post["date"],
         "dateModified": post.get("modified", post["date"]),
-        "url": BASE_URL + BLOG_PATH + post["slug"] + "/",
-        "inLanguage": "en",
+        "url": BASE_URL + blog_path(lang) + post["slug"] + "/",
+        "inLanguage": lang,
         "author": {"@type": "Person", "name": "DJ Orestis", "url": BASE_URL + "/about/"},
         "publisher": {"@id": BASE_URL + "/#business"},
     }
@@ -275,6 +280,22 @@ def nav_label(mod, en_mod, key):
     if key == "blog":
         return mod.STRINGS["nav"].get("blog", "Blog")
     return mod.STRINGS["nav"].get(key) or en_mod.STRINGS["nav"].get(key, key)
+
+
+BLOG_POSTS_BY_LANG = {}
+
+
+def hreflang_blog(mods, slug):
+    """Alternates for the blog index (slug=None) or one post, across languages that have it."""
+    langs = [lg for lg, posts in BLOG_POSTS_BY_LANG.items()
+             if slug is None or any(p["slug"] == slug for p in posts)]
+    if len(langs) <= 1:
+        return ""
+    tags = [f'<link rel="alternate" hreflang="{lg}" href="{BASE_URL}'
+            f'{blog_path(lg) if slug is None else blog_path(lg) + slug + "/"}">' for lg in langs]
+    tags.append(f'<link rel="alternate" hreflang="x-default" href="{BASE_URL}'
+                f'{blog_path("en") if slug is None else blog_path("en") + slug + "/"}">')
+    return "\n  ".join(tags)
 
 
 def hreflang_tags(key, mods):
@@ -492,9 +513,10 @@ def render_page(mods, en_mod, lang, key):
                       hero_html=hero_html, body=body, schemas=schemas, lang=lang)
 
 
-def render_blog_index(mods, en_mod, posts):
-    s = en_mod.STRINGS
-    b = s.get("blog", {})
+def render_blog_index(mods, en_mod, posts, lang='en'):
+    mod = mods[lang]
+    s = mod.STRINGS
+    b = s.get("blog") or en_mod.STRINGS.get("blog", {})
     title = b.get("index_title", "Blog — Stories & Guides from the Booth | DJ Orestis")
     desc = b.get("index_desc", "Event stories and practical guides from DJ Orestis: corporate parties, weddings and Greek nights in Brussels and across Europe.")
     h1 = b.get("h1", "From the <span class='gold'>booth</span>")
@@ -504,49 +526,50 @@ def render_blog_index(mods, en_mod, posts):
     for p in posts:
         date_h = f"<time datetime='{p['date']}'>{p['date']}</time>"
         cards.append(
-            f"<a class='card post-card' href='{BLOG_PATH}{p['slug']}/'>"
+            f"<a class='card post-card' href='{blog_path(lang)}{p['slug']}/'>"
             f"<p class='post-meta'>{date_h} · {p['category']}</p>"
             f"<h3>{p['title']}</h3><p>{p['desc']}</p>"
             f"<span class='card-more'>{b.get('read_more', 'Read the story')} →</span></a>"
         )
     body = f"""<section class="section"><div class="wrap"><div class="card-grid posts">{''.join(cards)}</div></div></section>
 <section class="section cta-band"><div class="wrap center"><h2>{b.get('cta', 'Planning something similar?')}</h2>
-<a class="btn btn-gold" href="{url_path('contact', 'en')}">{s['cta_quote']}</a></div></section>"""
+<a class="btn btn-gold" href="{url_path('contact', lang)}">{s['cta_quote']}</a></div></section>"""
 
     hero = f"""<section class="hero"><div class="wrap">
     <p class='kicker'>Blog</p><h1>{h1}</h1><p class='hero-sub'>{sub}</p></div></section>"""
 
-    return page_shell(mods["en"], en_mod, mods, key="blog", title=title, desc=desc,
-                      canonical=BASE_URL + BLOG_PATH, hreflang="", robots=None,
-                      hero_html=hero, body=body, schemas=[], lang="en")
+    return page_shell(mod, en_mod, mods, key="blog", title=title, desc=desc,
+                      canonical=BASE_URL + blog_path(lang), hreflang=hreflang_blog(mods, None), robots=None,
+                      hero_html=hero, body=body, schemas=[], lang=lang)
 
 
-def render_blog_post(mods, en_mod, post):
-    s = en_mod.STRINGS
-    b = s.get("blog", {})
-    path = BLOG_PATH + post["slug"] + "/"
-    body_html = localize_links(post["body"], "en")
+def render_blog_post(mods, en_mod, post, lang='en'):
+    mod = mods[lang]
+    s = mod.STRINGS
+    b = s.get("blog") or en_mod.STRINGS.get("blog", {})
+    path = blog_path(lang) + post["slug"] + "/"
+    body_html = localize_links(post["body"], lang)
     body_html = body_html.replace("{PLACEHOLDER_PHOTO}",
                                   f"<div class='media-ph' role='img' aria-label='{s['photo_ph']}'>"
                                   f"<span class='ph-ring'></span><span>{s['photo_ph']}</span></div>")
     body = f"""<article class="section blog-post"><div class="wrap narrow">
 {body_html}
-<p class="post-back"><a href="{BLOG_PATH}">← {b.get('back', 'All articles')}</a></p>
+<p class="post-back"><a href="{blog_path(lang)}">← {b.get('back', 'All articles')}</a></p>
 </div></article>
 <section class="section cta-band"><div class="wrap center"><h2>{b.get('cta', 'Planning something similar?')}</h2>
-<a class="btn btn-gold" href="{url_path('contact', 'en')}">{s['cta_quote']}</a></div></section>"""
+<a class="btn btn-gold" href="{url_path('contact', lang)}">{s['cta_quote']}</a></div></section>"""
 
     hero = f"""<section class="hero"><div class="wrap">
     <p class='kicker'><time datetime="{post['date']}">{post['date']}</time> · {post['category']}</p>
     <h1>{post['h1'] if post.get('h1') else post['title']}</h1>
     {f"<p class='hero-sub'>{post['sub']}</p>" if post.get('sub') else ''}</div></section>"""
 
-    return page_shell(mods["en"], en_mod, mods, key="blog", title=post["title"] + " | DJ Orestis",
-                      desc=post["desc"], canonical=BASE_URL + path, hreflang="", robots=None,
+    return page_shell(mod, en_mod, mods, key="blog", title=post["title"] + " | DJ Orestis",
+                      desc=post["desc"], canonical=BASE_URL + path, hreflang=hreflang_blog(mods, post["slug"]), robots=None,
                       hero_html=hero, body=body,
-                      schemas=[article_jsonld(post),
-                               breadcrumb_jsonld(mods["en"], "blog", "en", post["title"])],
-                      lang="en")
+                      schemas=[article_jsonld(post, lang),
+                               breadcrumb_jsonld(mod, "blog", lang, post["title"])],
+                      lang=lang)
 
 
 def main():
@@ -572,27 +595,34 @@ def main():
     print(f"  wrote {len(urls)} pages ({', '.join(mods.keys())})")
 
     # ------------------------------------------------------------------ blog
-    posts = []
-    for name in ("blog_events", "blog_guides"):
-        mod = load_module(name)
-        if mod and hasattr(mod, "POSTS"):
-            posts.extend(mod.POSTS)
-    if posts:
-        posts.sort(key=lambda p: p["date"], reverse=True)
+    # English lives in blog_events/blog_guides; translations in *_<lang>.py
+    for lg in mods:
+        suffix = "" if lg == "en" else f"_{lg}"
+        posts = []
+        for name in (f"blog_events{suffix}", f"blog_guides{suffix}"):
+            bm = load_module(name)
+            if bm and hasattr(bm, "POSTS"):
+                posts.extend(bm.POSTS)
+        if posts:
+            posts.sort(key=lambda x: x["date"], reverse=True)
+            BLOG_POSTS_BY_LANG[lg] = posts
+
+    for lg, posts in BLOG_POSTS_BY_LANG.items():
         slugs_seen = set()
-        for p in posts:
-            if p["slug"] in slugs_seen:
-                sys.exit(f"duplicate blog slug: {p['slug']}")
-            slugs_seen.add(p["slug"])
-            dest = out_file(BLOG_PATH + p["slug"] + "/")
+        for post in posts:
+            if post["slug"] in slugs_seen:
+                sys.exit(f"duplicate blog slug in {lg}: {post['slug']}")
+            slugs_seen.add(post["slug"])
+            dest = out_file(blog_path(lg) + post["slug"] + "/")
             dest.parent.mkdir(parents=True, exist_ok=True)
-            dest.write_text(render_blog_post(mods, en_mod, p), encoding="utf-8")
-            urls.append((BASE_URL + BLOG_PATH + p["slug"] + "/", p.get("modified", p["date"])))
-        dest = out_file(BLOG_PATH)
+            dest.write_text(render_blog_post(mods, en_mod, post, lg), encoding="utf-8")
+            urls.append((BASE_URL + blog_path(lg) + post["slug"] + "/",
+                         post.get("modified", post["date"])))
+        dest = out_file(blog_path(lg))
         dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_text(render_blog_index(mods, en_mod, posts), encoding="utf-8")
-        urls.append((BASE_URL + BLOG_PATH, posts[0]["date"]))
-        print(f"  wrote blog: index + {len(posts)} posts")
+        dest.write_text(render_blog_index(mods, en_mod, posts, lg), encoding="utf-8")
+        urls.append((BASE_URL + blog_path(lg), posts[0]["date"]))
+        print(f"  wrote blog[{lg}]: index + {len(posts)} posts")
 
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
