@@ -52,6 +52,45 @@ GBP_URL = ""
 # "Company Name BV — BTW BE 0123.456.789". Empty = not shown.
 COMPANY_LEGAL = "Orestis Vasileiadis — VAT BE 0785.520.639"
 
+# Service catalogue: (name, description, has a €600 starting price)
+# Mirrors what would go in Google Business Profile "Services".
+SERVICE_CATALOGUE = [
+    ("Corporate event DJ",
+     "Music for company receptions, staff parties, product launches and year-end events in "
+     "Brussels. Discreet, punctual setup and programme-aware timing so speeches land on time "
+     "and the floor fills afterwards. Sound and lighting available for up to 500 guests.", True),
+    ("Wedding DJ",
+     "Greek, international and mixed weddings across Belgium. One DJ for the whole day: "
+     "ceremony sound, wireless microphones for vows and speeches, dinner ambience and the "
+     "party. A planning meeting before every wedding.", True),
+    ("Baptism and family celebration DJ",
+     "Music for baptisms, name days and family celebrations in Brussels and across Belgium. "
+     "Elegant volume during the meal, a real dance floor afterwards, and the Greek repertoire "
+     "handled properly when the family expects it.", True),
+    ("Greek night and community event DJ",
+     "Authentic Greek nights for communities, associations and celebrations. Laika, entehna, "
+     "nisiotika, rebetiko and today's hits, with the space and timing a zeibekiko deserves. "
+     "Hosting in Greek, English, French or Dutch.", True),
+    ("Private party DJ",
+     "Birthdays, anniversaries, graduations and house parties with an open-format "
+     "professional. Electronic, Afro, Latin, RnB, Greek and the classics, read live off the "
+     "room. From an apartment-friendly rig to a full venue setup for 500 guests.", True),
+    ("Restaurant and venue resident DJ",
+     "Recurring themed nights for restaurants, bars and hotels in Brussels: Greek nights, "
+     "Latin evenings, Afro and RnB sessions. Conversation-level volume during service, energy "
+     "after. One pilot night available before any commitment.", False),
+    ("Sound and lighting hire",
+     "Professional sound and lighting scaled to your room, from 20 to 500 guests. Wireless "
+     "microphones for speeches and ceremonies, ambient lighting for receptions and full "
+     "dance-floor lighting for the party.", False),
+    ("Event photography and video",
+     "Photography and video coverage for weddings, corporate events and cultural productions. "
+     "Bookable on its own or as part of a full-package event production.", False),
+    ("Full-package event production",
+     "One partner for the whole event: DJ, professional sound and lighting, photography and "
+     "video, for up to 500 guests. One technical plan, one contact, one invoice.", True),
+]
+
 # ------------------------------------------------------------------ pages
 # Page keys in order. Slug "" means the language home page.
 SLUGS = {
@@ -156,6 +195,18 @@ def business_jsonld(mod):
         "knowsAbout": ["Greek music", "Electronic music", "Afrobeats", "Latin music", "RnB",
                        "Wedding entertainment", "Corporate event production", "Sound and lighting"],
         "founder": {"@type": "Person", "@id": BASE_URL + "/#person"},
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "DJ and event production services",
+            "itemListElement": [
+                {"@type": "Offer",
+                 "itemOffered": {"@type": "Service", "name": n, "description": d,
+                                 "provider": {"@id": BASE_URL + "/#business"},
+                                 "areaServed": {"@type": "City", "name": "Brussels"}},
+                 **({"price": "600", "priceCurrency": "EUR"} if priced else {})}
+                for n, d, priced in SERVICE_CATALOGUE
+            ],
+        },
     }
     if COMPANY_LEGAL:
         data["legalName"] = COMPANY_LEGAL
