@@ -146,8 +146,36 @@ Party planner
 Controlled tests show detailed Services entries move rankings, with effect visible in
 24–72 hours. Most competitors leave this empty.
 
-**Edit profile → Services → Add service.** For each one below: add the service name, then
-paste the description into the description box.
+### Finding the Services editor
+
+Google retired the old `business.google.com` dashboard for single-location businesses. The
+profile is now managed **inside Google Search**, and Services is easy to miss:
+
+1. Signed in with the owner account, go to **google.com** and search **`my business`**
+   (or your business name). The management panel appears at the top of the results.
+2. Click **Edit profile**. Tabs appear: *About · Contact · Location · Hours · More*.
+3. **Services is one of those tabs**, but it is frequently pushed off-screen — scroll the
+   tab row sideways or widen the browser window.
+
+**Shortcut:** while signed in, type **`edit services`** straight into the Google search bar.
+It opens the editor directly. The same works for `edit business description` and `add photos`.
+
+**On mobile:** Google Maps app → profile picture → *Your Business Profiles* → select it →
+*Edit profile* → *Services*.
+
+### If the Services tab is not there at all
+
+- **Most likely the primary category.** Services is enabled per category. If the primary
+  category ended up as "Entertainer" or "Event planner", change it to **DJ**
+  (*Edit profile → About → Business category*). Worth doing regardless — a precise primary
+  category is itself a proven ranking lever.
+- **Or it has not propagated.** Verification completing and every feature unlocking are not
+  simultaneous. Wait 24–48 hours after verification and check again.
+
+### The services to add
+
+For each one below: add the service name, then paste the description into the description
+box.
 
 **1. Corporate event DJ**
 ```
