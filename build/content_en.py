@@ -64,6 +64,8 @@ STRINGS = {
         "restaurant": "Restaurant DJ",
         "mykonos": "DJ across Europe",
         "blog": "Blog",
+        "weddingguide": "Wedding music guide",
+        "corporateguide": "Corporate music playbook",
         "music": "Music",
         "events": "Past events",
         "contact": "Contact",
@@ -830,6 +832,46 @@ PAGES = {
       <h2>Languages</h2>
       <p class="muted">Greek · English · French · Dutch</p>
     </aside>
+  </div>
+</section>
+""",
+    },
+
+
+    # ---------------------------------------------------------------- GUIDES
+    "weddingguide": {
+        "title": "Wedding Music Planning Guide — Timeline & Questions to Ask",
+        "desc": "A free wedding music planning guide from a Brussels DJ: the day's timeline, a must-play worksheet, ten questions to ask any DJ, and honest Belgian pricing.",
+        "kicker": "Free guide",
+        "h1": "The wedding music <span class='gold'>planning guide</span>",
+        "sub": "The timeline that makes a dance floor work, what to tell your DJ, and what a wedding DJ actually costs in Belgium — written from nine years of doing it.",
+        "signup": "wedding",
+        "body": """{GUIDE:WEDDING-GUIDE}
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Planning your wedding?</h2>
+    <p>Tell me your date and venue — I'll tell you honestly whether I'm the right DJ for it.</p>
+    <a class="btn btn-gold" href="{link:contact}">Check my availability</a>
+  </div>
+</section>
+""",
+    },
+
+    "corporateguide": {
+        "title": "Corporate Event Music Playbook — Brussels Event Organisers",
+        "desc": "A free playbook for company event organisers: how to programme music around your agenda, handle the transition to dancing, and brief a DJ for a multinational room.",
+        "kicker": "Free playbook",
+        "h1": "The corporate event <span class='gold'>music playbook</span>",
+        "sub": "How to programme music around speeches, awards and a room of fifteen nationalities — from a DJ who works Brussels corporate events.",
+        "signup": "corporate",
+        "body": """{GUIDE:CORPORATE-PLAYBOOK}
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Planning a company event?</h2>
+    <p>Send the date, venue and headcount — you'll get a clear proposal, usually within 48 hours.</p>
+    <a class="btn btn-gold" href="{link:contact}">Request a proposal</a>
   </div>
 </section>
 """,

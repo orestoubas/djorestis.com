@@ -9,6 +9,7 @@ Writes  finished HTML into the repository root (en at /, others at /<lang>/),
 """
 import importlib.util
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -127,7 +128,11 @@ SLUGS = {
     "events":      {"en": "events", "fr": "evenements", "nl": "evenementen", "el": "ekdiloseis"},
     "contact":     {"en": "contact", "fr": "contact", "nl": "contact", "el": "epikoinonia"},
     "privacy":     {"en": "privacy", "fr": "confidentialite", "nl": "privacy", "el": "aporrito"},
+    # Long-form guides — English only, doubling as lead magnets
+    "weddingguide":   {"en": "wedding-music-guide"},
+    "corporateguide": {"en": "corporate-event-music-playbook"},
 }
+GUIDE_KEYS = ["weddingguide", "corporateguide"]
 NAV_KEYS = ["about", "services", "music", "events", "blog", "contact"]
 SERVICE_KEYS = ["corporate", "wedding", "greek", "party", "fullpackage", "restaurant", "mykonos"]
 
@@ -142,6 +147,9 @@ BLOG_PATH = "/blog/"   # English (kept for existing call sites)
 def url_path(key, lang):
     if key == "blog":
         return blog_path(lang)
+    # English-only pages (guides) have no localised slug — fall back to the EN URL
+    if lang not in SLUGS[key]:
+        lang = "en"
     slug = SLUGS[key][lang]
     prefix = "/" if lang == "en" else f"/{lang}/"
     return prefix if slug == "" else f"{prefix}{slug}/"
@@ -167,6 +175,62 @@ def load_module(name):
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod
+
+
+def md_to_html(md):
+    """Convert the subset of markdown used in the guides to flowing HTML."""
+    out, lines, i = [], md.split("\n"), 0
+    list_open = None
+
+    def close_list():
+        nonlocal list_open
+        if list_open:
+            out.append(f"</{list_open}>")
+            list_open = None
+
+    def inline(s):
+        s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+        s = re.sub(r"(?<!\w)\*(?!\s)(.+?)(?<!\s)\*(?!\w)", r"<em>\1</em>", s)
+        s = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', s)
+        return s
+
+    while i < len(lines):
+        ln = lines[i].rstrip()
+        if not ln.strip():
+            close_list(); i += 1; continue
+        if ln.startswith("### "):
+            close_list(); out.append(f"<h3>{inline(ln[4:])}</h3>")
+        elif ln.startswith("## "):
+            close_list(); out.append(f"<h2>{inline(ln[3:])}</h2>")
+        elif ln.startswith("# "):
+            close_list()          # page h1 comes from the page config
+        elif ln.startswith("---"):
+            close_list()
+        elif ln.startswith("- "):
+            if list_open != "ul":
+                close_list(); out.append("<ul>"); list_open = "ul"
+            out.append(f"<li>{inline(ln[2:])}</li>")
+        elif re.match(r"^\d+\.\s", ln):
+            if list_open != "ol":
+                close_list(); out.append("<ol>"); list_open = "ol"
+            item = re.sub(r"^\d+\.\s", "", ln)
+            out.append(f"<li>{inline(item)}</li>")
+        elif ln.startswith("> "):
+            close_list(); out.append(f"<blockquote>{inline(ln[2:])}</blockquote>")
+        else:
+            close_list(); out.append(f"<p>{inline(ln)}</p>")
+        i += 1
+    close_list()
+    return "\n".join(out)
+
+
+def load_guide(name):
+    """Guide body only — everything before the internal email sequence."""
+    f = ROOT / "marketing" / "leadmagnets" / f"{name}.md"
+    if not f.exists():
+        return ""
+    md = f.read_text(encoding="utf-8").split("## Email sequence")[0]
+    return md_to_html(md)
 
 
 def localize_links(html, lang):
@@ -578,6 +642,11 @@ def render_page(mods, en_mod, lang, key):
 
     body = localize_links(page["body"], lang)
     body = body.replace("{FORM}", contact_form(s))
+    if "{GUIDE:" in body:
+        for gname in re.findall(r"\{GUIDE:([A-Z-]+)\}", body):
+            body = body.replace("{GUIDE:%s}" % gname,
+                                f"<section class='section'><div class='wrap narrow guide-body'>"
+                                f"{load_guide(gname)}</div></section>")
     body = body.replace("{PLACEHOLDER_PHOTO}",
                         f"<div class='media-ph' role='img' aria-label='{s['photo_ph']}'>"
                         f"<span class='ph-ring'></span><span>{s['photo_ph']}</span></div>")
