@@ -155,6 +155,18 @@ Ignore impressions, click-through rate and follower counts. They do not pay.
 | `INSTAGRAM-PLAN.md` | 12-week social calendar, captions, hashtags |
 | `PHOTOS.md` | The production day shot list |
 | `GROWTH-ROADMAP.md` | What an agency would do beyond this |
+| `PRESS-OUTREACH-KIT.md` | 25 media targets, 10 podcasts, 5 story angles, pitch templates |
+| `ANNUAL-CALENDAR.md` | Month-by-month plan built on Belgian booking seasonality |
+| `social/posts/` | First four Instagram posts, ready to upload |
+
+## Live on the site since the last revision
+
+| URL | What it does |
+|---|---|
+| `/wedding-music-guide/` | The wedding lead magnet as a full page — earns organic traffic and captures email |
+| `/corporate-event-music-playbook/` | The same for corporate organisers |
+| `/case-studies/` | Three case studies. Two are anonymised composites and say so on the page; the Papillon residency is real |
+| `/press/` | Bios in three lengths, fact sheet, downloadable press kit and assets — makes a journalist's job easy |
 
 ---
 
