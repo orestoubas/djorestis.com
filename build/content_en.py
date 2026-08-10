@@ -339,6 +339,7 @@ PAGES = {
     <h2>Planning a company event?</h2>
     <p>Send the date, venue and headcount — you'll receive a clear proposal, usually within 48 hours.</p>
     <a class="btn btn-gold" href="{link:contact}">Request a corporate quote</a>
+    <p class="muted" style="margin-top:18px">Planning it yourself first? Read the free <a href="{link:corporateguide}">corporate event music playbook</a>, or see a <a href="/case-studies/corporate-year-end-reception-brussels/">year-end reception case study</a>.</p>
   </div>
 </section>
 """,
@@ -403,6 +404,7 @@ PAGES = {
     <h2>Getting married?</h2>
     <p>Tell me your date and your venue — I'll tell you honestly if I'm the right DJ for your wedding.</p>
     <a class="btn btn-gold" href="{link:contact}">Check my availability</a>
+    <p class="muted" style="margin-top:18px">Still planning? The free <a href="{link:weddingguide}">wedding music planning guide</a> covers the timeline, and this <a href="/case-studies/greek-belgian-wedding-two-families/">Greek-Belgian wedding case study</a> shows how a mixed room works.</p>
   </div>
 </section>
 """,
@@ -640,6 +642,7 @@ PAGES = {
     <h2>Run a restaurant, bar or hotel in Brussels?</h2>
     <p>Let's talk about a pilot night — one evening, clear numbers, no long-term commitment.</p>
     <a class="btn btn-gold" href="{link:contact}">Propose a pilot night</a>
+    <p class="muted" style="margin-top:18px">See how one worked in practice: the <a href="/case-studies/papillon-schuman-greek-night-residency/">four-year Papillon Schuman residency</a>.</p>
   </div>
 </section>
 """,

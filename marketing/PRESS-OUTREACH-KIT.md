@@ -213,3 +213,164 @@ Order of operations:
 
 **Totals: 25 outlets listed** (a handful are listings/organisational channels rather than editorial desks — the editorial targets number 20).
 
+---
+
+## 2. Podcasts and radio
+
+Audio is the most winnable media in this document. Shows need guests every single week, and almost nobody pitches them properly. A 40-minute conversation also gives you a permanent, embeddable asset for the press page.
+
+**1. Radio Alma 101.9 FM (Brussels) — realistic (best audio target)**
+- *What:* Brussels multicultural community radio, broadcasting since the late 1970s in French, Spanish, Italian, Portuguese **and Greek**, with an explicit mission to promote the cultural identity of Brussels' Hellenic and other communities.
+- *Language:* French / Greek
+- *URL:* https://radioalma.eu — regulator listing: https://www.csa.be/service/radio-alma/ — based at the Maison des Cultures de Saint-Gilles, Rue de Belgrade 120, Brussels; tel. 02 345 26 56
+- *How to pitch:* identify the Greek-language programme in the blog/show list on radioalma.eu and contact that show directly through its page; the station switchboard is the fallback. Offer both an interview *and* a one-hour guest mix — community stations rarely turn down free, good, rights-cleared music with a host who can talk.
+- *Why it's first:* it is the one outlet in Belgium that is simultaneously Greek-facing, Brussels-facing and structurally hungry for contributors.
+
+**2. Kiosk Radio (Brussels) — realistic**
+- *What:* the Brussels web radio broadcasting 24/7 from a wooden kiosk in the Parc Royal since 2017; live DJ sets, pre-recorded shows and conversations, deliberately genre-fluid — jazz to experimental, ambient to hip hop, rock to electronic.
+- *Language:* English / French
+- *URL:* https://www.kioskradio.com — about: https://www.kioskradio.com/about — schedule: https://www.kioskradio.com/schedule
+- *How to pitch:* the only address surfaced publicly is `volunteers@kioskradio.com`, which is for volunteering, not bookings — check the site and Instagram for the current bookings contact before sending. Pitch a **concept show**, never "can I play". A recurring Greek-and-Mediterranean-diaspora selection — rebetiko into modern Greek electronic into Afro and Latin — is exactly their editorial fluidity.
+- *Reality check:* Kiosk is a tastemaker slot, not a commercial one. It builds credibility with the Brussels music scene, not bookings.
+
+**3. Radio Panik 105.4 FM (Brussels) — realistic**
+- *What:* Brussels community radio since 1983, French-language, alternative music and social discourse, wide genre range from electronic to hip-hop.
+- *Language:* French
+- *URL:* https://www.radiopanik.org — Rue Saint-Josse 49, 1210 Brussels; `info@radiopanik.org`
+- *How to pitch:* Panik is organised around independent shows, so pitch a *show*, not the station. Browse the programme list, find the two or three shows about migration, diaspora culture or electronic music, and write to them individually via their pages. `info@radiopanik.org` only as a last resort.
+
+**4. BRUZZ Radio 98.8 FM — ambitious**
+- *What:* the radio arm of BRUZZ, the Brussels media brand; city talk and music.
+- *Language:* Dutch
+- *URL:* https://www.bruzz.be
+- *How to pitch:* through the same BRUZZ editorial channels (`redactie@bruzz.be`, `muziekredactie@bruzz.be`). Realistically this comes *after* a BRUZZ article, as the follow-on. Ask for it in the thank-you email after any print/web piece runs.
+
+**5. Ellwed Talks — realistic (strongest podcast fit)**
+- *What:* the podcast from Ellwed Magazine, the destination-weddings-in-Greece publication; the host interviews wedding professionals about weddings and Greek culture.
+- *Language:* English
+- *URL:* https://ellwed.com/podcast/ — also on Apple Podcasts and Spotify
+- *How to pitch:* the podcast page carries guest information; use the site's contact route. Your angle is the inverse of their usual guest: not "a Greek wedding in Greece" but **"a Greek wedding outside Greece"** — how diaspora couples in Brussels build a Greek wedding 2,000km from Greece, and what the music has to do.
+- *Why it fits:* a Greek wedding podcast that talks to suppliers, and you are a Greek wedding supplier with a story they have not had on the show. This is the single most natural fit in the list.
+
+**6. Greece Chats (Tony Kariotis) — ambitious**
+- *What:* Greek culture, travel, diaspora and identity; interviews with "people doing cool things in the Greek world". Mostly English.
+- *URL:* https://www.getgreece.com/greece-chats-podcast
+- *How to pitch:* via the site's contact page. Lead with the Mykonos-seasons material — that is travel-adjacent and squarely his subject.
+
+**7. The Greek Podyssey — ambitious**
+- *What:* diaspora-focused podcast on Greek heritage, identity and life abroad, hosted from Australia; launched 2025.
+- *URL:* https://podcasts.apple.com/us/podcast/the-greek-podyssey/id1820074040 — coverage: https://greekcitytimes.com/2025/06/19/the-greek-podyssey-podcast-launches/
+- *How to pitch:* via their podcast/social contact. Your value to them is a **European** diaspora perspective, which an Australia-centred show is short of.
+
+**8. Ouzo Talk — long shot**
+- *What:* established Greek-Australian podcast on culture, history, music and diaspora identity.
+- *URL:* https://www.buzzsprout.com/1873222
+- *How to pitch:* via Buzzsprout/site contact. Big, established, Australia-focused. Pitch once, with the European-diaspora contrast as the hook, and move on.
+
+**9. Brussels expat podcasts — realistic / ambitious (check they are still active first)**
+- *What:* several Brussels/EU-bubble shows interview people who have made a life in the city: **Brussels Unplugged** (monthly guest format), **More From Brussels** (expat perspectives on the city), **Brussels Bubble Tea** (life in the EU bubble, produced by a consultancy).
+- *URL:* discovery via https://podcast.feedspot.com/brussels_podcasts/ and https://podcasts.apple.com/us/podcast/more-from-brussels/id541911127
+- *How to pitch:* each show's own contact route. **Verify the feed has an episode in the last six months before pitching** — several Brussels podcasts are dormant, and pitching a dead show wastes a week.
+- *Why they fit:* the "what Brussels looks like from the DJ booth" angle is a very easy yes for a conversational city podcast, and the audience is your exact customer.
+
+**10. Wedding-business podcasts (Evolve Your Wedding Business, The Wedding Business Podcast, and similar) — ambitious**
+- *What:* long-running shows for wedding professionals, featuring planners, venues, photographers and DJs.
+- *URL:* https://evolveyourweddingbusiness.com/the-podcast · https://podcasts.apple.com/gb/podcast/the-wedding-business-podcast/id1505339525 · directory: https://podcast.feedspot.com/wedding_podcasts/
+- *How to pitch:* each show's guest form. These are heavily US/UK-centric and heavily pitched, so your only differentiator is the thing they cannot get at home: **the multilingual European wedding** — four languages in one room, three cultures on one dancefloor.
+- *Reality check:* good for peer credibility and links, close to zero direct booking value.
+
+**Totals: 10 audio targets** (4 Brussels radio, 3 Greek/diaspora, 1 wedding-Greek crossover, plus the Brussels expat podcast cluster and the wedding-trade podcast cluster).
+
+---
+
+## 3. The story angles
+
+This is the core of the kit. Every failed DJ pitch fails the same way: it announces a service. Editors do not publish services. They publish **stories about how a city works**, and you happen to have five good ones.
+
+Rules that apply to all five:
+- The subject of the story is never "DJ Orestis". It is a community, a craft, a city, a tradition. You are the way in.
+- Never name corporate clients publicly. Say "international organisations and companies headquartered in Brussels" — it is accurate, it sounds bigger, and it keeps you hireable.
+- Every angle must survive the question *"why now, and why you?"* Have a one-sentence answer before you send anything.
+
+---
+
+### Angle 1 — "The Greek dancefloor is how a diaspora stays a community"
+
+**Headline:** *Where Brussels' Greeks go to remember they're Greek*
+
+**Pitch summary (2–3 sentences):** Around 35,000 Greeks live in Belgium, the largest Greek community in the consular region, but the community's real gathering place isn't an institution — it's a dancefloor. For nine years, Orestis Vasileiadis has been the DJ at those nights, in Brussels and increasingly in Vienna, Leuven and Lille, and he can trace how the music has changed as the community changed: older migrant families, then EU-institution professionals, then the post-2010 crisis generation, all in the same room asking for different songs.
+
+**Why a journalist would care:** it converts a demographic fact into a scene they can photograph. Diaspora stories are usually told through food or church; telling one through nightlife is fresher and visually better. It also has a natural conflict built in — three generations with three different ideas of what "Greek music" means — which is what makes it an article rather than a listing.
+
+**Which outlets:** BRUZZ (top target), BX1, The Brussels Times features, Greek City Times, Bruxelles Secrète, GreekReporter, Hellenic Community of Brussels channels, Radio Alma.
+
+**Peg:** the Brussels Greek Food Festival, Greek Independence Day (25 March), Easter, or a Sounds Greek Events date.
+
+---
+
+### Angle 2 — "Three summers in Mykonos taught me to read a room in ninety seconds"
+
+**Headline:** *What Mykonos teaches you about crowds — and what Brussels does to that knowledge*
+
+**Pitch summary:** Three seasons in Mykonos nightlife is an education in reading strangers: a room that turns over every 48 hours, a dozen nationalities, no shared language, and a booth where you have about ninety seconds to work out what this particular crowd is. Six years later in Brussels — a city of exactly that same mixture but with people who live here — Orestis argues the skill transferred, and that most of what event planners believe about "playlists" is wrong.
+
+**Why a journalist would care:** it is a craft story, and craft stories travel. Everyone has an opinion about music at events and almost nobody has heard from the person actually making the decisions. It contains a genuine, quotable claim — that the playlist is the wrong unit of thought — that gives an editor a headline. And Mykonos is a magnet word: it earns attention that "Brussels DJ" does not.
+
+**Why now:** wedding and event season planning, or the summer travel news cycle.
+
+**Which outlets:** The Brussels Times, The Bulletin, Together Magazine, Experience Magazine / eventnews.be, Kongres Magazine, Greece Chats, Ellwed Talks, wedding-business podcasts.
+
+---
+
+### Angle 3 — "A four-year residency is a business relationship, not a gig"
+
+**Headline:** *How a Brussels restaurant builds a Saturday night that lasts four years*
+
+**Pitch summary:** Most restaurant music is decoration; some of it is infrastructure. Papillon Schuman has kept the same DJ for four years, and that longevity is the story: how a residency actually gets built, what a restaurant is really buying when it hires a DJ, how you read a room where people are eating rather than dancing, and why volume, not taste, is the thing that ends most residencies.
+
+**Why a journalist would care:** hospitality-business journalism is perpetually short of concrete operational stories, and this one has numbers, a named venue, and a counterintuitive core (the DJ's job in a restaurant is restraint). Food media in particular is saturated with chef profiles and starved of stories about the rest of the room.
+
+**Which outlets:** Brussels' Kitchen (make the venue the subject), BRUZZ, The Bulletin, Experience Magazine / eventnews.be, Together Magazine.
+
+**Requirement before pitching:** get Papillon Schuman's explicit agreement to be named and quoted. A venue voice in the pitch roughly doubles its chance of being commissioned — and pitching a venue without asking will cost you the residency's goodwill.
+
+---
+
+### Angle 4 — "The multicultural wedding is the truest picture of modern Brussels"
+
+**Headline:** *Four languages, one dancefloor: what Brussels weddings say about the city*
+
+**Pitch summary:** A typical Brussels wedding now puts a Greek family, a Belgian family and a room of colleagues from ten countries in front of the same speakers, and someone has to make that work in real time. Orestis works these rooms in Greek, English, French and Dutch, and the sequencing problem — when to play the Greek set, how to bring in the Congolese and Latin sides of a Brussels crowd, what actually unites a room that shares no first language — is a portrait of the city in miniature.
+
+**Why a journalist would care:** "Brussels is the second-most international city in the world" is a cliché; this makes it concrete and human at 11pm on a Saturday. Weddings guarantee emotion, photographs and real people willing to be quoted. It is also evergreen — no news peg needed — which makes it the easiest thing for an editor to slot into a quiet week.
+
+**Which outlets:** The Brussels Times features, BRUZZ, BX1, Bruid & Bruidegom (as a real-wedding submission with the couple's permission), Together Magazine, Ellwed Talks, Brussels expat podcasts.
+
+**Asset needed:** one couple willing to be named and photographed. Ask past clients now, before you pitch — a signed-off couple turns this from an idea into a commissionable piece.
+
+---
+
+### Angle 5 — "Playing free for your own people"
+
+**Headline:** *The DJ who doesn't charge his own community*
+
+**Pitch summary:** Orestis plays paid corporate and wedding work all year, and then plays free for the Brussels Greek Community, Dames Hellènes and Hellenic United Women. He is explicit about why: a diaspora's cultural life runs on volunteer labour, and if the people who can do the work charge for it, the events simply stop happening. It is also, he'd argue, not charity — the community made him a DJ before any client did.
+
+**Why a journalist would care:** it is the one angle with a moral question in it, which is what turns a profile into a piece with an argument. It also inverts the expected story — the freelancer who protects his rates but gives away the work that matters most — and pro bono cultural labour in migrant communities is genuinely under-reported. Women's organisations in the mix give it a second door into social and community desks.
+
+**Which outlets:** Moustique, The Brussels Times, BX1, Greek City Times, GreekReporter, Hellenic Community of Brussels channels, Radio Alma, Radio Panik.
+
+**Handle with care:** pitch it as *how community culture gets funded*, never as *look how generous I am*. If it reads as self-congratulation it will be deleted, and rightly. Let the organisations speak — line up a quote from one of them before you pitch.
+
+---
+
+### Which angle to lead with
+
+| Season | Lead angle | Primary targets |
+|---|---|---|
+| Jan–Mar | Angle 4 (multicultural wedding) | wedding + expat media, ahead of booking season |
+| Mar–May | Angle 1 (diaspora dancefloor) | BRUZZ, BX1, Greek diaspora media — peg to 25 March / Easter / festival |
+| Jun–Aug | Angle 2 (Mykonos) | expat, travel-adjacent, podcasts |
+| Sep–Nov | Angle 3 (residency) | food and event-trade media |
+| Any time | Angle 5 (pro bono) | society and community desks — evergreen, no peg needed |
+
