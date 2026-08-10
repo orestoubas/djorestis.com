@@ -133,6 +133,7 @@ SLUGS = {
     "corporateguide": {"en": "corporate-event-music-playbook"},
 }
 GUIDE_KEYS = ["weddingguide", "corporateguide"]
+CASES_PATH = "/case-studies/"
 NAV_KEYS = ["about", "services", "music", "events", "blog", "contact"]
 SERVICE_KEYS = ["corporate", "wedding", "greek", "party", "fullpackage", "restaurant", "mykonos"]
 
@@ -145,6 +146,8 @@ BLOG_PATH = "/blog/"   # English (kept for existing call sites)
 
 
 def url_path(key, lang):
+    if key == "cases":
+        return CASES_PATH
     if key == "blog":
         return blog_path(lang)
     # English-only pages (guides) have no localised slug — fall back to the EN URL
@@ -447,6 +450,8 @@ def contact_form(s):
 
 
 def nav_label(mod, en_mod, key):
+    if key == "cases":
+        return "Case studies"
     if key == "blog":
         return mod.STRINGS["nav"].get("blog", "Blog")
     return mod.STRINGS["nav"].get(key) or en_mod.STRINGS["nav"].get(key, key)
@@ -692,6 +697,60 @@ def render_page(mods, en_mod, lang, key):
                       hero_html=hero_html, body=body, schemas=schemas, lang=lang)
 
 
+def case_html(c):
+    q = ""
+    if c["quote"]:
+        q = (f"<figure class='quote case-quote'><blockquote>{c['quote']}</blockquote>"
+             f"<figcaption>{c['quote_by']}</figcaption></figure>")
+    facts = [("Client", c["client"]), ("Event", c["event_type"]),
+             ("Guests", c["guests"]), ("Location", c["location"]), ("Services", c["services"])]
+    rows = "".join(f"<div class='fact'><dt>{k}</dt><dd>{v}</dd></div>" for k, v in facts)
+    return f"""<section class='section alt'><div class='wrap narrow'>
+  <dl class='fact-grid'>{rows}</dl></div></section>
+<section class='section'><div class='wrap narrow guide-body'>
+  <h2>The brief</h2>{c['challenge']}
+  <h2>What I did</h2>{c['approach']}
+  <h2>What happened</h2>{c['outcome']}
+  {q}
+</div></section>"""
+
+
+def render_case(mods, en_mod, c):
+    s = en_mod.STRINGS
+    path = CASES_PATH + c["slug"] + "/"
+    body = localize_links(case_html(c), "en")
+    body += (f"<section class='section cta-band'><div class='wrap center'>"
+             f"<h2>Planning something similar?</h2>"
+             f"<a class='btn btn-gold' href=\"{url_path('contact','en')}\">{s['cta_quote']}</a>"
+             f"<p style='margin-top:22px'><a href='{CASES_PATH}'>← All case studies</a></p></div></section>")
+    hero = (f"<section class='hero'><div class='wrap'><p class='kicker'>Case study</p>"
+            f"<h1>{c['h1']}</h1><p class='hero-sub'>{c['sub']}</p></div></section>")
+    return page_shell(mods["en"], en_mod, mods, key="cases", title=c["title"] + " | DJ Orestis",
+                      desc=c["desc"], canonical=BASE_URL + path, hreflang="", robots=None,
+                      hero_html=hero, body=body,
+                      schemas=[breadcrumb_jsonld(mods["en"], "cases", "en", c["title"])], lang="en")
+
+
+def render_cases_index(mods, en_mod, cases):
+    s = en_mod.STRINGS
+    cards = "".join(
+        f"<a class='card post-card' href='{CASES_PATH}{c['slug']}/'>"
+        f"<p class='post-meta'>{c['event_type']} · {c['location']}</p>"
+        f"<h3>{c['title'].replace('Case Study: ','')}</h3><p>{c['desc']}</p>"
+        f"<span class='card-more'>Read the case study →</span></a>" for c in cases)
+    body = (f"<section class='section'><div class='wrap'><div class='card-grid posts'>{cards}</div></div></section>"
+            f"<section class='section cta-band'><div class='wrap center'><h2>Planning something similar?</h2>"
+            f"<a class='btn btn-gold' href=\"{url_path('contact','en')}\">{s['cta_quote']}</a></div></section>")
+    hero = ("<section class='hero'><div class='wrap'><p class='kicker'>Case studies</p>"
+            "<h1>How the <span class='gold'>night actually went</span></h1>"
+            "<p class='hero-sub'>Three events in detail — the brief, the decisions, and what happened on the floor.</p></div></section>")
+    return page_shell(mods["en"], en_mod, mods, key="cases",
+                      title="Case Studies — Corporate, Wedding & Residency | DJ Orestis",
+                      desc="Three DJ Orestis case studies in detail: a Brussels corporate year-end reception, a Greek-Belgian wedding, and a four-year restaurant residency.",
+                      canonical=BASE_URL + CASES_PATH, hreflang="", robots=None,
+                      hero_html=hero, body=body, schemas=[], lang="en")
+
+
 def render_blog_index(mods, en_mod, posts, lang='en'):
     mod = mods[lang]
     s = mod.STRINGS
@@ -769,6 +828,16 @@ def main():
             write_page(url_path(key, lg), render_page(mods, en_mod, lg, key))
             urls.append((BASE_URL + url_path(key, lg), None))
     print(f"  wrote {len(urls)} pages ({', '.join(mods.keys())})")
+
+    # ------------------------------------------------------------------ case studies
+    cs = load_module("case_studies")
+    if cs and getattr(cs, "CASES", None):
+        for c in cs.CASES:
+            write_page(CASES_PATH + c["slug"] + "/", render_case(mods, en_mod, c))
+            urls.append((BASE_URL + CASES_PATH + c["slug"] + "/", None))
+        write_page(CASES_PATH, render_cases_index(mods, en_mod, cs.CASES))
+        urls.append((BASE_URL + CASES_PATH, None))
+        print(f"  wrote case studies: index + {len(cs.CASES)}")
 
     # ------------------------------------------------------------------ blog
     # English lives in blog_events/blog_guides; translations in *_<lang>.py
