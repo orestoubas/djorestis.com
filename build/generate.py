@@ -131,6 +131,7 @@ SLUGS = {
     # Long-form guides — English only, doubling as lead magnets
     "weddingguide":   {"en": "wedding-music-guide"},
     "corporateguide": {"en": "corporate-event-music-playbook"},
+    "press":          {"en": "press"},
 }
 GUIDE_KEYS = ["weddingguide", "corporateguide"]
 CASES_PATH = "/case-studies/"
@@ -452,7 +453,7 @@ def contact_form(s):
 def nav_label(mod, en_mod, key):
     if key == "cases":
         return "Case studies"
-    if key in ("weddingguide", "corporateguide"):
+    if key in ("weddingguide", "corporateguide", "press"):
         return en_mod.STRINGS["nav"][key]
     if key == "blog":
         return mod.STRINGS["nav"].get("blog", "Blog")
@@ -542,7 +543,7 @@ def page_shell(mod, en_mod, mods, *, key, title, desc, canonical, hreflang, robo
     )
     explore_links = "".join(
         f'<li><a href="{url_path(k, lang)}">{nav_label(mod, en_mod, k)}</a></li>'
-        for k in ["about", "music", "events", "cases", "weddingguide", "corporateguide", "privacy"]
+        for k in ["about", "music", "events", "cases", "weddingguide", "corporateguide", "press", "privacy"]
     )
 
     jsonld = "\n  ".join(

@@ -66,6 +66,7 @@ STRINGS = {
         "blog": "Blog",
         "weddingguide": "Wedding music guide",
         "corporateguide": "Corporate music playbook",
+        "press": "Press & media",
         "music": "Music",
         "events": "Past events",
         "contact": "Contact",
@@ -875,6 +876,82 @@ PAGES = {
     <h2>Planning a company event?</h2>
     <p>Send the date, venue and headcount — you'll get a clear proposal, usually within 48 hours.</p>
     <a class="btn btn-gold" href="{link:contact}">Request a proposal</a>
+  </div>
+</section>
+""",
+    },
+
+
+    # ---------------------------------------------------------------- PRESS
+    "press": {
+        "title": "Press & Media — DJ Orestis | Brussels DJ Press Kit",
+        "desc": "Press resources for DJ Orestis: biographies in three lengths, a downloadable press kit, brand assets, fact sheet and direct media contact.",
+        "kicker": "For journalists &amp; editors",
+        "h1": "Press &amp; <span class='gold'>media</span>",
+        "sub": "Everything you need to write about DJ Orestis, ready to copy. For interviews, comment or assets, email info@djorestis.com.",
+        "body": """
+<section class="section">
+  <div class="wrap narrow guide-body">
+    <h2>Biographies</h2>
+    <p class="muted">Copy whichever length fits. No approval needed.</p>
+
+    <h3>Short — 51 words</h3>
+    <blockquote>DJ Orestis (Orestis Vasileiadis) is a Brussels-based Greek DJ with nine years behind the decks — three seasons in Mykonos nightlife, six in Brussels. He holds a four-year residency at Papillon Schuman, has twice been host DJ of the Brussels Greek Food Festival, and plays Greek, electronic, Afro, Latin and RnB.</blockquote>
+
+    <h3>Medium — 98 words</h3>
+    <blockquote>DJ Orestis (Orestis Vasileiadis) is a Brussels-based Greek DJ with nine years of professional experience: three seasons in Mykonos nightlife, followed by six years in Brussels. He holds a four-year residency at Papillon Schuman and has twice been host DJ of the Brussels Greek Food Festival. He works across weddings, private celebrations and corporate events for international organisations based in the city, and co-founded Sounds Greek Events. He plays regularly for Greek communities in Brussels, Vienna, Leuven and Lille. His sets move between Greek, electronic, Afro, Latin and RnB, and he works in Greek, English, French and Dutch.</blockquote>
+
+    <h3>Long — 199 words</h3>
+    <blockquote>Orestis Vasileiadis — DJ Orestis — is a Greek DJ based in Brussels, with nine years behind the decks. He learned the job in Mykonos, playing three seasons in one of the most demanding nightlife environments in Europe, where a room turns over every few days and no two crowds share a language. He has spent the six years since in Brussels, a city with the same mixture of nationalities but people who stay — and where the skill is not surprising a crowd but holding one together. He holds a four-year residency at Papillon Schuman, has twice been the host DJ of the Brussels Greek Food Festival, and plays weddings, private celebrations and corporate events for international organisations headquartered in the city. He is a co-founder of Sounds Greek Events. Alongside the paid work, he plays regularly for Greek communities across Europe — Brussels, Vienna, Leuven and Lille — and performs pro bono for the Brussels Greek Community, Dames Hellènes and Hellenic United Women, on the principle that diaspora cultural life runs on volunteer labour and stops when nobody volunteers. His sets move between Greek, electronic, Afro, Latin and RnB. He works in Greek, English, French and Dutch.</blockquote>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap narrow">
+    <h2>Fact sheet</h2>
+    <dl class="fact-grid">
+      <div class="fact"><dt>Name</dt><dd>Orestis Vasileiadis — DJ Orestis</dd></div>
+      <div class="fact"><dt>Based</dt><dd>Brussels, Belgium</dd></div>
+      <div class="fact"><dt>Experience</dt><dd>9 years — 3 seasons Mykonos, 6 years Brussels</dd></div>
+      <div class="fact"><dt>Residency</dt><dd>Papillon Schuman, Brussels — 4th year</dd></div>
+      <div class="fact"><dt>Genres</dt><dd>Greek, electronic, Afro, Latin, RnB</dd></div>
+      <div class="fact"><dt>Languages</dt><dd>Greek, English, French, Dutch</dd></div>
+      <div class="fact"><dt>Also</dt><dd>Co-founder, Sounds Greek Events</dd></div>
+      <div class="fact"><dt>Media contact</dt><dd><a href="mailto:info@djorestis.com">info@djorestis.com</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow guide-body">
+    <h2>Assets</h2>
+    <ul>
+      <li><a href="/assets/press/djorestis-presskit.pdf">Press kit (PDF, one page)</a></li>
+      <li><a href="/assets/branding/concept-2.svg">Logo — full wordmark (SVG)</a></li>
+      <li><a href="/assets/branding/favicon.svg">Logo — monogram (SVG)</a></li>
+      <li><a href="/assets/og-image.png">Brand image (PNG, 1200×630)</a></li>
+    </ul>
+    <p class="muted">Performance photography available on request — email and I will send high-resolution files with usage cleared.</p>
+
+    <h2>Story angles</h2>
+    <p>Happy to talk about any of these, on the record:</p>
+    <ul>
+      <li><strong>Greek diaspora nightlife in Brussels</strong> — how a community keeps its culture through music, and what happens on the floor when it works.</li>
+      <li><strong>Reading a crowd</strong> — what three seasons in Mykonos nightlife teaches you, and how that translates to a Brussels corporate reception.</li>
+      <li><strong>Building a four-year residency</strong> — what it takes to make one night of the week belong to a venue.</li>
+      <li><strong>The multicultural wedding</strong> — four languages on one dance floor, and what that says about the city.</li>
+      <li><strong>Playing for free</strong> — why community events get the same set as paying clients.</li>
+    </ul>
+
+    <h2>Availability for comment</h2>
+    <p>Available as an expert source on wedding and event music, the Brussels nightlife and events industry, Greek music and diaspora culture, and what event suppliers actually cost in Belgium. Comment in Greek, English, French or Dutch.</p>
+  </div>
+</section>
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Media enquiries</h2>
+    <p>Email <a href="mailto:info@djorestis.com">info@djorestis.com</a> — I answer quickly and I am comfortable on short deadlines.</p>
   </div>
 </section>
 """,
