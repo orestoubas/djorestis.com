@@ -374,3 +374,260 @@ Rules that apply to all five:
 | Sep–Nov | Angle 3 (residency) | food and event-trade media |
 | Any time | Angle 5 (pro bono) | society and community desks — evergreen, no peg needed |
 
+---
+
+## 4. Pitch email templates
+
+**Rules that apply to every one of these:**
+- **No attachments on first contact.** Ever. Attachments trigger spam filters and irritate editors. Link to `djorestis.com/press/` instead.
+- One ask per email. Not two.
+- Subject lines are lower-stakes than you think and higher-stakes than you act — describe the story, don't tease it.
+- Send from `info@djorestis.com`, plain text, no HTML signature block with logos, no tracking pixels.
+- Replace every `[bracket]` before sending. A pitch with a leftover bracket is an instant delete.
+- Send Tuesday–Thursday, 08:00–10:00 CET. Not Friday afternoon, not Monday morning.
+
+---
+
+### 4.1 Cold pitch to a features editor (English) — 157 words
+
+> **Subject:** Story idea: how Brussels' Greek community uses nightlife to stay a community
+>
+> Dear [Outlet] features desk,
+>
+> Around 35,000 Greeks live in Belgium, the largest Greek community in this consular region. Its most reliable meeting place isn't an institution — it's a dancefloor.
+>
+> I'm Orestis Vasileiadis, a Greek DJ in Brussels. For nine years I've played the nights where that community gathers — here, and increasingly in Vienna, Leuven and Lille. From the booth you can watch the community change: older migrant families, EU-institution professionals, and the generation that left after 2010, all in one room, all asking for different songs. I also play these events free for the Brussels Greek Community, Dames Hellènes and Hellenic United Women, because otherwise many of them wouldn't happen.
+>
+> Would this work as a feature for [Outlet]? I can introduce you to the community organisers, and the next event is [date] at [venue] if you'd like to see it.
+>
+> Background, photos and a fact sheet: djorestis.com/press
+>
+> Best regards,
+> Orestis Vasileiadis · info@djorestis.com · [phone]
+
+---
+
+### 4.2 The same pitch in French — 173 words
+
+> **Objet :** Proposition de sujet : la communauté grecque de Bruxelles se retrouve sur la piste de danse
+>
+> Bonjour,
+>
+> Environ 35 000 Grecs vivent en Belgique — la plus grande communauté grecque de la région consulaire. Son véritable lieu de rassemblement n'est pas une institution : c'est une piste de danse.
+>
+> Je m'appelle Orestis Vasileiadis, DJ grec établi à Bruxelles. Depuis neuf ans, je joue lors des soirées où cette communauté se retrouve, à Bruxelles mais aussi à Vienne, Louvain et Lille. Depuis la cabine, on voit la communauté changer : les familles issues de l'immigration, les professionnels des institutions européennes, et la génération partie après 2010 — dans la même salle, avec trois idées différentes de ce qu'est « la musique grecque ».
+>
+> Je joue également bénévolement pour la Communauté hellénique de Bruxelles, les Dames Hellènes et Hellenic United Women, sans quoi une partie de ces événements n'existerait pas.
+>
+> Ce sujet pourrait-il intéresser [média] ? Je peux vous mettre en contact avec les organisateurs, et le prochain rendez-vous a lieu le [date] à [lieu].
+>
+> Dossier, photos et fiche d'information : djorestis.com/press
+>
+> Bien à vous,
+> Orestis Vasileiadis · info@djorestis.com · [téléphone]
+
+---
+
+### 4.3 Podcast / radio pitch — 157 words
+
+> **Subject:** Guest idea for [Show name]: reading a crowd, from Mykonos to Brussels
+>
+> Hi [Show name] team,
+>
+> I listened to your episode on [specific episode] — [one honest, specific sentence about it]. That's why I'm writing rather than sending this to a list.
+>
+> I'm Orestis, a Greek DJ based in Brussels. I spent three seasons in Mykonos nightlife, where the room turns over every 48 hours and you have about ninety seconds to work out who you're playing to. I've spent the six years since in Brussels doing the opposite job: weddings and community nights where a Greek family, a Belgian family and colleagues from ten countries are all in front of the same speakers, and I'm working in four languages to hold the room together.
+>
+> I'd bring: how you actually read a crowd, why the "playlist" is the wrong unit of thought, and what a diaspora dancefloor does for a community.
+>
+> Happy to record whenever suits. I can also provide an exclusive guest mix.
+>
+> djorestis.com/press
+>
+> Orestis Vasileiadis · info@djorestis.com
+
+---
+
+### 4.4 Follow-up, sent 7–10 days later — 76 words
+
+> **Subject:** Re: [exact original subject line — reply in the same thread]
+>
+> Hi [name / features desk],
+>
+> Following up once on the note below, in case it arrived in a busy week.
+>
+> One thing I should have added: [new, genuinely useful detail — a confirmed date, a community organiser who has agreed to speak, a photo you can now offer, a number].
+>
+> If it's not for you, no problem at all — a one-line "not for us" is genuinely helpful and I won't chase again.
+>
+> Best,
+> Orestis
+>
+> djorestis.com/press
+
+**Follow up once. Never twice.** The "one line and I'll stop" close is the highest-yielding sentence in this entire kit — it converts silence into a decision, and it makes you someone an editor is willing to hear from again next quarter.
+
+---
+
+### 4.5 "Expert source" note — offering commentary, not coverage — 113 words
+
+> **Subject:** Brussels DJ available as a source for wedding/event stories
+>
+> Hi [outlet] team,
+>
+> Short note, no pitch attached.
+>
+> I'm a Brussels-based DJ — nine years, three of them in Mykonos nightlife, a four-year restaurant residency here, and weddings and corporate events across Belgium. If you're ever writing about weddings, event costs, nightlife or how international Brussels actually behaves after 10pm, I'm happy to be quoted, on the record and at short notice.
+>
+> Things I can speak to concretely: what couples in Brussels actually spend on music, how a four-language room changes a night, what venues get wrong about sound, and how event music has changed since 2020.
+>
+> Fastest route to me is this address or [phone]. Background and photos: djorestis.com/press
+>
+> Best,
+> Orestis Vasileiadis
+
+**Use this one liberally.** It asks for nothing, so it is almost never resented, and journalists genuinely keep a mental list of people who answer the phone. Several of the placements you eventually get will come from this email rather than from a story pitch.
+
+---
+
+## 5. The press page — djorestis.com/press/
+
+A journalist writing about you at 16:40 on a deadline day needs four things and will abandon you if they have to email for any of them. The page's only job is to remove every reason to give up.
+
+### What the page must contain
+
+1. **Three bios**, in three lengths, as **selectable text on the page** — not in a PDF, not in an image. Editors copy and paste. Offer EN as default with FR/NL/EL versions linked, since you have the language pages already.
+2. **High-resolution photos**, downloadable individually and as one ZIP:
+   - 2–3 performance shots (in the booth, crowd visible)
+   - 1 clean portrait, neutral background
+   - 1 horizontal and 1 vertical crop of each — vertical for social, horizontal for web headers
+   - Minimum 2000px on the long edge, 300dpi versions for print
+   - **Every photo needs a caption and a photographer credit line printed next to it.** Missing credits are the most common reason a good photo doesn't get used.
+3. **Logo / wordmark** in PNG (transparent) and SVG.
+4. **A fact sheet** — a plain, scannable block: full name, base city, years active, genres, languages, residency, festivals, the kinds of clients (unnamed), organisations served pro bono, and Sounds Greek Events as co-founder. Facts, no adjectives.
+5. **Direct contact:** `info@djorestis.com` and a phone number, stated as "for press enquiries — I answer within 24 hours." Do not hide press contact behind a booking form.
+6. **The press kit PDF** (`marketing/presskit/djorestis-presskit.pdf`) linked as a secondary download, not as the primary content.
+7. **"As featured in"** — empty at first. Add every placement the day it runs. This section does more work than anything else on the page once it has three logos in it.
+8. **Two or three embedded audio/video assets** — a mix, a set clip. Journalists check that you're real.
+9. **A one-line usage permission:** "Photos and text on this page may be used freely for editorial coverage with credit to the photographer."
+
+### What NOT to put on it
+
+Pricing. Booking forms. Testimonials. Packages. A press page that tries to sell is a sales page, and journalists close sales pages.
+
+---
+
+### Bio — short version (51 words)
+
+> DJ Orestis (Orestis Vasileiadis) is a Brussels-based Greek DJ with nine years behind the decks — three seasons in Mykonos nightlife, six in Brussels. He holds a four-year residency at Papillon Schuman, has twice been host DJ of the Brussels Greek Food Festival, and plays Greek, electronic, Afro, Latin and RnB.
+
+---
+
+### Bio — medium version (98 words)
+
+> DJ Orestis (Orestis Vasileiadis) is a Brussels-based Greek DJ with nine years of professional experience: three seasons in Mykonos nightlife, followed by six years in Brussels. He holds a four-year residency at Papillon Schuman and has twice been host DJ of the Brussels Greek Food Festival. He works across weddings, private celebrations and corporate events for international organisations based in the city, and co-founded Sounds Greek Events. He plays regularly for Greek communities in Brussels, Vienna, Leuven and Lille. His sets move between Greek, electronic, Afro, Latin and RnB, and he works in Greek, English, French and Dutch.
+
+---
+
+### Bio — long version (199 words)
+
+> Orestis Vasileiadis — DJ Orestis — is a Greek DJ based in Brussels, with nine years behind the decks.
+>
+> He learned the job in Mykonos, playing three seasons in one of the most demanding nightlife environments in Europe, where a room turns over every few days and no two crowds share a language. He has spent the six years since in Brussels, a city with the same mixture of nationalities but people who stay — and where the skill is not surprising a crowd but holding one together.
+>
+> He holds a four-year residency at Papillon Schuman, has twice been the host DJ of the Brussels Greek Food Festival, and plays weddings, private celebrations and corporate events for international organisations headquartered in the city. He is a co-founder of Sounds Greek Events.
+>
+> Alongside the paid work, he plays regularly for Greek communities across Europe — Brussels, Vienna, Leuven and Lille — and performs pro bono for the Brussels Greek Community, Dames Hellènes and Hellenic United Women, on the principle that diaspora cultural life runs on volunteer labour and stops when nobody volunteers.
+>
+> His sets move between Greek, electronic, Afro, Latin and RnB. He works in Greek, English, French and Dutch.
+
+---
+
+## 6. Realistic expectations and cadence
+
+### The honest numbers
+
+Cold media pitching by an individual with no PR representation and no news event converts at roughly **2–5%**. Warm pitching — where you have read the outlet, matched the angle, and addressed a real desk — gets to **maybe 10%**. Podcasts run higher, often **15–25%**, because they have airtime to fill every week.
+
+So: **100 well-made pitches over a year should produce somewhere between 3 and 10 pieces of coverage.** If you get more, something is going unusually well. If you get zero after 40 genuinely good pitches, the problem is the angle, not the effort — change the angle, not the volume.
+
+### The weekly routine (3–5 hours)
+
+| When | Time | What |
+|---|---|---|
+| Mon | 30 min | Read the week's BRUZZ, Brussels Times and BX1 culture output. This is research, not procrastination — it tells you who is writing what. |
+| Tue | 60–90 min | Send **3–5 pitches**. New outlets only. Tailor each one; if you can't say why *this* outlet, don't send it. |
+| Wed | 30 min | Send follow-ups due today (day 7–10 on anything from last week). One each, then close it out. |
+| Thu | 30–60 min | Podcast pitches, or asset work — photos, press page updates, a mix. |
+| Fri | 15 min | Update the tracker. Log every send, reply, and outcome. |
+
+That is 3–4 hours. Leave the fifth hour unspent; you will need it the week something actually lands.
+
+### The tracker
+
+A single spreadsheet, seven columns: **Outlet · Contact used · Angle · Date sent · Follow-up due · Reply · Outcome.** Free, five minutes a week, and it is the only thing standing between you and pitching the same editor the same story twice — which is the fastest way to get filtered.
+
+### What a good first year looks like
+
+- **Months 1–2:** press page live. 20–25 pitches sent. Probably one reply, possibly none. This is the hardest stretch and the one where most people quit.
+- **Months 3–5:** first placement. Realistically it is a Greek diaspora outlet, a community channel, or a podcast — not a national newspaper. Take it, publish it on the press page immediately, and use it in every subsequent pitch.
+- **Months 6–8:** second and third placements, and the tone of replies changes. "Here's my idea" becomes "here's my idea, and here's where else it's run."
+- **Months 9–12:** one genuinely good one — BRUZZ, BX1 or The Brussels Times — plus a podcast or two, plus a trade byline. Two to three inbound press enquiries you didn't chase.
+
+**Success in year one is 3–5 placements, one of them substantial, and a press page that makes year two easy.** Not virality. Not a national TV segment.
+
+### Converting one placement into more
+
+Every placement is ammunition. The day one runs:
+
+1. **Add it to the press page** under "As featured in", with the outlet logo and a link. Same day.
+2. **Thank the journalist by email** — short, specific, no ask. Then offer yourself as a source for anything future (Section 4.5). Journalists move outlets constantly and take their contacts with them; this one email is why you will still have a contact at their next job.
+3. **Use it as the first line of the next pitch:** "BRUZZ covered the Greek nights in Brussels last month; the wedding side of this hasn't been written about." Editors are reassured by other editors.
+4. **Escalate deliberately:** community outlet → city media → national/podcast. Never pitch the same angle to two competing outlets at once; do pitch different angles to the same outlet a few months apart.
+5. **Ask for the radio follow-on.** After a BRUZZ article, ask BRUZZ Radio. After a podcast, ask for the guest mix. The second yes from the same organisation is far cheaper than a first yes from a new one.
+6. **Ask the journalist who else covers this.** One sentence, high hit rate, and the referral is worth more than any media database.
+
+---
+
+## 7. What not to do
+
+Each of these will either get your email deleted or get your address quietly filtered. The filtered version is worse, because it is silent and permanent.
+
+**Never mass-email.** No BCC lists, no mail merge, no "Dear Editor" to forty outlets. Editors talk to each other and can spot a blast instantly. One bad blast can close a city-sized market for you.
+
+**Never attach anything to a first email.** No PDFs, no photo bundles, no mixes as files. Link to `djorestis.com/press/`. Attachments look like spam and often are treated as such.
+
+**Never send a press release about yourself.** "DJ Orestis announces availability for the 2026 season" is not news, and sending it tells an editor you don't know what news is. Send a story idea in your own voice instead.
+
+**Never pitch a service.** "I'm a wedding DJ in Brussels, would you like to feature me?" is the single most common failure mode. The answer is always no. Pitch the *story* the service sits inside.
+
+**Never name your corporate clients publicly.** It breaks confidentiality, it will lose you the client, and it will lose you the next one. "International organisations headquartered in Brussels" says everything you need.
+
+**Never chase more than once.** One follow-up at day 7–10, then stop. A third email marks you as someone to avoid, permanently, for a story that was never going to run.
+
+**Never fake a relationship.** Do not open with "as a longtime reader" unless it's true, and never claim to have listened to an episode you haven't. Journalists test this with one question and the whole pitch collapses.
+
+**Never invent or guess a contact address.** A guessed `firstname.lastname@` that bounces is a wasted shot; one that lands on the wrong person marks you as careless. Use the published desk address, or find the right person properly.
+
+**Never argue with a rejection**, and never ask why. "Not for us" is a gift — it frees you to pitch that outlet again in three months with something better. Reply "thanks, understood" or don't reply at all.
+
+**Never ask to review the article before publication.** It is an insult in most European newsrooms and it will end the relationship. You may offer to fact-check specific details; you may not approve copy.
+
+**Never pay for a placement and call it press.** Paid inserts, "featured business" packages and press-release distribution wires produce no readers, no credibility and no journalists. If someone quotes you €300 for guaranteed coverage, it is advertising with the label filed off — and it is a third of your entire monthly budget for nothing.
+
+**Never let the press page go stale.** A "latest news" section whose most recent item is eighteen months old actively damages you. Either keep it current or don't have it.
+
+**Never pitch the same angle to BRUZZ and The Brussels Times in the same week.** They cover the same city for different language audiences and both will find out. Stagger by angle and by season.
+
+---
+
+## Quick-start: your first ten days
+
+1. **Day 1–3.** Build `djorestis.com/press/` with the three bios above, five captioned high-res photos, the fact sheet, and `info@djorestis.com` as press contact. Nothing else.
+2. **Day 4.** Register on agenda.brussels as an organiser and submit your next public dates. Free, fifteen minutes.
+3. **Day 5.** Send Angle 1 to **BRUZZ** (`redactie@bruzz.be`), **BX1** (`actu@bx1.be`) and **Greek City Times** (`info@greekcitytimes.com`).
+4. **Day 6.** Send the podcast pitch (4.3) to **Radio Alma**'s Greek-language programme and to **Ellwed Talks**.
+5. **Day 7.** Send the expert-source note (4.5) to **The Brussels Times** (`info@brusselstimes.com`) and **The Bulletin** (`info@ackroyd.be`).
+6. **Day 8.** Ask Papillon Schuman for permission to be named in Angle 3, and ask one past couple about Angle 4.
+7. **Day 9.** Build the tracker spreadsheet. Log everything sent so far.
+8. **Day 10.** Stop. Do not send more this week. Next Tuesday, send three more.
