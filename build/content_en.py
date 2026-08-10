@@ -11,6 +11,23 @@ STRINGS = {
     "cta_services": "View services",
     "faq_heading": "Frequently asked questions",
     "facts_heading": "At a glance",
+    "testimonials_heading": "What clients say",
+    "signup": {
+        "wedding": {
+            "title": "Free wedding music planning guide",
+            "text": "The timeline that makes a wedding dance floor work, a must-play / never-play worksheet, and ten questions worth asking any DJ before you book.",
+            "placeholder": "Your email address",
+            "button": "Send me the guide",
+            "note": "One email with the guide, then a few genuinely useful ones. Unsubscribe any time.",
+        },
+        "corporate": {
+            "title": "Free corporate event music playbook",
+            "text": "How to programme music around your agenda — arrival, dinner, speeches, and the transition to dancing that most events get wrong.",
+            "placeholder": "Your work email address",
+            "button": "Send me the playbook",
+            "note": "One email with the playbook, then a few genuinely useful ones. Unsubscribe any time.",
+        },
+    },
     "photo_ph": "Photo coming soon",
     "video_ph": "Video coming soon",
     "footer_sge": "Co-founder of",
@@ -285,6 +302,7 @@ PAGES = {
                   ("Base &amp; travel", "Brussels; all of Belgium, and Europe on request"),
                   ("Setup time", "2–3 hours before doors, discreetly")],
         "service_type": "Corporate event DJ",
+        "signup": "corporate",
         "body": """
 <section class="section">
   <div class="wrap split">
@@ -349,6 +367,7 @@ PAGES = {
                   ("Languages", "Greek, English, French, Dutch"),
                   ("Planning", "A preparation meeting before every wedding")],
         "service_type": "Wedding DJ",
+        "signup": "wedding",
         "body": """
 <section class="section">
   <div class="wrap split">

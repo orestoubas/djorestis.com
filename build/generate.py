@@ -45,6 +45,18 @@ SOCIAL_LINKS = {
     # "LinkedIn": "https://linkedin.com/in/...",
 }
 
+# Testimonials shown as visible copy. Deliberately NOT marked up with Review /
+# AggregateRating schema: self-controlled review markup makes the page ineligible
+# for star features and risks a manual action. Real reviews belong on Google.
+# Format: (quote, attribution, event type + city)
+TESTIMONIALS = [
+    # ("They read the room perfectly all night.", "Marie & Thomas", "Wedding, Brussels"),
+]
+
+# Newsletter / lead-magnet signup endpoint (e.g. a Brevo or Formspree form URL).
+# Empty = the signup block is hidden entirely rather than shown broken.
+SIGNUP_ENDPOINT = ""
+
 # Google Business Profile URL, once verified (strong entity signal)
 GBP_URL = ""
 
@@ -310,6 +322,36 @@ def faq_html(faq, heading):
     return f"<section class='section faq'><div class='wrap narrow'><h2>{heading}</h2>{items}</div></section>"
 
 
+def testimonials_html(s):
+    if not TESTIMONIALS:
+        return ""
+    items = "".join(
+        f"<figure class='quote'><blockquote>{q}</blockquote>"
+        f"<figcaption>{who}<span>{ctx}</span></figcaption></figure>"
+        for q, who, ctx in TESTIMONIALS)
+    return (f"<section class='section alt'><div class='wrap'>"
+            f"<h2>{s.get('testimonials_heading', 'What clients say')}</h2>"
+            f"<div class='quote-grid'>{items}</div></div></section>")
+
+
+def signup_html(s, audience):
+    """Lead-magnet capture. Hidden until an endpoint is configured."""
+    if not SIGNUP_ENDPOINT:
+        return ""
+    c = s.get("signup", {}).get(audience)
+    if not c:
+        return ""
+    return f"""<section class='section signup-band'><div class='wrap narrow center'>
+  <h2>{c['title']}</h2><p>{c['text']}</p>
+  <form class='signup-form' method='POST' action='{SIGNUP_ENDPOINT}'>
+    <input type='email' name='email' required placeholder='{c['placeholder']}' aria-label='{c['placeholder']}'>
+    <input type='hidden' name='audience' value='{audience}'>
+    <button type='submit' class='btn btn-gold'>{c['button']}</button>
+  </form>
+  <p class='form-note'>{c['note']}</p>
+</div></section>"""
+
+
 def contact_form(s):
     f = s["form"]
     opts = "".join(f"<option>{o}</option>" for o in f["event_types"])
@@ -549,6 +591,10 @@ def render_page(mods, en_mod, lang, key):
                  f"<dl class='fact-grid'>{rows}</dl></div></section>")
     if page.get("faq"):
         body += faq_html(page["faq"], s["faq_heading"])
+    if key in SERVICE_KEYS or key == "home":
+        body += testimonials_html(s)
+    if page.get("signup"):
+        body += signup_html(s, page["signup"])
 
     price_html = ""
     if page.get("price"):
