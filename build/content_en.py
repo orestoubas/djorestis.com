@@ -720,27 +720,59 @@ PAGES = {
     # ---------------------------------------------------------------- MUSIC
     "music": {
         "title": "Music & Sets — Greek, Electronic, Afro, Latin & RnB | DJ Orestis",
-        "desc": "Listen to DJ Orestis: five music worlds — Greek, electronic, Afro, Latin and RnB — mixed for corporate events, weddings and parties in Brussels and across Europe.",
+        "desc": "The five music worlds DJ Orestis mixes — Greek, electronic, Afro, Latin and RnB — how a set is actually built, and what that means for weddings, corporate events and Greek nights.",
         "kicker": "Listen",
         "h1": "Five music worlds, <span class='gold'>one DJ</span>",
-        "sub": "The range is the point: whatever your crowd, there's a set for it.",
+        "sub": "The range is the point: whatever your crowd, there is a set for it — and the craft is knowing which one the room needs at 22:40.",
+        "facts": [("Genres", "Greek, electronic, Afro, Latin, RnB"),
+                  ("Format", "Open format, mixed live — never a fixed playlist"),
+                  ("Requests", "Welcome, woven in when they serve the floor"),
+                  ("Never-play list", "Always respected"),
+                  ("Hosting", "Greek, English, French or Dutch"),
+                  ("Typical set", "4–6 hours, extendable")],
         "body": """
 <section class="section">
   <div class="wrap">
+    <h2>The five worlds</h2>
     <div class="card-grid">
-      <div class="card"><h3>Greek</h3><p>Laïkà, éntekhna, nisiótika, rebetiko, 90s classics and today's charts — the full spectrum, with the cultural fluency to know which is right when.</p></div>
-      <div class="card"><h3>Electronic</h3><p>House, deep and melodic sets shaped by three seasons in Mykonos — sunset elegance to peak-time drive.</p></div>
-      <div class="card"><h3>Afro</h3><p>Afrobeats, afro house and amapiano — the sound that owns modern European dance floors.</p></div>
-      <div class="card"><h3>Latin</h3><p>Reggaeton, salsa, bachata and Latin pop — instant floor-fillers for international crowds.</p></div>
-      <div class="card"><h3>RnB</h3><p>Classic and contemporary RnB and hip-hop — the connective tissue of every great open-format set.</p></div>
+      <div class="card"><h3>Greek</h3><p>Laïkà and éntekhna, nisiótika for the summer feeling, rebetiko when the moment earns it, the 90s canon everyone over thirty knows by heart, and today's charts for everyone under it. The cultural fluency matters more than the catalogue — knowing that a zeibekiko needs space and silence around it, and that a kalamatianó early sets up the whole night.</p></div>
+      <div class="card"><h3>Electronic</h3><p>House, deep and melodic, shaped by three seasons of Mykonos sunsets and peak-time rooms. This is what carries a corporate reception without dominating conversation, and what takes a wedding past midnight when the older guests have gone home.</p></div>
+      <div class="card"><h3>Afro</h3><p>Afrobeats, afro house and amapiano — the sound that owns European dance floors right now, and the most reliable bridge between generations and nationalities in a mixed room.</p></div>
+      <div class="card"><h3>Latin</h3><p>Reggaeton, salsa, bachata and Latin pop. Instant floor-fillers for international crowds, and the section of the night where people who claim they do not dance usually start.</p></div>
+      <div class="card"><h3>RnB</h3><p>Classic and contemporary RnB and hip-hop. The connective tissue of any open-format set — what you use to move between worlds without the floor noticing the seam.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap split">
+    <div>
+      <h2>How a set is actually built</h2>
+      <p>Almost every client starts the music conversation with a playlist. I read all of them properly, and they are genuinely useful — but a playlist is a list of songs, and an evening is a shape.</p>
+      <p>What I plan is the shape. Where the energy sits during dinner, how long the first proper dance section runs before it needs air, which moment carries the emotional weight of the night, and what plays at 01:50 when you want people to leave happy rather than drift out.</p>
+      <p>Then I abandon most of it. The room decides. A track that empties the floor at 21:00 fills it at 00:30 — same song, same people, different moment. Reading that in real time is the entire job, and it is the one thing a playlist cannot do.</p>
+      <a class="btn btn-ghost" href="{link:weddingguide}">The full timeline, in the free guide</a>
+    </div>
+    {PLACEHOLDER_PHOTO}
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    <h2>What this means for your event</h2>
+    <ul class="ticks">
+      <li><strong>Mixed and international rooms</strong> — Brussels crowds are rarely one nationality. Five genuine repertoires means nobody stands at the edge waiting for something they recognise.</li>
+      <li><strong>Greek celebrations</strong> — the Greek hours are real Greek hours, not three token songs, and they flow into international sets so every guest belongs all night.</li>
+      <li><strong>Corporate events</strong> — sophisticated background programming during dinner and speeches, then a floor that fills when the plates leave. Two different skills, one evening.</li>
+      <li><strong>Your list matters</strong> — must-plays get played, never-plays never do. That second list is more important than the first, and I ask for it every time.</li>
+    </ul>
   </div>
 </section>
 
 <section class="section alt">
   <div class="wrap">
     <h2>Sets &amp; aftermovies</h2>
-    <p class="center muted">Fresh recordings are on the way — in the meantime, you can hear me live every month at Papillon Schuman in Brussels.</p>
+    <p class="center muted">Recordings are on the way. In the meantime you can hear me live at Papillon Schuman in Brussels, where I have held the residency for four years.</p>
     <div class="media-grid">
       {PLACEHOLDER_VIDEO}
       {PLACEHOLDER_VIDEO}
@@ -755,6 +787,16 @@ PAGES = {
   </div>
 </section>
 """,
+        "faq": [
+            ("Can I give you a playlist?",
+             "Yes, and please do. Your must-plays are the skeleton of the night. I build the living set around them and adapt to the room as the evening goes — the list tells me who you are, the floor tells me what to do next."),
+            ("Do you take requests during the event?",
+             "Gladly. Requests are part of a good party and often the best moment of the night. I weave them in where they serve the floor, and I always protect your never-play list."),
+            ("Can you cover several genres in one night?",
+             "That is the whole point of an open format. A typical evening might move from elegant electronic during dinner into Greek hours, out through Latin and Afro, and finish on RnB and classics — with the joins invisible."),
+            ("What if my guests are from many different countries?",
+             "That is the most common situation in Brussels and my strongest ground. Five real repertoires and four spoken languages mean a mixed room is an advantage rather than a problem."),
+        ],
     },
 
     # ---------------------------------------------------------------- EVENTS
