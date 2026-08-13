@@ -129,8 +129,10 @@ SLUGS = {
     "contact":     {"en": "contact", "fr": "contact", "nl": "contact", "el": "epikoinonia"},
     "privacy":     {"en": "privacy", "fr": "confidentialite", "nl": "privacy", "el": "aporrito"},
     # Long-form guides — English only, doubling as lead magnets
-    "weddingguide":   {"en": "wedding-music-guide", "fr": "guide-musique-mariage"},
-    "corporateguide": {"en": "corporate-event-music-playbook"},
+    "weddingguide":   {"en": "wedding-music-guide", "fr": "guide-musique-mariage",
+                       "nl": "gids-bruiloftsmuziek", "el": "odigos-mousikis-gamou"},
+    "corporateguide": {"en": "corporate-event-music-playbook", "fr": "guide-musique-entreprise",
+                       "nl": "draaiboek-bedrijfsmuziek", "el": "odigos-etairikis-mousikis"},
     "press":          {"en": "press"},
 }
 GUIDE_KEYS = ["weddingguide", "corporateguide"]
@@ -154,8 +156,8 @@ def url_path(key, lang):
         return CASES_PATH
     if key == "blog":
         return blog_path(lang)
-    # English-only pages (guides) have no localised slug — fall back to the EN URL
-    if lang not in SLUGS[key]:
+    # fall back to the English URL when this language has no such page
+    if lang not in SLUGS[key] or not page_available(key, lang):
         lang = "en"
     slug = SLUGS[key][lang]
     prefix = "/" if lang == "en" else f"/{lang}/"
@@ -229,6 +231,16 @@ def md_to_html(md):
         i += 1
     close_list()
     return "\n".join(out)
+
+
+def page_available(key, lang):
+    """True when this language really has this page (registry populated in main)."""
+    langs = AVAILABLE.get(key)
+    return lang in langs if langs is not None else True
+
+
+def guide_exists(name):
+    return (ROOT / "marketing" / "leadmagnets" / f"{name}.md").exists()
 
 
 def load_guide(name):
@@ -465,6 +477,7 @@ def nav_label(mod, en_mod, key):
 
 BLOG_POSTS_BY_LANG = {}
 CASES_BY_LANG = {}
+AVAILABLE = {}   # key -> set(langs) actually built
 
 
 def hreflang_blog(mods, slug):
@@ -483,7 +496,7 @@ def hreflang_blog(mods, slug):
 def hreflang_tags(key, mods):
     tags = []
     for lg in LANGS:
-        if lg in mods and key in mods[lg].PAGES:
+        if lg in mods and key in mods[lg].PAGES and page_available(key, lg):
             tags.append(f'<link rel="alternate" hreflang="{lg}" href="{BASE_URL}{url_path(key, lg)}">')
     if len(tags) <= 1:
         return ""
@@ -497,7 +510,7 @@ def lang_switcher(key, lang, mods):
         if lg not in mods:
             continue
         # Blog is EN-only: other languages link to their home page.
-        if key == "blog" or key not in mods[lg].PAGES:
+        if key == "blog" or key not in mods[lg].PAGES or not page_available(key, lg):
             href = url_path("home", lg) if lg != "en" else url_path(key, "en")
         else:
             href = url_path(key, lg)
@@ -841,10 +854,22 @@ def main():
         if cs and getattr(cs, "CASES", None):
             CASES_BY_LANG[lg] = cs.CASES
 
+    for key in SLUGS:
+        AVAILABLE[key] = set()
+        for lg, mod in mods.items():
+            if key not in mod.PAGES:
+                continue
+            body = mod.PAGES[key].get("body", "")
+            if any(not guide_exists(gn) for gn in re.findall(r"\{GUIDE:([A-Z-]+)\}", body)):
+                continue
+            AVAILABLE[key].add(lg)
+
     urls = []          # (loc, lastmod|None)
     for lg, mod in mods.items():
         for key in SLUGS:
             if key not in mod.PAGES:
+                continue
+            if not page_available(key, lg):
                 continue
             write_page(url_path(key, lg), render_page(mods, en_mod, lg, key))
             urls.append((BASE_URL + url_path(key, lg), None))

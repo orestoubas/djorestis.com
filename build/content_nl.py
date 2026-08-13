@@ -47,6 +47,8 @@ STRINGS = {
         "restaurant": "Restaurant DJ",
         "mykonos": "DJ in heel Europa",
         "blog": "Blog",
+        "corporateguide": "Draaiboek bedrijfsmuziek",
+        "weddingguide": "Gids bruiloftsmuziek",
         "music": "Muziek",
         "events": "Eerdere evenementen",
         "contact": "Contact",
@@ -811,6 +813,43 @@ PAGES = {
       <h2>Talen</h2>
       <p class="muted">Grieks · Engels · Frans · Nederlands</p>
     </aside>
+  </div>
+</section>
+""",
+    },
+
+
+    "weddingguide": {
+        "title": "Gids bruiloftsmuziek — Draaiboek &amp; vragen voor uw DJ",
+        "desc": "Gratis gids voor de muziek op uw bruiloft, van een Brusselse DJ: het draaiboek van de dag, een lijst met must-plays, tien vragen voor elke DJ en eerlijke Belgische prijzen.",
+        "kicker": "Gratis gids",
+        "h1": "De gids voor <span class='gold'>bruiloftsmuziek</span>",
+        "sub": "Het draaiboek dat een dansvloer laat werken, wat u uw DJ vertelt, en wat een bruiloft-DJ in België werkelijk kost — geschreven na negen jaar praktijk.",
+        "body": """{GUIDE:WEDDING-GUIDE-NL}
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Plant u uw bruiloft?</h2>
+    <p>Geef me uw datum en locatie — ik zeg u eerlijk of ik de juiste DJ voor u ben.</p>
+    <a class="btn btn-gold" href="{link:contact}">Beschikbaarheid checken</a>
+  </div>
+</section>
+""",
+    },
+
+    "corporateguide": {
+        "title": "Draaiboek muziek voor bedrijfsevenementen | DJ Orestis",
+        "desc": "Gratis draaiboek voor organisatoren van bedrijfsevenementen: muziek programmeren rond uw agenda, speeches opvangen, en de overgang naar de dansvloer die de meeste events missen.",
+        "kicker": "Gratis draaiboek",
+        "h1": "Het muziekdraaiboek voor <span class='gold'>bedrijfsevenementen</span>",
+        "sub": "Hoe u muziek programmeert rond speeches, awards en een zaal met vijftien nationaliteiten — van een DJ die Brusselse bedrijfsevenementen draait.",
+        "body": """{GUIDE:CORPORATE-PLAYBOOK-NL}
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Organiseert u een bedrijfsevenement?</h2>
+    <p>Stuur de datum, locatie en het aantal gasten — u krijgt een duidelijke offerte, meestal binnen 48 uur.</p>
+    <a class="btn btn-gold" href="{link:contact}">Offerte aanvragen</a>
   </div>
 </section>
 """,

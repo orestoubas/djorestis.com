@@ -58,6 +58,7 @@ STRINGS = {
         "mykonos": "DJ en Europe",
         "blog": "Blog",
         "weddingguide": "Guide musique mariage",
+        "corporateguide": "Guide musique entreprise",
         "music": "Musique",
         "events": "Événements passés",
         "contact": "Contact",
@@ -842,6 +843,25 @@ PAGES = {
     <h2>Vous préparez votre mariage ?</h2>
     <p>Donnez-moi votre date et votre lieu — je vous dirai honnêtement si je suis le bon DJ pour vous.</p>
     <a class="btn btn-gold" href="{link:contact}">Vérifier ma disponibilité</a>
+  </div>
+</section>
+""",
+    },
+
+
+    "corporateguide": {
+        "title": "Guide musique pour événements d'entreprise | DJ Orestis",
+        "desc": "Guide gratuit pour les organisateurs d'événements d'entreprise : programmer la musique autour de votre agenda, gérer les discours, et réussir le passage à la piste de danse.",
+        "kicker": "Guide gratuit",
+        "h1": "Le guide musique des <span class='gold'>événements d'entreprise</span>",
+        "sub": "Comment programmer la musique autour des discours, des remises de prix et d'une salle de quinze nationalités — par un DJ qui travaille les événements d'entreprise bruxellois.",
+        "body": """{GUIDE:CORPORATE-PLAYBOOK-FR}
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Vous organisez un événement d'entreprise ?</h2>
+    <p>Envoyez la date, le lieu et le nombre d'invités — vous recevrez une proposition claire, généralement endéans les 48 heures.</p>
+    <a class="btn btn-gold" href="{link:contact}">Demander une proposition</a>
   </div>
 </section>
 """,
