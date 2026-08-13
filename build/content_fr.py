@@ -10,6 +10,16 @@ STRINGS = {
     "cta_quote": "Demander un devis",
     "cta_services": "Découvrir les services",
     "faq_heading": "Questions fréquentes",
+    "cases_back": "Toutes les études de cas",
+    "cases_index": {
+        "title": "Études de cas — Entreprise, mariage &amp; résidence | DJ Orestis",
+        "desc": "Trois études de cas détaillées : une réception de fin d'année à Bruxelles, un mariage gréco-belge, et une résidence de quatre ans en restaurant.",
+        "kicker": "Études de cas",
+        "h1": "Comment la soirée <span class='gold'>s'est vraiment passée</span>",
+        "sub": "Trois événements en détail — le brief, les décisions, et ce qui s'est passé sur la piste.",
+        "read_more": "Lire l'étude de cas",
+        "cta": "Vous préparez quelque chose de similaire ?",
+    },
     "facts_heading": "En bref",
     "photo_ph": "Photo bientôt disponible",
     "video_ph": "Vidéo bientôt disponible",
@@ -47,6 +57,7 @@ STRINGS = {
         "restaurant": "DJ restaurant",
         "mykonos": "DJ en Europe",
         "blog": "Blog",
+        "weddingguide": "Guide musique mariage",
         "music": "Musique",
         "events": "Événements passés",
         "contact": "Contact",
@@ -811,6 +822,26 @@ PAGES = {
       <h2>Langues</h2>
       <p class="muted">Grec · Anglais · Français · Néerlandais</p>
     </aside>
+  </div>
+</section>
+""",
+    },
+
+
+    # ---------------------------------------------------------------- GUIDE
+    "weddingguide": {
+        "title": "Guide musique de mariage — Timeline &amp; questions à poser",
+        "desc": "Guide gratuit pour la musique de votre mariage, par un DJ bruxellois : le déroulé de la journée, la liste des incontournables, dix questions à poser, et les prix réels en Belgique.",
+        "kicker": "Guide gratuit",
+        "h1": "Le guide de la <span class='gold'>musique de mariage</span>",
+        "sub": "Le déroulé qui fait vivre une piste de danse, ce qu'il faut dire à votre DJ, et ce que coûte réellement un DJ de mariage en Belgique — écrit après neuf ans de terrain.",
+        "body": """{GUIDE:WEDDING-GUIDE-FR}
+
+<section class="section cta-band">
+  <div class="wrap center">
+    <h2>Vous préparez votre mariage ?</h2>
+    <p>Donnez-moi votre date et votre lieu — je vous dirai honnêtement si je suis le bon DJ pour vous.</p>
+    <a class="btn btn-gold" href="{link:contact}">Vérifier ma disponibilité</a>
   </div>
 </section>
 """,

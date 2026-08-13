@@ -129,7 +129,7 @@ SLUGS = {
     "contact":     {"en": "contact", "fr": "contact", "nl": "contact", "el": "epikoinonia"},
     "privacy":     {"en": "privacy", "fr": "confidentialite", "nl": "privacy", "el": "aporrito"},
     # Long-form guides — English only, doubling as lead magnets
-    "weddingguide":   {"en": "wedding-music-guide"},
+    "weddingguide":   {"en": "wedding-music-guide", "fr": "guide-musique-mariage"},
     "corporateguide": {"en": "corporate-event-music-playbook"},
     "press":          {"en": "press"},
 }
@@ -148,6 +148,9 @@ BLOG_PATH = "/blog/"   # English (kept for existing call sites)
 
 def url_path(key, lang):
     if key == "cases":
+        # only prefix a language that actually has translated case studies
+        if lang != "en" and lang in CASES_BY_LANG:
+            return "/" + lang + CASES_PATH
         return CASES_PATH
     if key == "blog":
         return blog_path(lang)
@@ -461,6 +464,7 @@ def nav_label(mod, en_mod, key):
 
 
 BLOG_POSTS_BY_LANG = {}
+CASES_BY_LANG = {}
 
 
 def hreflang_blog(mods, slug):
@@ -718,40 +722,48 @@ def case_html(c):
 </div></section>"""
 
 
-def render_case(mods, en_mod, c):
-    s = en_mod.STRINGS
-    path = CASES_PATH + c["slug"] + "/"
-    body = localize_links(case_html(c), "en")
+def render_case(mods, en_mod, c, lang='en', base=None):
+    base = base or CASES_PATH
+    mod = mods[lang]
+    s = mod.STRINGS
+    path = base + c["slug"] + "/"
+    body = localize_links(case_html(c), lang)
     body += (f"<section class='section cta-band'><div class='wrap center'>"
              f"<h2>Planning something similar?</h2>"
-             f"<a class='btn btn-gold' href=\"{url_path('contact','en')}\">{s['cta_quote']}</a>"
-             f"<p style='margin-top:22px'><a href='{CASES_PATH}'>← All case studies</a></p></div></section>")
+             f"<a class='btn btn-gold' href=\"{url_path('contact',lang)}\">{s['cta_quote']}</a>"
+             f"<p style='margin-top:22px'><a href='{base}'>← All case studies</a></p></div></section>")
     hero = (f"<section class='hero'><div class='wrap'><p class='kicker'>Case study</p>"
             f"<h1>{c['h1']}</h1><p class='hero-sub'>{c['sub']}</p></div></section>")
-    return page_shell(mods["en"], en_mod, mods, key="cases", title=c["title"] + " | DJ Orestis",
+    return page_shell(mod, en_mod, mods, key="cases", title=c["title"] + " | DJ Orestis",
                       desc=c["desc"], canonical=BASE_URL + path, hreflang="", robots=None,
                       hero_html=hero, body=body,
-                      schemas=[breadcrumb_jsonld(mods["en"], "cases", "en", c["title"])], lang="en")
+                      schemas=[breadcrumb_jsonld(mod, "cases", lang, c["title"])], lang=lang)
 
 
-def render_cases_index(mods, en_mod, cases):
-    s = en_mod.STRINGS
+def render_cases_index(mods, en_mod, cases, lang='en', base=None):
+    base = base or CASES_PATH
+    mod = mods[lang]
+    s = mod.STRINGS
+    ci = s.get("cases_index", {})
     cards = "".join(
-        f"<a class='card post-card' href='{CASES_PATH}{c['slug']}/'>"
+        f"<a class='card post-card' href='{base}{c['slug']}/'>"
         f"<p class='post-meta'>{c['event_type']} · {c['location']}</p>"
         f"<h3>{c['title'].replace('Case Study: ','')}</h3><p>{c['desc']}</p>"
-        f"<span class='card-more'>Read the case study →</span></a>" for c in cases)
+        f"<span class='card-more'>" + ci.get("read_more", "Read the case study") + " →</span></a>" for c in cases)
     body = (f"<section class='section'><div class='wrap'><div class='card-grid posts'>{cards}</div></div></section>"
-            f"<section class='section cta-band'><div class='wrap center'><h2>Planning something similar?</h2>"
+            f"<section class='section cta-band'><div class='wrap center'><h2>{ci.get('cta','Planning something similar?')}</h2>"
             f"<a class='btn btn-gold' href=\"{url_path('contact','en')}\">{s['cta_quote']}</a></div></section>")
-    hero = ("<section class='hero'><div class='wrap'><p class='kicker'>Case studies</p>"
-            "<h1>How the <span class='gold'>night actually went</span></h1>"
-            "<p class='hero-sub'>Three events in detail — the brief, the decisions, and what happened on the floor.</p></div></section>")
-    return page_shell(mods["en"], en_mod, mods, key="cases",
-                      title="Case Studies — Corporate, Wedding & Residency | DJ Orestis",
-                      desc="Three DJ Orestis case studies in detail: a Brussels corporate year-end reception, a Greek-Belgian wedding, and a four-year restaurant residency.",
-                      canonical=BASE_URL + CASES_PATH, hreflang="", robots=None,
-                      hero_html=hero, body=body, schemas=[], lang="en")
+    hero = ("<section class='hero'><div class='wrap'><p class='kicker'>"
+            + ci.get("kicker", "Case studies") + "</p><h1>"
+            + ci.get("h1", "How the <span class='gold'>night actually went</span>") + "</h1>"
+            "<p class='hero-sub'>"
+            + ci.get("sub", "Three events in detail — the brief, the decisions, and what happened on the floor.")
+            + "</p></div></section>")
+    return page_shell(mod, en_mod, mods, key="cases",
+                      title=ci.get("title", "Case Studies — Corporate, Wedding & Residency | DJ Orestis"),
+                      desc=ci.get("desc", "Three DJ Orestis case studies in detail: a Brussels corporate year-end reception, a Greek-Belgian wedding, and a four-year restaurant residency."),
+                      canonical=BASE_URL + base, hreflang="", robots=None,
+                      hero_html=hero, body=body, schemas=[], lang=lang)
 
 
 def render_blog_index(mods, en_mod, posts, lang='en'):
@@ -823,6 +835,12 @@ def main():
         sys.exit("content_en.py is required")
     en_mod = mods["en"]
 
+    for lg in mods:
+        suffix = "" if lg == "en" else "_" + lg
+        cs = load_module("case_studies" + suffix)
+        if cs and getattr(cs, "CASES", None):
+            CASES_BY_LANG[lg] = cs.CASES
+
     urls = []          # (loc, lastmod|None)
     for lg, mod in mods.items():
         for key in SLUGS:
@@ -833,14 +851,14 @@ def main():
     print(f"  wrote {len(urls)} pages ({', '.join(mods.keys())})")
 
     # ------------------------------------------------------------------ case studies
-    cs = load_module("case_studies")
-    if cs and getattr(cs, "CASES", None):
-        for c in cs.CASES:
-            write_page(CASES_PATH + c["slug"] + "/", render_case(mods, en_mod, c))
-            urls.append((BASE_URL + CASES_PATH + c["slug"] + "/", None))
-        write_page(CASES_PATH, render_cases_index(mods, en_mod, cs.CASES))
-        urls.append((BASE_URL + CASES_PATH, None))
-        print(f"  wrote case studies: index + {len(cs.CASES)}")
+    for lg, cases in CASES_BY_LANG.items():
+        base = url_path("cases", lg)
+        for c in cases:
+            write_page(base + c["slug"] + "/", render_case(mods, en_mod, c, lg, base))
+            urls.append((BASE_URL + base + c["slug"] + "/", None))
+        write_page(base, render_cases_index(mods, en_mod, cases, lg, base))
+        urls.append((BASE_URL + base, None))
+        print(f"  wrote case studies[{lg}]: index + {len(cases)}")
 
     # ------------------------------------------------------------------ blog
     # English lives in blog_events/blog_guides; translations in *_<lang>.py
