@@ -20,6 +20,10 @@ STRINGS = {
         "read_more": "Lire l'étude de cas",
         "cta": "Vous préparez quelque chose de similaire ?",
     },
+    "venues_heading": "Où je joue à <span class='gold'>Bruxelles</span>",
+    "venues_intro": "Restaurants et bars aux quatre coins de la ville — du quartier européen à Saint-Gilles — où je suis résident ou je joue régulièrement.",
+    "venues_restaurants": "Restaurants",
+    "venues_bars": "Bars &amp; cafés",
     "facts_heading": "En bref",
     "photo_ph": "Photo bientôt disponible",
     "video_ph": "Vidéo bientôt disponible",
@@ -416,8 +420,8 @@ PAGES = {
         "kicker": "Ελληνικές βραδιές — l'authentique",
         "h1": "DJ grec à <span class='gold'>Bruxelles</span>",
         "sub": "Du Brussels Greek Food Festival aux fêtes communautaires de Vienne, Louvain et Lille — la soirée grecque, comme elle le mérite.",
-        "price": "À partir de 400 € HTVA", "price_note": "À Bruxelles — déplacement en sus au-delà", "price_amount": "400",
-        "facts": [("Prix de départ", "400 € HTVA à Bruxelles, DJ seul"),
+        "price": "À partir de 500 € HTVA", "price_note": "À Bruxelles — déplacement en sus au-delà", "price_amount": "500",
+        "facts": [("Prix de départ", "500 € HTVA à Bruxelles, DJ seul"),
                   ("Répertoire", "Laïkà, éntekhna, nisiótika, rebétiko, tubes grecs actuels"),
                   ("Soirées mixtes", "Heures grecques mêlées d'afro, de latino, de RnB et d'international"),
                   ("Animation", "Annonces en grec, anglais, français ou néerlandais"),
@@ -478,8 +482,9 @@ PAGES = {
         "kicker": "Votre fête, au volume professionnel",
         "h1": "DJ de soirée à <span class='gold'>Bruxelles</span>",
         "sub": "Anniversaires, jubilés, remises de diplôme, fêtes à domicile — l'énergie d'un club, le professionnalisme compatible avec votre salon.",
-        "price": "À partir de 400 € HTVA", "price_note": "À Bruxelles — déplacement en sus au-delà", "price_amount": "400",
-        "facts": [("Prix de départ", "400 € HTVA à Bruxelles, DJ seul"),
+        "price": "À partir de 500 € HTVA", "price_note": "Lieu privé à Bruxelles — dès 300 € au Papillon Schuman", "price_amount": "500",
+        "facts": [("Prix de départ", "500 € HTVA pour un lieu privé à Bruxelles, DJ seul"),
+                  ("Au Papillon Schuman", "Dès 300 € DJ + 1 500 € de consommation minimum"),
                   ("Formats", "Anniversaires, jubilés, remises de diplôme, fêtes à domicile"),
                   ("Échelle", "De l'appartement à une salle de 500 invités"),
                   ("Musique", "Open format — électro, afro, latino, RnB, grec, pop"),
@@ -502,6 +507,16 @@ PAGES = {
   </div>
 </section>
 
+<section class="section alt">
+  <div class="wrap">
+    <h2>Deux façons de l'organiser</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Chez vous</h3><p>Un appartement, une salle louée, un jardin, un loft d'entreprise — je viens à vous. <strong>Dès 500 € HTVA</strong> à Bruxelles pour le DJ. Le son et la lumière sont chiffrés en plus, car les besoins d'une salle varient énormément.</p></div>
+      <div class="card"><h3>Au Papillon Schuman</h3><p>Réservez la salle où je suis résident. Aux tarifs standards du Papillon, cela donne <strong>dès 300 € HTVA</strong> pour le DJ plus <strong>1 500 € de consommation minimum</strong> — un bar que vous auriez payé de toute façon, dans un lieu déjà conçu pour la fête.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="section cta-band">
   <div class="wrap center">
     <h2>Une date en tête ?</h2>
@@ -512,7 +527,7 @@ PAGES = {
 """,
         "faq": [
             ("Combien coûte un DJ pour une fête privée à Bruxelles ?",
-             "Cela dépend de la durée, du lieu et du besoin éventuel en matériel son et lumière. Envoyez les informations essentielles via le formulaire de contact et vous recevrez un devis clair et personnalisé — en général endéans les 48 heures, sans engagement."),
+             "À Bruxelles, une fête privée démarre à 500 € HTVA pour le DJ, dans le lieu de votre choix. Si vous l'organisez au Papillon Schuman, où je suis résident, les tarifs standards du Papillon sont de 300 € HTVA pour le DJ plus 1 500 € de consommation minimum. Le son et la lumière sont chiffrés séparément, selon la salle. Envoyez les informations essentielles via le formulaire de contact et vous recevrez un devis clair et personnalisé — en général endéans les 48 heures, sans engagement."),
             ("Apportez-vous votre propre matériel pour les fêtes à domicile ?",
              "Oui — je peux venir avec une installation complète adaptée à un appartement, ou avec un dispositif son et lumière complet pour une salle louée jusqu'à 500 invités. Décrivez-moi l'espace et je vous proposerai la bonne configuration."),
             ("Acceptez-vous les demandes de morceaux pendant la fête ?",

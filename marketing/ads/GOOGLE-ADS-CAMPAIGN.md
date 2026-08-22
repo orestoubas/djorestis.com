@@ -278,7 +278,7 @@ an enquiry.
 1. Google Ads → **Goals → Conversions → New conversion action → Website**
 2. Enter `djorestis.com`, choose **Set up manually**
 3. Create a conversion named **Quote request**, category *Submit lead form*, value: leave
-   blank or set an indicative €400 (average booking value helps the algorithm optimise)
+   blank or set an indicative €600 (average booking value helps the algorithm optimise)
 4. Since Analytics is already linked, the simplest path is: **Import from Google Analytics
    (GA4)** — create the event in GA4 first, then import it here
 5. In GA4 → Admin → Events → **Create event**, condition: `event_name = click` and the link

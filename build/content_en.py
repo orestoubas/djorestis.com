@@ -10,6 +10,10 @@ STRINGS = {
     "cta_quote": "Request a quote",
     "cta_services": "View services",
     "faq_heading": "Frequently asked questions",
+    "venues_heading": "Where I play in <span class='gold'>Brussels</span>",
+    "venues_intro": "Restaurants and bars across the city — from the EU quarter to Saint-Gilles — where I hold residencies or play regularly.",
+    "venues_restaurants": "Restaurants",
+    "venues_bars": "Bars &amp; cafés",
     "facts_heading": "At a glance",
     "testimonials_heading": "What clients say",
     "signup": {
@@ -428,8 +432,8 @@ PAGES = {
         "kicker": "Ελληνικές βραδιές — the real thing",
         "h1": "Greek DJ in <span class='gold'>Brussels</span>",
         "sub": "From the Brussels Greek Food Festival to community parties in Vienna, Leuven and Lille — the Greek night, done the way it deserves.",
-        "price": "From €400 excl. VAT", "price_note": "Within Brussels — travel added beyond", "price_amount": "400",
-        "facts": [("Starting price", "€400 excl. VAT within Brussels, DJ only"),
+        "price": "From €500 excl. VAT", "price_note": "Within Brussels — travel added beyond", "price_amount": "500",
+        "facts": [("Starting price", "€500 excl. VAT within Brussels, DJ only"),
                   ("Repertoire", "Laïkà, éntekhna, nisiótika, rebetiko, modern Greek hits"),
                   ("Mixed nights", "Greek hours blended with Afro, Latin, RnB and international"),
                   ("Hosting", "Announcements in Greek, English, French or Dutch"),
@@ -490,8 +494,9 @@ PAGES = {
         "kicker": "Your party, professionally loud",
         "h1": "Party DJ in <span class='gold'>Brussels</span>",
         "sub": "Birthdays, anniversaries, graduations, house parties — club-level energy, living-room friendly professionalism.",
-        "price": "From €400 excl. VAT", "price_note": "Within Brussels — travel added beyond", "price_amount": "400",
-        "facts": [("Starting price", "€400 excl. VAT within Brussels, DJ only"),
+        "price": "From €500 excl. VAT", "price_note": "Private venue in Brussels — from €300 at Papillon Schuman", "price_amount": "500",
+        "facts": [("Starting price", "€500 excl. VAT for a private venue in Brussels, DJ only"),
+                  ("At Papillon Schuman", "From €300 DJ + €1,500 minimum bar spend"),
                   ("Formats", "Birthdays, anniversaries, graduations, house parties"),
                   ("Scale", "From an apartment to a venue of 500 guests"),
                   ("Music", "Open format — electronic, Afro, Latin, RnB, Greek, pop"),
@@ -514,6 +519,16 @@ PAGES = {
   </div>
 </section>
 
+<section class="section alt">
+  <div class="wrap">
+    <h2>Two ways to do it</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Your own space</h3><p>An apartment, a rented venue, a garden, a company loft — I come to you. <strong>From €500 excl. VAT</strong> within Brussels for the DJ. Sound and lighting are quoted on top, because what a room needs varies enormously.</p></div>
+      <div class="card"><h3>At Papillon Schuman</h3><p>Book the room where I'm resident. On Papillon's standard rates that's <strong>from €300 excl. VAT</strong> for the DJ plus a <strong>€1,500 minimum bar spend</strong> — a bar bill you were going to pay anyway, in a venue already built for a party.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="section cta-band">
   <div class="wrap center">
     <h2>Got a date in mind?</h2>
@@ -524,7 +539,7 @@ PAGES = {
 """,
         "faq": [
             ("How much does a private party DJ cost in Brussels?",
-             "It depends on duration, location and whether you need sound and lighting equipment. Send the basics through the contact form and you'll get a clear, personalised quote — usually within 48 hours, with no obligation."),
+             "Within Brussels, a private party starts at €500 excl. VAT for the DJ at a venue of your choosing. If you hold it at Papillon Schuman, where I'm resident, Papillon's standard rates are from €300 excl. VAT for the DJ plus a €1,500 minimum bar spend. Sound and lighting are quoted separately, depending on the room. Send the basics through the contact form and you'll get a clear, personalised quote — usually within 48 hours, with no obligation."),
             ("Do you bring your own equipment for house parties?",
              "Yes — I can bring a complete, apartment-friendly setup, or full sound and light for a rented venue up to 500 guests. Tell me the space and I'll propose the right configuration."),
             ("Do you take song requests during the party?",

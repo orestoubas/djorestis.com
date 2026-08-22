@@ -20,6 +20,10 @@ STRINGS = {
         "read_more": "Lees de praktijkcase",
         "cta": "Plant u iets soortgelijks?",
     },
+    "venues_heading": "Waar ik draai in <span class='gold'>Brussel</span>",
+    "venues_intro": "Restaurants en bars door de hele stad — van de Europese wijk tot Sint-Gillis — waar ik resident ben of geregeld draai.",
+    "venues_restaurants": "Restaurants",
+    "venues_bars": "Bars &amp; cafés",
     "facts_heading": "In het kort",
     "photo_ph": "Foto volgt binnenkort",
     "video_ph": "Video volgt binnenkort",
@@ -416,8 +420,8 @@ PAGES = {
         "kicker": "Ελληνικές βραδιές — het echte werk",
         "h1": "Griekse DJ in <span class='gold'>Brussel</span>",
         "sub": "Van het Brussels Greek Food Festival tot gemeenschapsfeesten in Wenen, Leuven en Rijsel — de Griekse avond, zoals ze verdient.",
-        "price": "Vanaf € 400 excl. btw", "price_note": "Binnen Brussel — reiskosten daarbuiten", "price_amount": "400",
-        "facts": [("Vanafprijs", "€ 400 excl. btw binnen Brussel, enkel DJ"),
+        "price": "Vanaf € 500 excl. btw", "price_note": "Binnen Brussel — reiskosten daarbuiten", "price_amount": "500",
+        "facts": [("Vanafprijs", "€ 500 excl. btw binnen Brussel, enkel DJ"),
                   ("Repertoire", "Laïkà, éntekhna, nisiótika, rebetiko, moderne Griekse hits"),
                   ("Gemengde avonden", "Griekse uren vermengd met Afro, Latin, RnB en internationaal"),
                   ("Presentatie", "Aankondigingen in het Grieks, Engels, Frans of Nederlands"),
@@ -478,8 +482,9 @@ PAGES = {
         "kicker": "Uw feest, professioneel luid",
         "h1": "Feest DJ in <span class='gold'>Brussel</span>",
         "sub": "Verjaardagen, jubilea, afstudeerfeesten, huisfeesten — energie van clubniveau, professionaliteit die ook in de huiskamer past.",
-        "price": "Vanaf € 400 excl. btw", "price_note": "Binnen Brussel — reiskosten daarbuiten", "price_amount": "400",
-        "facts": [("Vanafprijs", "€ 400 excl. btw binnen Brussel, enkel DJ"),
+        "price": "Vanaf € 500 excl. btw", "price_note": "Privélocatie in Brussel — vanaf € 300 in Papillon Schuman", "price_amount": "500",
+        "facts": [("Vanafprijs", "€ 500 excl. btw voor een privélocatie in Brussel, enkel DJ"),
+                  ("In Papillon Schuman", "Vanaf € 300 DJ + € 1.500 minimumconsumptie"),
                   ("Formats", "Verjaardagen, jubilea, afstudeerfeesten, huisfeesten"),
                   ("Schaal", "Van een appartement tot een zaal met 500 gasten"),
                   ("Muziek", "Open format — electronic, Afro, Latin, RnB, Grieks, pop"),
@@ -502,6 +507,16 @@ PAGES = {
   </div>
 </section>
 
+<section class="section alt">
+  <div class="wrap">
+    <h2>Twee manieren om het te doen</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Je eigen locatie</h3><p>Een appartement, een gehuurde zaal, een tuin, een bedrijfsloft — ik kom naar jou. <strong>Vanaf € 500 excl. btw</strong> binnen Brussel voor de DJ. Geluid en licht worden er apart bij geoffreerd, want wat een zaal nodig heeft verschilt enorm.</p></div>
+      <div class="card"><h3>In Papillon Schuman</h3><p>Boek de zaal waar ik resident ben. Aan de standaardtarieven van Papillon is dat <strong>vanaf € 300 excl. btw</strong> voor de DJ plus <strong>€ 1.500 minimumconsumptie</strong> — een bar die je sowieso zou betalen, in een zaak die al voor feesten is gebouwd.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="section cta-band">
   <div class="wrap center">
     <h2>Heeft u al een datum in gedachten?</h2>
@@ -512,7 +527,7 @@ PAGES = {
 """,
         "faq": [
             ("Hoeveel kost een DJ voor een privéfeest in Brussel?",
-             "Dat hangt af van de duur, de locatie en of u geluids- en lichtinstallatie nodig heeft. Stuur de basisgegevens via het contactformulier en u ontvangt een heldere, persoonlijke offerte — meestal binnen 48 uur, geheel vrijblijvend."),
+             "Binnen Brussel start een privéfeest vanaf € 500 excl. btw voor de DJ, op de locatie van uw keuze. Houdt u het in Papillon Schuman, waar ik resident ben, dan gelden de standaardtarieven van Papillon: vanaf € 300 excl. btw voor de DJ plus € 1.500 minimumconsumptie. Geluid en licht worden apart geoffreerd, afhankelijk van de zaal. Stuur de basisgegevens via het contactformulier en u ontvangt een heldere, persoonlijke offerte — meestal binnen 48 uur, geheel vrijblijvend."),
             ("Brengt u uw eigen materiaal mee voor huisfeesten?",
              "Ja — ik kan een complete, appartementvriendelijke opstelling meebrengen, of volledig geluid en licht voor een gehuurde zaal tot 500 gasten. Beschrijf de ruimte en ik stel de juiste configuratie voor."),
             ("Neemt u verzoekjes aan tijdens het feest?",

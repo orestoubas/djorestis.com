@@ -322,7 +322,7 @@ POSTS = [
 "h1": "Wat <span class='gold'>kost</span> een DJ in België?",
 "sub": "Een eerlijke blik op wat DJ's in België vragen, waarom offertes zo sterk uiteenlopen, en hoe u ze vergelijkt zonder u te vergissen.",
 "body": """
-<p>Laat mij de vraag beantwoorden die iedereen googelt en die weinig DJ's openlijk bespreken. De prijzen in deze sector lopen enorm uiteen, en koppels en bedrijven verdienen te begrijpen waarom, nog voor zij offertes vergelijken. Bruiloften en bedrijfsevenementen starten vanaf <strong>€ 600 excl. btw</strong> voor een DJ-set, privéfeesten binnen Brussel vanaf <strong>€ 400</strong>. Geluid en licht worden apart geoffreerd, want wat een zaal nodig heeft verschilt enorm, en het volledige pakket met speakers, microfoons en licht komt rond <strong>€ 1.000</strong> uit. Hier is de eerlijke kaart van de bredere markt, van binnenuit gezien.</p>
+<p>Laat mij de vraag beantwoorden die iedereen googelt en die weinig DJ's openlijk bespreken. De prijzen in deze sector lopen enorm uiteen, en koppels en bedrijven verdienen te begrijpen waarom, nog voor zij offertes vergelijken. Bruiloften en bedrijfsevenementen starten vanaf <strong>€ 600 excl. btw</strong> voor een DJ-set, privéfeesten binnen Brussel vanaf <strong>€ 500</strong> op een eigen locatie — of vanaf <strong>€ 300</strong> met € 1.500 minimumconsumptie in Papillon Schuman, waar ik resident ben. Geluid en licht worden apart geoffreerd, want wat een zaal nodig heeft verschilt enorm, en het volledige pakket met speakers, microfoons en licht komt rond <strong>€ 1.000</strong> uit. Hier is de eerlijke kaart van de bredere markt, van binnenuit gezien.</p>
 
 <h2>De gangbare prijsvorken</h2>
 <p>Op basis van wat ik in de Belgische markt zie, een ruwe oriëntatie:</p>
