@@ -405,6 +405,39 @@ def faq_html(faq, heading):
     return f"<section class='section faq'><div class='wrap narrow'><h2>{heading}</h2>{items}</div></section>"
 
 
+def venues_html(s):
+    """Venues where he has played. Names link out where a URL is verified.
+
+    Deliberately text, not logos: using a venue's logo is a trademark question
+    and implies endorsement. Ask each venue for permission, then swap in logos.
+    """
+    vmod = load_module("venues")
+    venues = getattr(vmod, "VENUES", None) if vmod else None
+    if not venues:
+        return ""
+
+    def item(v):
+        label = v["name"]
+        href = v.get("url") or v.get("instagram") or ""
+        inner = (f'<a href="{href}" target="_blank" rel="noopener">{label}</a>'
+                 if href else f"<span>{label}</span>")
+        area = f'<em>{v["area"]}</em>' if v.get("area") else ""
+        return f"<li>{inner}{area}</li>"
+
+    groups = []
+    for kind, heading in (("Restaurant", s.get("venues_restaurants", "Restaurants")),
+                          ("Bar", s.get("venues_bars", "Bars &amp; clubs"))):
+        rows = "".join(item(v) for v in venues if v.get("type") == kind)
+        if rows:
+            groups.append(f"<div class='venue-group'><h3>{heading}</h3><ul class='venue-list'>{rows}</ul></div>")
+    if not groups:
+        return ""
+    return (f"<section class='section venues'><div class='wrap'>"
+            f"<h2>{s.get('venues_heading', 'Where I play in Brussels')}</h2>"
+            f"<p class='muted venues-intro'>{s.get('venues_intro', '')}</p>"
+            f"<div class='venue-groups'>{''.join(groups)}</div></div></section>")
+
+
 def testimonials_html(s):
     if not TESTIMONIALS:
         return ""
@@ -685,6 +718,8 @@ def render_page(mods, en_mod, lang, key):
                  f"<dl class='fact-grid'>{rows}</dl></div></section>")
     if page.get("faq"):
         body += faq_html(page["faq"], s["faq_heading"])
+    if key == "home":
+        body += venues_html(s)
     if key in SERVICE_KEYS or key == "home":
         body += testimonials_html(s)
     if page.get("signup"):

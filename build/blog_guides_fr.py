@@ -322,7 +322,7 @@ POSTS = [
 "h1": "Combien <span class='gold'>coûte</span> un DJ en Belgique ?",
 "sub": "Un regard honnête sur ce que facturent les DJ en Belgique, sur les raisons d'écarts aussi larges entre les devis, et sur la façon de les comparer sans se brûler.",
 "body": """
-<p>Répondons à la question que tout le monde tape sur Google et que peu de DJ abordent ouvertement. Dans ce métier, les prix varient énormément, et les couples comme les entreprises méritent de comprendre pourquoi avant de comparer des devis. Je peux déjà vous dire d'où je pars : mes prestations démarrent à 600 € HTVA pour le DJ seul, le son et la lumière étant chiffrés séparément, et chaque événement est ensuite chiffré individuellement. Voici, en plus de cela, la carte honnête du marché tel que je le vois de l'intérieur.</p>
+<p>Répondons à la question que tout le monde tape sur Google et que peu de DJ abordent ouvertement. Dans ce métier, les prix varient énormément, et les couples comme les entreprises méritent de comprendre pourquoi avant de comparer des devis. Je peux déjà vous dire d'où je pars : les mariages et les événements d'entreprise démarrent à <strong>600 € HTVA</strong> pour le DJ seul, et les fêtes privées à Bruxelles à <strong>400 €</strong> ; le son et la lumière sont chiffrés séparément, et la formule complète avec enceintes, micros et lumière tourne autour de <strong>1 000 €</strong>. Chaque événement est ensuite chiffré individuellement. Voici, en plus de cela, la carte honnête du marché tel que je le vois de l'intérieur.</p>
 
 <h2>Les fourchettes habituelles</h2>
 <p>Sur la base de ce que j'observe sur le marché belge, une orientation approximative — tous les montants s'entendent HTVA :</p>

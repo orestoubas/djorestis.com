@@ -321,7 +321,7 @@ POSTS = [
 "h1": "How much does a DJ <span class='gold'>cost</span> in Belgium?",
 "sub": "An honest look at what DJs charge in Belgium, why quotes differ so wildly, and how to compare them without getting burned.",
 "body": """
-<p>Let me answer the question everyone googles and few DJs discuss openly. Prices in this industry vary enormously, and couples and companies deserve to understand why before they compare quotes. My own bookings start at <strong>€600 excl. VAT</strong> for a DJ set — sound and lighting are quoted separately, because what a room needs varies enormously — and every event is then scoped individually. Here is the honest map of the wider market as I see it from inside.</p>
+<p>Let me answer the question everyone googles and few DJs discuss openly. Prices in this industry vary enormously, and couples and companies deserve to understand why before they compare quotes. Weddings and corporate events start at <strong>€600 excl. VAT</strong> for a DJ set, and private parties within Brussels at <strong>€400</strong>. Sound and lighting are quoted separately, because what a room needs varies enormously, and the full package with speakers, microphones and lighting lands around <strong>€1,000</strong>. Here is the honest map of the wider market as I see it from inside.</p>
 
 <h2>The typical ranges</h2>
 <p>Based on what I see in the Belgian market, a rough orientation:</p>

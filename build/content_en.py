@@ -428,8 +428,8 @@ PAGES = {
         "kicker": "Ελληνικές βραδιές — the real thing",
         "h1": "Greek DJ in <span class='gold'>Brussels</span>",
         "sub": "From the Brussels Greek Food Festival to community parties in Vienna, Leuven and Lille — the Greek night, done the way it deserves.",
-        "price": "From €600 excl. VAT", "price_note": "DJ only — sound &amp; lighting quoted separately", "price_amount": "600",
-        "facts": [("Starting price", "€600 excl. VAT, DJ only"),
+        "price": "From €400 excl. VAT", "price_note": "Within Brussels — travel added beyond", "price_amount": "400",
+        "facts": [("Starting price", "€400 excl. VAT within Brussels, DJ only"),
                   ("Repertoire", "Laïkà, éntekhna, nisiótika, rebetiko, modern Greek hits"),
                   ("Mixed nights", "Greek hours blended with Afro, Latin, RnB and international"),
                   ("Hosting", "Announcements in Greek, English, French or Dutch"),
@@ -490,8 +490,8 @@ PAGES = {
         "kicker": "Your party, professionally loud",
         "h1": "Party DJ in <span class='gold'>Brussels</span>",
         "sub": "Birthdays, anniversaries, graduations, house parties — club-level energy, living-room friendly professionalism.",
-        "price": "From €600 excl. VAT", "price_note": "DJ only — sound &amp; lighting quoted separately", "price_amount": "600",
-        "facts": [("Starting price", "€600 excl. VAT, DJ only"),
+        "price": "From €400 excl. VAT", "price_note": "Within Brussels — travel added beyond", "price_amount": "400",
+        "facts": [("Starting price", "€400 excl. VAT within Brussels, DJ only"),
                   ("Formats", "Birthdays, anniversaries, graduations, house parties"),
                   ("Scale", "From an apartment to a venue of 500 guests"),
                   ("Music", "Open format — electronic, Afro, Latin, RnB, Greek, pop"),
@@ -539,8 +539,8 @@ PAGES = {
         "kicker": "One partner, whole event",
         "h1": "Full-package <span class='gold'>event solutions</span>",
         "sub": "DJ + professional sound &amp; light + photography + video — for events and small shows up to 500 people.",
-        "price": "DJ from €600 excl. VAT", "price_note": "Full production quoted per event", "price_amount": "600",
-        "facts": [("Starting price", "DJ from €600 excl. VAT; production quoted per event"),
+        "price": "From €1,000 excl. VAT", "price_note": "DJ, speakers, microphones and lighting", "price_amount": "1000",
+        "facts": [("Starting price", "€1,000 excl. VAT for the full premium package"),
                   ("Maximum size", "500 guests"),
                   ("Included on request", "Sound, lighting, photography, video"),
                   ("Microphones", "Wireless mics for speeches and ceremonies"),
@@ -573,6 +573,20 @@ PAGES = {
       <div class="card"><h3>Community galas &amp; shows</h3><p>Stage productions, annual balls and cultural evenings up to 500 people.</p></div>
       <div class="card"><h3>Venue events</h3><p>Pop-up club nights and themed evenings, fully produced.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap narrow">
+    <h2>What the full package actually costs</h2>
+    <p>No mystery, and nothing bundled that you don't need. The package is built from three parts, and you can stop at any of them:</p>
+    <dl class="fact-grid price-build">
+      <div class="fact"><dt>DJ service</dt><dd>from €600</dd></div>
+      <div class="fact"><dt>+ Standard speakers</dt><dd>+ €200</dd></div>
+      <div class="fact"><dt>+ Microphones, stands &amp; lighting</dt><dd>+ €200</dd></div>
+      <div class="fact total"><dt>Full premium package</dt><dd>around €1,000</dd></div>
+    </dl>
+    <p class="muted">All figures excl. VAT, for a standard event within Brussels. Larger rooms, longer hours, extra lighting or photo and video coverage are quoted on top — and I will tell you when you don't need them.</p>
   </div>
 </section>
 

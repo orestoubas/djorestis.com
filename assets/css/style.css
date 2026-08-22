@@ -359,3 +359,40 @@ a.card:hover { border-color: var(--gold-lo); text-decoration: none; transform: t
 .guide-body blockquote { border-left: 2px solid var(--gold); padding-left: 18px; margin: 1.4em 0;
   color: var(--ivory); font-family: var(--font-display); font-size: 1.08rem; }
 .guide-body > p:first-of-type { color: var(--ivory); font-size: 1.08rem; }
+
+/* ---------- Venue strip ---------- */
+.venues-intro { max-width: 640px; margin-bottom: 34px; }
+.venue-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+.venue-group h3 {
+  font-family: var(--font-body); font-size: 0.76rem; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--stone);
+  padding-bottom: 12px; border-bottom: 1px solid var(--graphite); margin-bottom: 4px;
+}
+.venue-list { list-style: none; }
+.venue-list li {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  padding: 11px 0; border-bottom: 1px solid var(--graphite);
+}
+.venue-list li:last-child { border-bottom: none; }
+.venue-list a, .venue-list span {
+  font-family: var(--font-display); font-size: 1.06rem; color: var(--ivory);
+  letter-spacing: 0.02em;
+}
+.venue-list a { position: relative; }
+.venue-list a:hover { color: var(--gold); text-decoration: none; }
+.venue-list a::after {
+  content: "↗"; margin-left: 6px; font-family: var(--font-body);
+  font-size: 0.72rem; color: var(--gold-lo); vertical-align: super;
+}
+.venue-list a:hover::after { color: var(--gold); }
+.venue-list em {
+  font-style: normal; color: var(--stone); font-size: 0.76rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+
+/* ---------- Price build-up ---------- */
+.price-build { margin-top: 26px; }
+.price-build .fact dd { font-family: var(--font-display); font-size: 1.15rem; color: var(--gold); }
+.price-build .fact.total { background: rgba(198, 161, 91, 0.07); }
+.price-build .fact.total dt { color: var(--ivory); }
+.price-build .fact.total dd { color: var(--gold-hi); font-size: 1.3rem; }
