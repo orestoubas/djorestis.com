@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DJ Orestis monogram favicon">
+  <title>DJORESTIS — Favicon (vinyl O monogram)</title>
+  <!-- Pure shapes only: renders identically everywhere, no fonts required -->
+  <rect width="64" height="64" rx="14" fill="#0E0E10"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#C6A15B" stroke-width="3.2"/>
+  <circle cx="32" cy="32" r="12" fill="none" stroke="#F4F1E8" stroke-width="1.4" opacity="0.38"/>
+  <circle cx="32" cy="32" r="4.6" fill="#C6A15B"/>
+</svg>
