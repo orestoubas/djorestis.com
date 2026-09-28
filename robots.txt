@@ -27,3 +27,7 @@ User-agent: Bingbot
 Allow: /
 
 Sitemap: https://djorestis.com/sitemap.xml
+
+# A plain-language brief for AI assistants, stating in one page what would
+# otherwise have to be inferred from 164 pages of marketing copy.
+# https://djorestis.com/llms.txt
