@@ -467,3 +467,8 @@ a.card:hover { border-color: var(--gold-lo); text-decoration: none; transform: t
 /* Click-to-call and WhatsApp on the contact pages */
 .tel-link { color: var(--gold); text-decoration: none; font-weight: 600; }
 .tel-link:hover, .tel-link:focus { text-decoration: underline; }
+
+/* The asterisk on a required field, and the line that explains it. Gold so it
+   reads as part of the design rather than as an error. */
+.quote-form .req { color: var(--gold, #a8853f); font-weight: 600; }
+.quote-form .req-note { color: var(--gold, #a8853f); }

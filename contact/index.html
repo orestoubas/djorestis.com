@@ -26,7 +26,7 @@
   <link rel="preload" href="/assets/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/jost-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=703d3ad8">
-  <link rel="stylesheet" href="/assets/css/style.css?v=04423997">
+  <link rel="stylesheet" href="/assets/css/style.css?v=f5633935">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://djorestis.com/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://djorestis.com/contact/"}]}</script>
 </head>
 <body>
@@ -72,13 +72,13 @@
     </label>
   </div>
   <div class="form-grid">
-    <label>Your name *<input type="text" name="name" required autocomplete="name"></label>
-    <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+    <label>Your name * <span class='req' aria-hidden='true'>*</span><input type="text" name="name" required autocomplete="name"></label>
+    <label>Email * <span class='req' aria-hidden='true'>*</span><input type="email" name="email" required autocomplete="email"></label>
     <label>Phone / WhatsApp<input type="tel" name="phone" autocomplete="tel"></label>
     <label>Type of event<select name="event_type"><option>Corporate event / reception</option><option>Wedding</option><option>Baptism</option><option>Private party</option><option>Greek night / community event</option><option>Club / venue booking</option><option>Other</option></select></label>
     <label>Event date<input type="date" name="event_date"></label>
-    <label>Location<input type="text" name="location" placeholder="City, country or venue"></label>
-    <label>Number of guests<input type="number" name="guests" min="1" max="5000"></label>
+    <label>Location <span class='req' aria-hidden='true'>*</span><input type="text" name="location" required placeholder="City, country or venue"></label>
+    <label>Number of guests <span class='req' aria-hidden='true'>*</span><input type="number" name="guests" required min="1" max="5000"></label>
     <label>Indicative budget<input type="text" name="budget" placeholder="Optional: helps me tailor the proposal"></label>
   </div>
   <label class="full">Extra services needed
@@ -90,7 +90,7 @@
   </label>
   <label class="full">Tell me about your event<textarea name="message" rows="5" placeholder="The occasion, the atmosphere you want, music preferences…"></textarea></label>
   <button type="submit" class="btn btn-gold">Send request</button>
-  <p class="form-note">You will receive a personalised proposal, usually within 48 hours. No obligation.</p>
+  <p class="form-note"><span class="req-note">Fields marked * are required.</span> You will receive a personalised proposal, usually within 48 hours. No obligation.</p>
   <p class="form-status" role="status" aria-live="polite"></p>
 </form>
     </div>

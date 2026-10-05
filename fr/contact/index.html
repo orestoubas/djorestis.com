@@ -26,7 +26,7 @@
   <link rel="preload" href="/assets/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/jost-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=703d3ad8">
-  <link rel="stylesheet" href="/assets/css/style.css?v=04423997">
+  <link rel="stylesheet" href="/assets/css/style.css?v=f5633935">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://djorestis.com/fr/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://djorestis.com/fr/contact/"}]}</script>
 </head>
 <body>
@@ -72,13 +72,13 @@
     </label>
   </div>
   <div class="form-grid">
-    <label>Votre nom *<input type="text" name="name" required autocomplete="name"></label>
-    <label>E-mail *<input type="email" name="email" required autocomplete="email"></label>
+    <label>Votre nom * <span class='req' aria-hidden='true'>*</span><input type="text" name="name" required autocomplete="name"></label>
+    <label>E-mail * <span class='req' aria-hidden='true'>*</span><input type="email" name="email" required autocomplete="email"></label>
     <label>GSM / WhatsApp<input type="tel" name="phone" autocomplete="tel"></label>
     <label>Type d'événement<select name="event_type"><option>Événement d'entreprise / réception</option><option>Mariage</option><option>Baptême</option><option>Fête privée</option><option>Soirée grecque / événement communautaire</option><option>Club / établissement</option><option>Autre</option></select></label>
     <label>Date de l'événement<input type="date" name="event_date"></label>
-    <label>Lieu<input type="text" name="location" placeholder="Ville, pays ou nom de la salle"></label>
-    <label>Nombre d'invités<input type="number" name="guests" min="1" max="5000"></label>
+    <label>Lieu <span class='req' aria-hidden='true'>*</span><input type="text" name="location" required placeholder="Ville, pays ou nom de la salle"></label>
+    <label>Nombre d'invités <span class='req' aria-hidden='true'>*</span><input type="number" name="guests" required min="1" max="5000"></label>
     <label>Budget indicatif<input type="text" name="budget" placeholder="Facultatif: m'aide à affiner la proposition"></label>
   </div>
   <label class="full">Services complémentaires souhaités
@@ -90,7 +90,7 @@
   </label>
   <label class="full">Parlez-moi de votre événement<textarea name="message" rows="5" placeholder="L'occasion, l'ambiance recherchée, vos préférences musicales…"></textarea></label>
   <button type="submit" class="btn btn-gold">Envoyer la demande</button>
-  <p class="form-note">Vous recevrez une proposition personnalisée, en général endéans les 48 heures. Sans engagement.</p>
+  <p class="form-note"><span class="req-note">Les champs marqués d'un * sont obligatoires.</span> Vous recevrez une proposition personnalisée, en général endéans les 48 heures. Sans engagement.</p>
   <p class="form-status" role="status" aria-live="polite"></p>
 </form>
     </div>

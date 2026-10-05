@@ -26,7 +26,7 @@
   <link rel="preload" href="/assets/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/jost-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=703d3ad8">
-  <link rel="stylesheet" href="/assets/css/style.css?v=04423997">
+  <link rel="stylesheet" href="/assets/css/style.css?v=f5633935">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Αρχική", "item": "https://djorestis.com/el/"}, {"@type": "ListItem", "position": 2, "name": "Επικοινωνία", "item": "https://djorestis.com/el/epikoinonia/"}]}</script>
 </head>
 <body>
@@ -72,13 +72,13 @@
     </label>
   </div>
   <div class="form-grid">
-    <label>Το όνομά σας *<input type="text" name="name" required autocomplete="name"></label>
-    <label>Email *<input type="email" name="email" required autocomplete="email"></label>
+    <label>Το όνομά σας * <span class='req' aria-hidden='true'>*</span><input type="text" name="name" required autocomplete="name"></label>
+    <label>Email * <span class='req' aria-hidden='true'>*</span><input type="email" name="email" required autocomplete="email"></label>
     <label>Τηλέφωνο / WhatsApp<input type="tel" name="phone" autocomplete="tel"></label>
     <label>Είδος εκδήλωσης<select name="event_type"><option>Εταιρική εκδήλωση / δεξίωση</option><option>Γάμος</option><option>Βάπτιση</option><option>Ιδιωτικό πάρτι</option><option>Ελληνική βραδιά / εκδήλωση κοινότητας</option><option>Κράτηση για club / χώρο</option><option>Άλλο</option></select></label>
     <label>Ημερομηνία εκδήλωσης<input type="date" name="event_date"></label>
-    <label>Τοποθεσία<input type="text" name="location" placeholder="Πόλη, χώρα ή χώρος εκδήλωσης"></label>
-    <label>Αριθμός καλεσμένων<input type="number" name="guests" min="1" max="5000"></label>
+    <label>Τοποθεσία <span class='req' aria-hidden='true'>*</span><input type="text" name="location" required placeholder="Πόλη, χώρα ή χώρος εκδήλωσης"></label>
+    <label>Αριθμός καλεσμένων <span class='req' aria-hidden='true'>*</span><input type="number" name="guests" required min="1" max="5000"></label>
     <label>Ενδεικτικός προϋπολογισμός<input type="text" name="budget" placeholder="Προαιρετικό, με βοηθά να προσαρμόσω την πρόταση"></label>
   </div>
   <label class="full">Πρόσθετες υπηρεσίες που χρειάζεστε
@@ -90,7 +90,7 @@
   </label>
   <label class="full">Πείτε μου για την εκδήλωσή σας<textarea name="message" rows="5" placeholder="Η περίσταση, η ατμόσφαιρα που θέλετε, οι μουσικές σας προτιμήσεις…"></textarea></label>
   <button type="submit" class="btn btn-gold">Αποστολή αιτήματος</button>
-  <p class="form-note">Θα λάβετε μια εξατομικευμένη πρόταση, συνήθως εντός 48 ωρών. Χωρίς καμία δέσμευση.</p>
+  <p class="form-note"><span class="req-note">Τα πεδία με * είναι υποχρεωτικά.</span> Θα λάβετε μια εξατομικευμένη πρόταση, συνήθως εντός 48 ωρών. Χωρίς καμία δέσμευση.</p>
   <p class="form-status" role="status" aria-live="polite"></p>
 </form>
     </div>
