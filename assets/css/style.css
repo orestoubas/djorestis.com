@@ -470,5 +470,20 @@ a.card:hover { border-color: var(--gold-lo); text-decoration: none; transform: t
 
 /* The asterisk on a required field, and the line that explains it. Gold so it
    reads as part of the design rather than as an error. */
-.quote-form .req { color: var(--gold, #a8853f); font-weight: 600; }
-.quote-form .req-note { color: var(--gold, #a8853f); }
+.quote-form .req { color: var(--gold); font-weight: 600; }
+.quote-form .req-note { color: var(--gold); }
+
+/* Upcoming nights on the events page. Deliberately not .event-list: that class
+   belongs to the past-highlights columns above and carries its own padding,
+   bottom borders and an .events-cols margin rule, all of which would fight the
+   flex rows here. A row is a date, what and where, and a way through to the
+   booking page, so it has to stay readable when it wraps onto a phone. */
+.upcoming-list { list-style: none; margin: 18px 0 0; padding: 0; }
+.upcoming-row { display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: baseline;
+                padding: 14px 0; border-top: 1px solid var(--graphite); }
+.upcoming-row:last-child { border-bottom: 1px solid var(--graphite); }
+.upcoming-date { flex: 0 0 auto; min-width: 11rem; color: var(--gold); font-weight: 600; }
+.upcoming-what { flex: 1 1 16rem; }
+.upcoming-note { color: var(--grey); font-size: 0.9rem; }
+.upcoming-link { flex: 0 0 auto; white-space: nowrap; }
+@media (max-width: 560px) { .upcoming-date { min-width: 100%; } }
