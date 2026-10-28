@@ -487,3 +487,8 @@ a.card:hover { border-color: var(--gold-lo); text-decoration: none; transform: t
 .upcoming-note { color: var(--grey); font-size: 0.9rem; }
 .upcoming-link { flex: 0 0 auto; white-space: nowrap; }
 @media (max-width: 560px) { .upcoming-date { min-width: 100%; } }
+
+/* Free entry is the single most persuasive fact about these nights, so it is
+   set in gold rather than left to read as another line of description. */
+.upcoming-free { display: inline-block; margin-top: 4px; color: var(--gold);
+                 font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; }
